@@ -1,6 +1,8 @@
 ﻿<script src="js/libraries/jquery-2.1.1.js" type="text/javascript"></script>
 <script src="js/libraries/jquery-cookie/jquery.cookie.js" type="text/javascript"></script>
-<script src="js/Templates.js" type="text/javascript"></script>
+<script src="js/Main.js" type="text/javascript"></script>
+<script src="js/RegAuth.js" type="text/javascript"></script>
+<script src="js/Landing.js" type="text/javascript"></script>
 <script>
     window.onload = function () {
         checkLanguage();
@@ -14,170 +16,10 @@
     window.onresize = function () {
         scaling();
     };
-
-    function scaling(){
-        var index = Math.ceil(innerWidth*innerHeight/50000)-10;
-        var fontSize = 100 + Math.ceil(index * 3);
-        document.getElementById("func1").style.fontSize = fontSize+"%";
-        document.getElementById("func2").style.fontSize = fontSize+"%";
-        document.getElementById("func3").style.fontSize = fontSize+"%";
-        document.getElementById("func4").style.fontSize = fontSize+"%";
-        document.getElementById("func5").style.fontSize = fontSize+"%";
-        document.getElementById("func6").style.fontSize = fontSize+"%";
-        document.getElementById("func7").style.fontSize = fontSize+"%";
-        var imageSize = 50 + index * 3;
-        document.getElementById("funcImage1").style.height = imageSize;
-        document.getElementById("funcImage2").style.height = imageSize;
-        document.getElementById("funcImage3").style.height = imageSize;
-        document.getElementById("funcImage4").style.height = imageSize;
-        document.getElementById("funcImage5").style.height = imageSize;
-        document.getElementById("funcImage6").style.height = imageSize;
-        document.getElementById("funcImage7").style.height = imageSize;
-        var flagSize = 40 + index * 2;
-        document.getElementById("langImage0").style.height = flagSize;
-        document.getElementById("langImage1").style.height = flagSize;
-        document.getElementById("logo-image").style.height = 50 + index * 3;
-        document.getElementById("welcome-text").style.fontSize = 18 + index;
-        document.getElementById("welcome-text2").style.fontSize = 16 + index;
-        document.getElementById("sign-form").style.width = 225 + index * 10;
-        var signHeader = 20 + index;
-        document.getElementById("header-in").style.fontSize = signHeader;
-        document.getElementById("header-up").style.fontSize = signHeader;
-        var signInput = 14 + index;
-        document.getElementById("email").style.fontSize = signInput;
-        document.getElementById("password").style.fontSize = signInput;
-        document.getElementById("name").style.fontSize = signInput;
-        var signInputHeight = 24 + index * 2;
-        document.getElementById("email").style.height = signInputHeight;
-        document.getElementById("password").style.height = signInputHeight;
-        document.getElementById("name").style.height = signInputHeight;
-        var signButton = 15 + index;
-        document.getElementById("button-in").style.fontSize = signButton;
-        document.getElementById("button-up").style.fontSize = signButton;
-        var signText = 14 + Math.ceil(index * 0.5);
-        document.getElementById("text-in").style.fontSize = signText;
-        document.getElementById("text-up").style.fontSize = signText;
-        document.getElementById("text-in2").style.fontSize = signText;
-        document.getElementById("text-up2").style.fontSize = signText;
-        document.getElementById("error-msg").style.fontSize = signText;
-    }
-
-    function selectLang(lang){
-        $.cookie('language',lang,{path:'/'});
-        document.getElementById("welcome-text").innerHTML = landing[lang]['welcome-text'];
-        document.getElementById("welcome-text2").innerHTML = landing[lang]['welcome-text2'];
-        document.getElementById("grammar-header").innerHTML = landing[lang]['landing-grammar-header'];
-        document.getElementById("grammar-text").innerHTML = landing[lang]['landing-grammar-text'];
-        document.getElementById("vocabulary-header").innerHTML = landing[lang]['landing-vocabulary-header'];
-        document.getElementById("vocabulary-text").innerHTML = landing[lang]['landing-vocabulary-text'];
-        document.getElementById("exercises-header").innerHTML = landing[lang]['landing-exercises-header'];
-        document.getElementById("exercises-text").innerHTML = landing[lang]['landing-exercises-text'];
-        document.getElementById("testing-header").innerHTML = landing[lang]['landing-testing-header'];
-        document.getElementById("testing-text").innerHTML = landing[lang]['landing-testing-text'];
-        document.getElementById("chatting-header").innerHTML = landing[lang]['landing-chatting-header'];
-        document.getElementById("chatting-text").innerHTML = landing[lang]['landing-chatting-text'];
-        document.getElementById("library-header").innerHTML = landing[lang]['landing-library-header'];
-        document.getElementById("library-text").innerHTML = landing[lang]['landing-library-text'];
-        document.getElementById("advices-header").innerHTML = landing[lang]['landing-advices-header'];
-        document.getElementById("advices-text").innerHTML = landing[lang]['landing-advices-text'];
-        document.getElementById("header-up").innerHTML = landing[lang]['sign-up-header'];
-        document.getElementById("header-in").innerHTML = landing[lang]['sign-in-header'];
-        document.getElementById("button-up").value = landing[lang]['sign-up-button'];
-        document.getElementById("button-in").value = landing[lang]['sign-in-button'];
-        document.getElementById("text-up").innerHTML = landing[lang]['sign-up-text'];
-        document.getElementById("text-in").innerHTML = landing[lang]['sign-in-text'];
-        document.getElementById("text-up2").innerHTML = landing[lang]['sign-up-text2'];
-        document.getElementById("text-in2").innerHTML = landing[lang]['sign-in-text2'];
-        document.getElementById("password").placeholder = landing[lang]['reg-form-password'];
-        document.getElementById("name").placeholder = landing[lang]['reg-form-name'];
-        scaling();
-    }
-
-    function signInUp(choice) {
-        if (choice == 1) {
-            document.getElementById("header-up").style.display = "none";
-            document.getElementById("header-in").style.display = "block";
-            document.getElementById("name").style.display = "none";
-            document.getElementById("buttons-up").style.display = "none";
-            document.getElementById("buttons-in").style.display = "block";
-        } else {
-            document.getElementById("header-up").style.display = "block";
-            document.getElementById("header-in").style.display = "none";
-            document.getElementById("name").style.display = "block";
-            document.getElementById("buttons-up").style.display = "block";
-            document.getElementById("buttons-in").style.display = "none";
-        }
-    }
-
-    function register(){
-        document.getElementById("error-msg").innerText = '';
-        var errorMessage = '';
-        $.ajax({
-            type: "POST",
-            url: "../ajax/auth-reg/canBeRegistred.php",
-            data: "email=" + document.getElementById("email").value,
-            success: function (data) {
-                if (data != 0) {
-                    errorMessage += landing[$.cookie('language')]['error-same-email'] + '\n';
-                }
-                if (document.getElementById("email").value == '') {
-                    errorMessage += landing[$.cookie('language')]['error-empty-email'] + '\n';
-                }
-                if (document.getElementById("name").value == '') {
-                    errorMessage += landing[$.cookie('language')]['error-empty-name'] + '\n';
-                }
-                if (document.getElementById("password").value == '') {
-                    errorMessage += landing[$.cookie('language')]['error-empty-pass'] + '\n';
-                }
-                if(errorMessage != '') {
-                    document.getElementById("error-msg").innerText = errorMessage;
-                } else {
-                    $.ajax({
-                        type: "POST",
-                        url: "../ajax/auth-reg/registerUser.php",
-                        data: "email=" + document.getElementById("email").value +
-                        "&name=" + document.getElementById("name").value +
-                        "&password=" + document.getElementById("password").value,
-                        success: function (data) {
-                            $.cookie("user",data,{path:'/'});
-                            document.location.href = '/grammar/rules';
-                        }
-                    });
-                }
-            }
-        });
-    }
-
-    function authorize(){
-        document.getElementById("error-msg").innerText = '';
-        var errorMessage = '';
-        $.ajax({
-            type: "POST",
-            url: "../ajax/auth-reg/canBeAuthorized.php",
-            data: "email=" + document.getElementById("email").value + "&password=" + document.getElementById("password").value,
-            success: function (data) {
-                if (data == -1) {
-                    errorMessage += landing[$.cookie('language')]['error-no-user'] + '\n';
-                }
-                if (document.getElementById("email").value == '') {
-                    errorMessage += landing[$.cookie('language')]['error-empty-email'] + '\n';
-                }
-                if (document.getElementById("password").value == '') {
-                    errorMessage += landing[$.cookie('language')]['error-empty-pass'] + '\n';
-                }
-                if(errorMessage != '') {
-                    document.getElementById("error-msg").innerText = errorMessage;
-                } else {
-                    $.cookie("user",data,{path:'/'});
-                    document.location.href = '/grammar/rules';
-                }
-            }
-        });
-    }
 </script>
 <html>
 <head>
-    <title>Your English Friend</title>
+    <title>Your English Friend - изучение английского языка онлайн</title>
     <link rel="shortcut icon" href="images/icon.png" type="image/png">
     <link rel="stylesheet" type="text/css" href="css/landing.css"/>
 </head>
@@ -221,12 +63,12 @@
                 <input class="input" placeholder="Имя" autofocus="true" id="name">
                 <input class="input" type="password" placeholder="Пароль" id="password"><br>
                 <div class="div-sign-buttons" id="buttons-up">
-                    <input type="button" class="action" value="Регистрация" id="button-up" onclick="register()">
+                    <input type="button" class="action" value="Регистрация" id="button-up" onclick="register(false)">
                     <a class="sign-text" id="text-up" onclick="signInUp(1)">Вход</a><br>
                     <a class="sign-text" id="text-up2" onclick="document.location.href = '/grammar/rules';">Предпросмотр</a>
                 </div>
                 <div class="div-sign-buttons hidden" id="buttons-in">
-                    <input type="button" class="action" value="Вход" id="button-in" onclick="authorize()">
+                    <input type="button" class="action" value="Вход" id="button-in" onclick="authorize(false)">
                     <a class="sign-text" id="text-in" onclick="signInUp(2)">Регистрация</a><br>
                     <a class="sign-text" id="text-in2">Забыли пароль?</a>
                 </div>

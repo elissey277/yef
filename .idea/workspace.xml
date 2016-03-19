@@ -2,14 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/www.iml" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\www\.idea\scopes\scope_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\www\.idea\workspace.xml" afterPath="" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\www\.idea\www.iml" afterPath="$PROJECT_DIR$/.idea/www.iml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Advice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Chat.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Landing.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Page.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/RegAuth.js" />
+      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\js\Templates.js" afterPath="$PROJECT_DIR$/js/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advice/index.html" afterPath="$PROJECT_DIR$/advice/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/friends/index.html" afterPath="$PROJECT_DIR$/chat/friends/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/messages/index.html" afterPath="$PROJECT_DIR$/chat/messages/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/chat/profile/index.html" afterPath="$PROJECT_DIR$/chat/profile/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grammar/exercises/index.html" afterPath="$PROJECT_DIR$/grammar/exercises/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grammar/rules/index.html" afterPath="$PROJECT_DIR$/grammar/rules/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/texts/index.html" afterPath="$PROJECT_DIR$/library/texts/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/videos/index.html" afterPath="$PROJECT_DIR$/library/videos/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/dictionary/index.html" afterPath="$PROJECT_DIR$/vocabulary/dictionary/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/differences/index.html" afterPath="$PROJECT_DIR$/vocabulary/differences/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/glossaries/index.html" afterPath="$PROJECT_DIR$/vocabulary/glossaries/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/synonyms/index.html" afterPath="$PROJECT_DIR$/vocabulary/synonyms/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/testing/index.html" afterPath="$PROJECT_DIR$/vocabulary/testing/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -56,34 +68,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="Templates.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/Templates.js">
+      <file leaf-file-name="Advice.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/Advice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2261">
-              <caret line="240" column="72" selection-start-line="240" selection-start-column="72" selection-end-line="240" selection-end-column="72" />
-              <folding>
-                <element signature="e#14#3858#0" expanded="false" />
-                <element signature="e#3872#5182#0" expanded="false" />
-                <element signature="e#5196#5423#0" expanded="false" />
-                <element signature="e#5439#5757#0" expanded="false" />
-                <element signature="n#!!block;n#getParam#0" expanded="false" />
-                <element signature="n#!!block;n#getTitle#0" expanded="false" />
-                <element signature="n#!!block;n#getHeader#0" expanded="false" />
-                <element signature="n#!!block;n#getFooter#0" expanded="false" />
-                <element signature="n#!!block;n#loadPage#0" expanded="false" />
-                <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
-                <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
-                <element signature="n#!!block;n#getProfile#0" expanded="false" />
-              </folding>
+            <state vertical-scroll-proportion="0.5269168" vertical-offset="0" max-vertical-offset="1785">
+              <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/index.html">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/advice/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.28333333" vertical-offset="204" max-vertical-offset="6018">
-              <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+            <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="884">
+              <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -102,13 +101,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/js/libraries/url.js" />
-        <option value="$PROJECT_DIR$/www/grammar/index.html" />
-        <option value="$PROJECT_DIR$/www/library/videos/index.html" />
-        <option value="$PROJECT_DIR$/www/library/texts/index.html" />
-        <option value="$PROJECT_DIR$/www/html/library-text.html" />
-        <option value="$PROJECT_DIR$/www/grammar/rules/index.html" />
-        <option value="$PROJECT_DIR$/www/grammar/exercises/index.html" />
         <option value="$PROJECT_DIR$/www/chat/friends/index.html" />
         <option value="$PROJECT_DIR$/www/vocabulary/dictionary/index.html" />
         <option value="$PROJECT_DIR$/www/vocabulary/differences/index.html" />
@@ -152,7 +144,14 @@
         <option value="$PROJECT_DIR$/ajax/chat-messages/sendMessage.php" />
         <option value="$PROJECT_DIR$/ajax/chat-messages/viewLatestMessages.php" />
         <option value="$PROJECT_DIR$/ajax/chat-messages/viewUnreadMessages.php" />
+        <option value="$PROJECT_DIR$/js/RegAuth.js" />
+        <option value="$PROJECT_DIR$/js/Landing.js" />
+        <option value="$PROJECT_DIR$/js/Chat.js" />
+        <option value="$PROJECT_DIR$/js/Advice.js" />
+        <option value="$PROJECT_DIR$/js/Main.js" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/js/Page.js" />
+        <option value="$PROJECT_DIR$/advice/index.html" />
       </list>
     </option>
   </component>
@@ -204,6 +203,34 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="advice" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -441,7 +468,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458419419933</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Test">
+      <created>1458419512783</created>
+      <option name="number" value="00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1458419512783</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -452,6 +485,7 @@
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32935917" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -462,7 +496,6 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -509,28 +542,19 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="18" />
+      <option name="time" value="20" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/Templates.js">
+    <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2261">
           <caret line="240" column="72" selection-start-line="240" selection-start-column="72" selection-end-line="240" selection-end-column="72" />
           <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="e#3872#5182#0" expanded="false" />
-            <element signature="e#5196#5423#0" expanded="false" />
-            <element signature="e#5439#5757#0" expanded="false" />
             <element signature="n#!!block;n#getParam#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
             <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
             <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
-            <element signature="n#!!block;n#getProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -543,23 +567,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Templates.js">
+    <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2261">
           <caret line="240" column="72" selection-start-line="240" selection-start-column="72" selection-end-line="240" selection-end-column="72" />
           <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="e#3872#5182#0" expanded="false" />
-            <element signature="e#5196#5423#0" expanded="false" />
-            <element signature="e#5439#5757#0" expanded="false" />
             <element signature="n#!!block;n#getParam#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
             <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
             <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
-            <element signature="n#!!block;n#getProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -572,23 +587,14 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Templates.js">
+    <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3876">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="e#3872#5182#0" expanded="false" />
-            <element signature="e#5196#5423#0" expanded="false" />
-            <element signature="e#5439#5757#0" expanded="false" />
             <element signature="n#!!block;n#getParam#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
             <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
             <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
-            <element signature="n#!!block;n#getProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -601,7 +607,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Templates.js">
+    <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3876">
           <caret line="305" column="16" selection-start-line="305" selection-start-column="16" selection-end-line="305" selection-end-column="25" />
@@ -665,18 +671,9 @@
           <caret line="223" column="16" selection-start-line="223" selection-start-column="16" selection-end-line="223" selection-end-column="18" />
           <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="19" />
           <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="e#3872#5182#0" expanded="false" />
-            <element signature="e#5196#5423#0" expanded="false" />
-            <element signature="e#5439#5757#0" expanded="false" />
             <element signature="n#!!block;n#getParam#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
             <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
             <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
-            <element signature="n#!!block;n#getProfile#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -685,6 +682,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -739,17 +737,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advice/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/chat/friends/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="867">
           <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="8" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -765,6 +757,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="884">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -772,6 +765,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="867">
           <caret line="8" column="9" selection-start-line="8" selection-start-column="9" selection-end-line="8" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -779,6 +773,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.255" vertical-offset="0" max-vertical-offset="867">
           <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -786,27 +781,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="1.4664537" vertical-offset="0" max-vertical-offset="3060">
           <caret line="54" column="14" selection-start-line="54" selection-start-column="14" selection-end-line="54" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Templates.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="2261">
-          <caret line="240" column="72" selection-start-line="240" selection-start-column="72" selection-end-line="240" selection-end-column="72" />
-          <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="e#3872#5182#0" expanded="false" />
-            <element signature="e#5196#5423#0" expanded="false" />
-            <element signature="e#5439#5757#0" expanded="false" />
-            <element signature="n#!!block;n#getParam#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
-            <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
-            <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
-            <element signature="n#!!block;n#getProfile#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -856,6 +831,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.19833334" vertical-offset="0" max-vertical-offset="600">
           <caret line="7" column="16" selection-start-line="7" selection-start-column="16" selection-end-line="7" selection-end-column="16" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -894,10 +870,77 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7284345" vertical-offset="173" max-vertical-offset="1326">
+          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0543131" vertical-offset="0" max-vertical-offset="626">
+          <caret line="73" column="0" selection-start-line="73" selection-start-column="0" selection-end-line="73" selection-end-column="0" />
+          <folding>
+            <element signature="e#14#3858#0" expanded="false" />
+            <element signature="n#!!block;n#scaling#0" expanded="false" />
+            <element signature="n#!!block;n#selectLang#0" expanded="false" />
+            <element signature="n#!!block;n#signInUp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5702875" vertical-offset="0" max-vertical-offset="626">
+          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.1086262" vertical-offset="0" max-vertical-offset="626">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="n#!!block;n#getParam#0" expanded="false" />
+            <element signature="n#!!block;n#checkLanguage#0" expanded="false" />
+            <element signature="n#!!block;n#isAuthorized#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333" vertical-offset="204" max-vertical-offset="6018">
-          <caret line="22" column="11" selection-start-line="22" selection-start-column="11" selection-end-line="22" selection-end-column="11" />
+        <state vertical-scroll-proportion="-4.4683332" vertical-offset="2732" max-vertical-offset="3332">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7226754" vertical-offset="2124" max-vertical-offset="2771">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <marker date="1458429161726" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advice/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="884">
+          <caret line="4" column="27" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Advice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5269168" vertical-offset="0" max-vertical-offset="1785">
+          <caret line="19" column="13" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
           <folding />
         </state>
       </provider>
