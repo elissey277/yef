@@ -1,0 +1,242 @@
+.body {
+    margin: 0;
+    padding: 0;
+    background: url("../../images/background.jpg");
+    background-size: cover;
+}
+
+.logo-image {
+    width: 65%;
+}
+
+.header {
+    background: #0060B0;
+    width: 100%;
+    margin: 0;
+    padding: 3px 0 7px 0;
+    text-align: center;
+}
+
+.table {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.cell {
+    height: 10px;
+    padding: 0;
+}
+
+.div-sign {
+    width: 80%;
+    background: #00C0FF;
+    padding: 15px;
+    border: 2px solid #0060B0;
+    margin: 10px 0 20px 0;
+}
+
+.sign-header {
+    font-family: "Arial", sans-serif;
+    font-size: 75px;
+    color: #FFFFFF;
+    text-shadow: 0 0 18px #0060B0;
+    margin: 15px 0;
+}
+
+.sign-text {
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #FFFFFF;
+    margin: 0 10px;
+    text-shadow: 0 0 12px #0060B0;
+    border-bottom: 2px dotted #ffffff;
+}
+
+.sign-text:hover {
+    border-bottom: 2px solid #ffffff;
+    cursor: pointer;
+}
+
+.input {
+    width: 100%;
+    height: 70px;
+    margin: 15px 0;
+    padding-left: 10px;
+    border: 2px solid #0060B0;
+    font-size: 45px;
+    font-family: "Arial", sans-serif;
+}
+
+.hidden {
+    display: none;
+}
+
+.div-sign-buttons {
+    text-align: center;
+}
+
+.action {
+    margin: 10px 0;
+    padding: 10px 20px;
+    font: 50px bold;
+    font-family: "Arial", serif;
+    border: 2px solid #000000;
+    background: #FDCB50;
+    color: #000000;
+}
+
+.action:hover {
+    background: #FDDB50;
+    cursor: pointer;
+}
+
+.welcome-text {
+    font: 40px Arial;
+    color: #0060B0;
+    padding: 10px 0;
+    margin: 10px 0;
+}
+
+.welcome-text-big {
+    font: 50px Arial;
+    color: #0060B0;
+    padding: 15px 0;
+    margin: 30px 0;
+}
+
+.image-flag {
+    height: 120px;
+    border-radius: 80px;
+    border: 5px #0060B0 solid;
+    margin: 25px 10px;
+}
+
+.text-lang {
+    cursor: pointer;
+    font-family: "Arial", sans-serif;
+    font-size: 40px;
+    color: #0060B0;
+    border-bottom: 2px dotted #0060B0;
+}
+
+.div-text-lang {
+    width: 270px;
+}
+
+.text-lang:hover {
+    border-bottom: 2px solid #0060B0;
+}
+
+.div-lang {
+    float: right;
+}
+
+.div-lang-select {
+    display: none;
+    position: fixed;
+    top: 277px;
+    right: 91px;
+    background: white;
+    border: 2px solid #7070D0;
+}
+
+.lang-select {
+    margin: auto;
+    padding: 0;
+    float: left;
+}
+
+.lang-select li {
+    color: #0060A0;
+    font-size: 40px;
+    font-family: "Arial", sans-serif;
+    text-decoration: none;
+    width: auto;
+    vertical-align: middle;
+    list-style-type: none;
+    padding: 7px 15px;
+    text-align: left;
+}
+
+.lang-item:hover {
+    background: #A0C0F0;
+    cursor: pointer;
+}
+
+.functions-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.function-div {
+    width: 80%;
+    vertical-align: middle;
+}
+
+.function-table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.function-cell {
+    width: 20%;
+}
+
+.function-cell2 {
+    width: 80%;
+}
+
+.function-image {
+    height: 150px;
+    border-radius: 80px;
+    border: 3px solid #00C0FF;
+    margin: 20px;
+}
+
+.function-header {
+    font-family: "Arial", sans-serif;
+    font-size: 50px;
+    font-weight: bold;
+    color: #0000BF;
+}
+
+.function-text {
+    font-family: "Arial", sans-serif;
+    font-size: 35px;
+}
+
+
+
+.div-color {
+    width: 80px;
+    height: 80px;
+    margin: 10px;
+}
+
+.red {
+    background: #DF3030;
+}
+.orange {
+    background: #FF4F00;
+}
+.yellow {
+    background: #EFEF20;
+}
+.green {
+    background: #20CF20;
+}
+.blue {
+    background: #2020BF;
+}
+.violet {
+    background: #CF30CF;
+}
+
+.text-test {
+    font-size: 2em;
+}

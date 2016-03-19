@@ -1,0 +1,174 @@
+/*main components*/
+.body {
+    margin: 0;
+    padding: 0;
+}
+.footer {
+    width: 100%;
+    border-top: 1px solid #0064af;
+    background-color: #E5E5F5;
+    font: 12px Tahoma;
+    color: #0064af;
+    padding: 5px 0;
+    text-align: center;
+    margin: 0;
+}
+/*menu*/
+.menu {
+    margin: auto;
+    padding: 0;
+    float: left;
+    width: 100%;
+    border: 0;
+    background-color: #ffffff;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    float: left;
+    color: #0064af;
+    text-decoration: none;
+    width: 125px;
+    /*width: auto;*/
+    vertical-align: middle;
+    text-align: center;
+    border-right: 1px dotted #0064af;
+}
+ul.menu li:hover {
+    position: relative;
+    float: left;
+}
+ul.menu li:hover > ul {
+    border: solid #0064af;
+    border-width: 0 1px 1px 1px;
+    border-top: 1px dotted #0064af;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -1px;
+    background-color: #ffffff;
+    padding: 0;
+}
+ul.menu li:hover > ul a {
+    border-right: 0;
+    width: 125px;
+    text-align: center;
+}
+ul.menu li ul {
+    display: none;
+    border: 0;
+}
+.menu-text {
+    font: bold 16px Tahoma;
+    color: #0064af;
+    padding: 12px 12px;
+}
+.menu-text a {
+    color: #0064af;
+    text-decoration: none;
+}
+.item a:hover {
+    background-color: #e4eaff;
+}
+/*header*/
+.image-flag {
+    height: 40px;
+    vertical-align: middle;
+    margin: 6px 0 0 5px;
+    cursor: pointer;
+    border-radius: 100px;
+    border: 2px solid white;
+}
+.logo {
+    height: 35px;
+    margin: 5px 0 15px 0;
+    cursor: pointer;
+}
+.div-lang {
+    float: right;
+    padding: 2px;
+    margin: 0;
+}
+.div-menu {
+    background: #0060B0;
+    text-align: left;
+    border: 0;
+}
+/*content*/
+.page-header {
+    font: 30px bold;
+    margin: 0 0 10px 25px;
+    font-family: "Tahoma", serif;
+    color: #0064af;
+}
+.grammar-list {
+    font: 18px bold;
+    margin-left: 15px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.grammar-list a {
+    font: 18px bold;
+    margin-left: 15px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+    text-decoration: none;
+}
+.grammar-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.submenu-button {
+    color: #0064af;
+    background-color: white;
+    border: 1px solid #0064af;
+    margin-right: 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 4px 7px;
+    font-family: "Tahoma", serif;
+}
+.submenu-button:hover {
+    background-color: #EEEEFF;
+}
+.submenu-button-active {
+    color: #0064af;
+    background-color: #F7F7FF;
+    border: 1px solid #0064af;
+    margin-right: 15px;
+    border-radius: 3px;
+    font-size: 16px;
+    padding: 4px 7px;
+    font-family: "Tahoma", serif;
+}
+.list-image{
+    height: 50px;
+    margin: 10px;
+}
+.list-text{
+    font-size: 16px;
+    margin-left: 5px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.list-text:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.advice-image{
+    height: 100px;
+    margin: 20px;
+}
+.advice-title{
+    font-size: 20px;
+    margin-left: 5px;
+    font-family: "Tahoma", serif;
+    color: #0064af;
+}
+.advice-text{
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}

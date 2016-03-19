@@ -1,0 +1,266 @@
+﻿<script src="../js/libraries/jquery-2.1.1.js" type="text/javascript"></script>
+<script src="../js/libraries/jquery-cookie/jquery.cookie.js" type="text/javascript"></script>
+<script>
+    window.onload = function () {
+        document.getElementById("select-lang").style.display = "none";
+        selectLang($.cookie('language'));
+    };
+
+    window.onscroll = function () {
+        hideSelect();
+    };
+
+    function showHideSelect() {
+        if (document.getElementById("select-lang").style.display == "none"){
+            document.getElementById("select-lang").style.top = 277 - self.scrollY;
+            document.getElementById("select-lang").style.display = "block";
+        } else {
+            document.getElementById("select-lang").style.display = "none";
+        }
+    }
+
+    function selectLang(lang){
+        document.getElementById("select-lang").style.display = "none";
+        $.cookie('language',lang);
+        switch (parseInt(lang)){
+            case 1:
+                document.getElementById("text-lang").innerHTML = "Русский \u25bc";
+                document.getElementById("logo-lang").innerHTML = "<img src=\"../images/lang/ru.png\" class=\"image-flag\">";
+                document.getElementById("welcome-text").innerHTML = "Подружитесь с <b>Your English Friend</b>!<br>И он поможет Вам выучить английский язык быстро и интересно!";
+                document.getElementById("welcome-text2").innerHTML = "Пройдите <b>БЕСПЛАТНУЮ</b> регистрацию<br>и начинайте учить английский язык прямо сейчас!";
+                document.getElementById("grammar-header").innerHTML = "Грамматика";
+                document.getElementById("grammar-text").innerHTML = "Просто и понятно изложенные правила грамматики";
+                document.getElementById("vocabulary-header").innerHTML = "Лексика";
+                document.getElementById("vocabulary-text").innerHTML = "Подборки слов для общения на разные темы";
+                document.getElementById("exercises-header").innerHTML = "Упражнения";
+                document.getElementById("exercises-text").innerHTML = "Закрепление правил грамматики упражнениями";
+                document.getElementById("testing-header").innerHTML = "Тестирование";
+                document.getElementById("testing-text").innerHTML = "7 видов тестов для быстрого изучения слов";
+                document.getElementById("chatting-header").innerHTML = "Общение";
+                document.getElementById("chatting-text").innerHTML = "Общение на английском с друзьями и новыми знакомыми";
+                document.getElementById("library-header").innerHTML = "Библиотека";
+                document.getElementById("library-text").innerHTML = "Большой сборник текстовых, аудио и видео материалов";
+                document.getElementById("advices-header").innerHTML = "Полезные советы";
+                document.getElementById("advices-text").innerHTML = "Полезные статьи по изучению английского языка";
+                document.getElementById("header-up").innerHTML = "Регистрация";
+                document.getElementById("header-in").innerHTML = "Вход";
+                document.getElementById("button-up").value = "Регистрация";
+                document.getElementById("button-in").value = "Вход";
+                document.getElementById("text-up").innerHTML = "Вход";
+                document.getElementById("text-in").innerHTML = "Регистрация";
+                document.getElementById("text-up2").innerHTML = "Предпросмотр";
+                document.getElementById("text-in2").innerHTML = "Забыли пароль?";
+                document.getElementById("password").placeholder = "Пароль";
+                break;
+            case 2:
+                document.getElementById("text-lang").innerHTML = "English \u25bc";
+                document.getElementById("logo-lang").innerHTML = "<img src=\"../images/lang/en.png\" class=\"image-flag\">";
+                document.getElementById("welcome-text").innerHTML = "Make friends with <b>Your English Friend</b>!<br>And he will help you to learn English fast and interesting!";
+                document.getElementById("welcome-text2").innerHTML = "Sign up for <b>FREE</b><br>and start learning English right now!";
+                document.getElementById("grammar-header").innerHTML = "Grammar";
+                document.getElementById("grammar-text").innerHTML = "Simple and clear description of grammar rules";
+                document.getElementById("vocabulary-header").innerHTML = "Vocabulary";
+                document.getElementById("vocabulary-text").innerHTML = "Words compilations for talking on different topics";
+                document.getElementById("exercises-header").innerHTML = "Exercises";
+                document.getElementById("exercises-text").innerHTML = "Consolidating grammar rules by exercises";
+                document.getElementById("testing-header").innerHTML = "Testing";
+                document.getElementById("testing-text").innerHTML = "7 types of tests for rapid words learning";
+                document.getElementById("chatting-header").innerHTML = "Chatting";
+                document.getElementById("chatting-text").innerHTML = "Chat in English with your friends and new mates";
+                document.getElementById("library-header").innerHTML = "Library";
+                document.getElementById("library-text").innerHTML = "Big collection of text, audio and video materials";
+                document.getElementById("advices-header").innerHTML = "Useful Advices";
+                document.getElementById("advices-text").innerHTML = "Useful articles about learning English";
+                document.getElementById("header-up").innerHTML = "Sign Up";
+                document.getElementById("header-in").innerHTML = "Sign In";
+                document.getElementById("button-up").value = "Sign Up";
+                document.getElementById("button-in").value = "Sign In";
+                document.getElementById("text-up").innerHTML = "Sign In";
+                document.getElementById("text-in").innerHTML = "Sign Up";
+                document.getElementById("text-up2").innerHTML = "Preview";
+                document.getElementById("text-in2").innerHTML = "Forgot password?";
+                document.getElementById("password").placeholder = "Password";
+                break;
+            default:
+                break;
+        }
+    }
+
+    function signInUp(choice) {
+        if (choice == 1) {
+            document.getElementById("header-up").style.display = "none";
+            document.getElementById("header-in").style.display = "block";
+            document.getElementById("buttons-up").style.display = "none";
+            document.getElementById("buttons-in").style.display = "block";
+        } else {
+            document.getElementById("header-up").style.display = "block";
+            document.getElementById("header-in").style.display = "none";
+            document.getElementById("buttons-up").style.display = "block";
+            document.getElementById("buttons-in").style.display = "none";
+        }
+    }
+
+    function hideSelect() {
+        document.getElementById("select-lang").style.display = "none";
+    }
+</script>
+<html>
+<head>
+    <title>Your English Friend</title>
+    <link rel="shortcut icon" href="../images/icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="css/landing.css"/>
+</head>
+<body class="body">
+<div class="header">
+    <a><img src="../images/logo.png" class="logo-image"></a>
+</div>
+<div class="div-lang">
+    <table>
+        <tr>
+            <td>
+                <a id="logo-lang"><img src="../images/lang/ru.png" class="image-flag"></a>
+            </td>
+            <td>
+                <div class="div-text-lang"><a class="text-lang" id="text-lang" onclick="showHideSelect()">Русский &#9660;</a></div>
+            </td>
+        </tr>
+    </table>
+    <div class="div-lang-select" id="select-lang">
+        <ul class="lang-select">
+            <li onclick="selectLang(1)" class="lang-item">Русский</li>
+            <li onclick="selectLang(2)" class="lang-item">English</li>
+        </ul>
+    </div>
+</div>
+
+<table class="table" onclick="hideSelect()">
+    <tr>
+        <td align="center" class="cell">
+            <p class="welcome-text-big" id="welcome-text">Подружитесь с <b>Your English Friend</b>!<br>
+                            И он поможет Вам выучить английский язык быстро и интересно!</p>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <div class="div-sign">
+                <p class="sign-header" id="header-up" align="left">Регистрация</p>
+                <p class="sign-header hidden" id="header-in" align="left">Вход</p>
+                <input class="input" placeholder="Email" id="email"><br>
+                <input class="input" type="password" placeholder="Пароль" id="password"><br>
+                <div class="div-sign-buttons" id="buttons-up">
+                    <input type="button" class="action" value="Регистрация" id="button-up">
+                    <a class="sign-text" id="text-up" onclick="signInUp(1)">Вход</a><br>
+                    <a class="sign-text" id="text-up2">Предпросмотр</a>
+                </div>
+                <div class="div-sign-buttons hidden" id="buttons-in">
+                    <input type="button" class="action" value="Вход" id="button-in">
+                    <a class="sign-text" id="text-in" onclick="signInUp(2)">Регистрация</a><br>
+                    <a class="sign-text" id="text-in2">Забыли пароль?</a>
+                </div>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td align="center">
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/grammar.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="grammar-header">Грамматика</a><br>
+                            <a class="function-text" id="grammar-text">Просто и понятно изложенные правила грамматики</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/vocabulary.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="vocabulary-header">Лексика</a><br>
+                            <a class="function-text" id="vocabulary-text">Подборки слов для общения на разные темы</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/exercises.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="exercises-header">Упражнения</a><br>
+                            <a class="function-text" id="exercises-text">Закрепление правил грамматики упражнениями</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/testing.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="testing-header">Тестирование</a><br>
+                            <a class="function-text" id="testing-text">7 видов тестов для быстрого изучения слов</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/chatting.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="chatting-header">Общение</a><br>
+                            <a class="function-text" id="chatting-text">Общение на английском с друзьями и новыми знакомыми</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/library.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="library-header">Библиотека</a><br>
+                            <a class="function-text" id="library-text">Большой сборник текстовых, аудио и видео материалов</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="function-div">
+                <table class="function-table">
+                    <tr>
+                        <td class="function-cell">
+                            <a><img src="../images/landing/advices.jpg" class="function-image"></a>
+                        </td>
+                        <td class="function-cell2">
+                            <a class="function-header" id="advices-header">Полезные советы</a><br>
+                            <a class="function-text" id="advices-text">Полезные статьи по изучению английского языка</a>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <p class="welcome-text" id="welcome-text2">Пройдите <b>БЕСПЛАТНУЮ</b> регистрацию<br>
+            и начинайте учить английский язык прямо сейчас!</p>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

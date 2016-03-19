@@ -1,0 +1,241 @@
+.body {
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+.main-block {
+    width: 95%;
+    text-align: center;
+    margin: auto;
+}
+
+.menu {
+    margin: auto;
+    padding: 0;
+    float: left;
+    width: 95%;
+    border: solid #0064af;
+    border-width: 0 3px 3px 3px;
+    background-color: #ffffff;
+}
+.menu li {
+    display: inline;
+}
+.menu li a {
+    float: left;
+    color: #0064af;
+    text-decoration: none;
+    width: auto;
+    vertical-align: middle;
+    text-align: center;
+}
+ul.menu li:hover {
+    position: relative;
+    float: left;
+}
+ul.menu li:hover > ul {
+    border: solid #0064af;
+    border-width: 0 3px 3px 3px;
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: -3px;
+    background-color: #ffffff;
+    padding: 0;
+}
+ul.menu li:hover > ul a {
+    border-right: 0;
+    width: 180px;
+    text-align: left;
+}
+ul.menu li ul {
+    display: none;
+    border: 0;
+}
+.menu-text {
+    font: bold 16px Arial;
+    color: #0064af;
+    padding: 12px 12px;
+}
+.menu-text a {
+    color: #0064af;
+    text-decoration: none;
+}
+.item a:hover {
+    background-color: #e4eaff;
+}
+.active-item a {
+    background-color: #e4eaff;
+}
+
+.image-flag {
+    height: 30px;
+    vertical-align: middle;
+    margin: 6px 0 0 5px;
+    cursor: pointer;
+}
+
+.logo {
+    height: 35px;
+    margin: 5px 0 15px 0;
+    cursor: pointer;
+}
+
+.content {
+    width: 80%;
+    height: auto;
+    float: left;
+    text-align: left;
+}
+
+.library-content {
+    overflow-y: scroll;
+    height: 90%;
+}
+
+.ads {
+    width: 225px;
+    float: right;
+    text-align: center;
+    border: 1px dotted #0064af;
+}
+
+.bottom-ads {
+    width: 100%;
+    border: 1px dotted #0064af;
+    float: left;
+    margin: 10px 0 5px 0;
+}
+
+.footer {
+    width: 100%;
+    border: solid #0064af;
+    border-width: 1px 1px 0 1px;
+    background-color: #E5E5F5;
+    font: 12px Arial;
+    color: #0064af;
+    padding: 5px 0;
+    text-align: center;
+    float: left;
+    margin: 0;
+}
+
+.div-menu-vertical {
+    height: 90%;
+    width: auto;
+    float: left;
+}
+
+.div-search {
+    height: 40px;
+    width: 100%;
+    background-color: #eeeeee;
+    box-shadow: 0 2px 1px -1px #7a7f85;
+    border-bottom: 1px solid #0064af;
+    vertical-align: middle;
+}
+
+.menu-vertical {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    float: left;
+    font: bold 12px Arial;
+    background-color: #edefff;
+    color: #0064af;
+    width: auto;
+    text-align: center;
+    border-right: 1px solid #0064af;
+}
+.menu-vertical li {
+    list-style-type: none;
+}
+.menu-vertical li a {
+    float: left;
+    color: #0064af;
+    padding: 9px 12px;
+    text-decoration: none;
+    width: 125px;
+    text-align: left;
+}
+.menu-vertical li a:hover {
+    background-color: #dce2ff;
+    text-decoration: underline;
+    box-shadow: 0 0 1px 1px #7a7f85;
+}
+.menu-vertical-active-tab a {
+    background-color: #ffffff;
+    box-shadow: 0 0 1px 1px #7a7f85;
+}
+
+.search-input {
+    width: 30%;
+    height: 30px;
+    margin: 5px 0 5px 7px;
+    padding-left: 5px;
+    border: solid #0064af;
+    border-width: 1px 0 1px 1px;
+    font: 14px bold;
+    font-family: "Arial", serif;
+}
+
+.search-button {
+    width: auto;
+    height: 30px;
+    margin: 5px 5px 5px 0;
+    padding: 5px 10px;
+    border: 1px solid #0064af;
+    font: 14px bold;
+    font-family: "Arial", serif;
+    background: #edefff;
+    color: #0064af;
+}
+
+.search-button a {
+    text-decoration: none;
+    color: #0064af;
+}
+
+.search-button:hover {
+    color: #ffffff;
+    background: #0064af;
+    cursor: pointer;
+}
+
+.content-text {
+    font-family: "Arial", serif;
+}
+
+.div-menu {
+    margin-bottom: 10px;
+    background: #0060B0;
+    text-align: left;
+}
+
+.page-header {
+    font: 30px bold;
+    margin-left: 25px;
+    font-family: "Arial", serif;
+    color: #0064af;
+}
+
+.grammar-list {
+    font: 18px bold;
+    margin-left: 15px;
+    font-family: "Arial", serif;
+    color: #000000;
+}
+
+.grammar-list a {
+    font: 18px bold;
+    margin-left: 15px;
+    font-family: "Arial", serif;
+    color: #000000;
+    text-decoration: none;
+}
+
+.grammar-list a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
