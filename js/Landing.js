@@ -150,6 +150,8 @@ function selectLang(lang){
 }
 
 function signInUp(choice) {
+    document.getElementById("error-msg").innerText = "";
+    document.getElementById("email").focus();
     if (choice == 1) {
         document.getElementById("header-up").style.display = "none";
         document.getElementById("header-in").style.display = "block";

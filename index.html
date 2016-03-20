@@ -16,6 +16,16 @@
     window.onresize = function () {
         scaling();
     };
+
+    window.onkeydown = function (e) {
+        if (e.which == 13) {
+            if(document.getElementById("buttons-up").style.display != "none"){
+                register(false);
+            } else {
+                authorize(false);
+            }
+        }
+    };
 </script>
 <html>
 <head>
@@ -62,12 +72,12 @@
                 <input class="input" type="email" placeholder="Email" autofocus="true" id="email"><br>
                 <input class="input" placeholder="Имя" autofocus="true" id="name">
                 <input class="input" type="password" placeholder="Пароль" id="password"><br>
-                <div class="div-sign-buttons" id="buttons-up">
+                <div class="div-sign-buttons" style="display: block" id="buttons-up">
                     <input type="button" class="action" value="Регистрация" id="button-up" onclick="register(false)">
                     <a class="sign-text" id="text-up" onclick="signInUp(1)">Вход</a><br>
                     <a class="sign-text" id="text-up2" onclick="document.location.href = '/grammar/rules';">Предпросмотр</a>
                 </div>
-                <div class="div-sign-buttons hidden" id="buttons-in">
+                <div class="div-sign-buttons" style="display: none" id="buttons-in">
                     <input type="button" class="action" value="Вход" id="button-in" onclick="authorize(false)">
                     <a class="sign-text" id="text-in" onclick="signInUp(2)">Регистрация</a><br>
                     <a class="sign-text" id="text-in2">Забыли пароль?</a>
