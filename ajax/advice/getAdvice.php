@@ -14,8 +14,7 @@ $allliked = mysqli_num_rows($alllikes);
 
 $advices = mysqli_query($db,
     "SELECT Id, Title".$_POST["language"]." as Title, Text".$_POST["language"]." as Text, Image FROM advices
-        WHERE Id = ".$_POST["id"]."
-        ORDER BY advices.Id ASC")
+        WHERE Id = ".$_POST["id"])
 or die(mysql_error());
 $advice = mysqli_fetch_array($advices);
 

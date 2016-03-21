@@ -1,10 +1,10 @@
 <?php
-include '../../config.php';
+include '../../../config.php';
 // search all read
 $allliked = mysqli_query($db,
-    "SELECT advices.Id FROM advices
-        INNER JOIN advicesliked ON advices.Id = advicesliked.AdviceId
-        WHERE advicesliked.UserId = ".$_POST["user"])
+    "SELECT texts.Id FROM texts
+        INNER JOIN textsliked ON texts.Id = textsliked.TextId
+        WHERE textsliked.UserId = ".$_POST["user"])
 or die(mysql_error());
 $inliked = '';
 $inliked .= '(';
@@ -18,15 +18,15 @@ for($i=0;$i<mysqli_num_rows($allliked);$i++){
 $inliked .= ')';
 // search recommendations by liked
 $likedrecs = mysqli_query($db,
-    "SELECT advicesrecommended.Advice2Id as Id FROM advicesrecommended
-	  INNER JOIN advicesliked ON advicesliked.AdviceId = advicesrecommended.Advice1Id
-        WHERE advicesliked.UserId = ".$_POST["user"]." AND advicesrecommended.Advice2Id NOT IN ".$inliked)
+    "SELECT textsrecommended.Text2Id as Id FROM textsrecommended
+	  INNER JOIN textsliked ON textsliked.TextId = textsrecommended.Text1Id
+        WHERE textsliked.UserId = ".$_POST["user"]." AND textsrecommended.Text2Id NOT IN ".$inliked)
 or die(mysql_error());
 // search recommendations by read
 $readrecs = mysqli_query($db,
-    "SELECT advicesrecommended.Advice2Id as Id FROM advicesrecommended
-	  INNER JOIN advicesread ON advicesread.AdviceId = advicesrecommended.Advice1Id
-        WHERE advicesread.UserId = ".$_POST["user"]." AND advicesrecommended.Advice2Id NOT IN ".$inliked)
+    "SELECT textsrecommended.Text2Id as Id FROM textsrecommended
+	  INNER JOIN textsread ON textsread.TextId = textsrecommended.Text1Id
+        WHERE textsread.UserId = ".$_POST["user"]." AND textsrecommended.Text2Id NOT IN ".$inliked)
 or die(mysql_error());
 //create complete list of recommendations
 $reclist = array();
@@ -50,12 +50,13 @@ usort($reclist, "cmp");
 
 $json = array();
 for($i=0;$i<count($reclist)&&$i<10;$i++){
-    $advices = mysqli_query($db,
-        "SELECT advices.Id, advices.Title".$_POST["language"]." as Title, advices.Image FROM advices
-            WHERE advices.Id = ".$reclist[$i][0])
+    $texts = mysqli_query($db,
+        "SELECT texts.Id, texts.Title".$_POST["language"]." as Title, texts.Difficulty, textscategories.Title".$_POST["language"]." as Category, textscategories.Image FROM texts
+            INNER JOIN textscategories ON texts.CategoryId = textscategories.Id
+            WHERE texts.Id = ".$reclist[$i][0])
     or die(mysql_error());
-    $advice = mysqli_fetch_array($advices);
-    array_push($json, array($advice['Id'],$advice['Title'],$advice['Image']));
+    $text = mysqli_fetch_array($texts);
+    array_push($json, array($text['Id'],$text['Title'],$text['Difficulty'],$text['Category'],$text['Image']));
 }
 
 $json = array_reverse($json);

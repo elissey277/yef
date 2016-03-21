@@ -45,12 +45,20 @@ var titles = [
     {
         'button-all': "All",
         'button-liked': "Liked",
-        'button-recommended': "Recommended"
+        'button-recommended': "Recommended",
+        'button-search': "Search",
+        'search-title': "Input text...",
+        'search-search': "Search",
+        'search-reset': "Reset"
     },
     {
         'button-all': "Все",
         'button-liked': "Понравившиеся",
-        'button-recommended': "Рекомендованные"
+        'button-recommended': "Рекомендованные",
+        'button-search': "Поиск",
+        'search-title': "Введите текст...",
+        'search-search': "Поиск",
+        'search-reset': "Сброс"
     }
 ];
 
@@ -124,7 +132,7 @@ function getHeader(language){
     }
     header +=               '<li class="item"><a class="menu-text">'+menu[language]['menu-library']+'</a>'+
                                 '<ul>'+
-                                    '<li><a href="http://'+location.hostname+'/library/texts" class="menu-text">'+menu[language]['menu-texts']+'</a></li>'+
+                                    '<li><a href="http://'+location.hostname+'/library/texts/#all?page=1" class="menu-text">'+menu[language]['menu-texts']+'</a></li>'+
                                     '<li><a href="http://'+location.hostname+'/library/videos" class="menu-text">'+menu[language]['menu-videos']+'</a></li>'+
                                 '</ul>'+
                             '</li>';

@@ -151,6 +151,17 @@ ul.menu li ul {
     font-family: "Tahoma", serif;
     color: #000000;
 }
+.list-diff{
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.list-category{
+    font-size: 14px;
+    font-family: "Tahoma", serif;
+    font-style: italic;
+    color: #000000;
+}
 .list-text:hover{
     cursor: pointer;
     text-decoration: underline;
@@ -159,15 +170,23 @@ ul.menu li ul {
     height: 100px;
     margin: 20px;
 }
-.advice-title{
+.page-title {
     font-size: 20px;
     margin-left: 5px;
     font-family: "Tahoma", serif;
     color: #0064af;
 }
-.advice-text{
+.page-text {
     font-size: 16px;
     font-family: "Tahoma", serif;
+    color: #000000;
+}
+.page-text-grey {
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #EEEEEE;
+}
+.page-text-grey:hover {
     color: #000000;
 }
 .liked{
@@ -195,4 +214,62 @@ ul.menu li ul {
 }
 .not-liked:hover {
     background-color: #EEEEFF;
+}
+.pages-text {
+    font: 16px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.pages-text a {
+    font: 16px;
+    font-family: "Tahoma", serif;
+    color: #0064af;
+    text-decoration: none;
+}
+.pages-text a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.search-input{
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.search-button{
+    color: #0064af;
+    background-color: white;
+    border: 1px solid #0064af;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 1px 3px;
+    font-family: "Tahoma", serif;
+}
+.search-button:hover {
+    background-color: #EEEEFF;
+}
+.search-button-reset{
+    color: #af6400;
+    background-color: white;
+    border: 1px solid #af6400;
+    margin-left: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 2px 3px;
+    font-family: "Tahoma", serif;
+}
+.search-button-reset:hover {
+    background-color: #FFEEEE;
+}
+.search-select{
+    font-size: 16px;
+    margin-left: 10px;
+    padding: 1px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.not-found-text {
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #000000;
 }
