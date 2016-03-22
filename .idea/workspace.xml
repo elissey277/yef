@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Landing.js" afterPath="$PROJECT_DIR$/js/Landing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -522,7 +520,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458635996944</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="Other bugfixes">
+      <created>1458636690920</created>
+      <option name="number" value="00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1458636690921</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -590,7 +594,8 @@
     <MESSAGE value="Read/Like Advices&#10;Landing page improvements&#10;Preview implementation" />
     <MESSAGE value="Refactoring&#10;Advice - improvements&#10;Library Texts - implementation&#10;Other bugfixes" />
     <MESSAGE value="JS refactoring&#10;Other bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="JS refactoring&#10;Other bugfixes" />
+    <MESSAGE value="Other bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Other bugfixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
