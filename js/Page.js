@@ -165,7 +165,7 @@ function getFooter(language){
 
 function selectLang(lang) {
     if($.cookie('language')!=lang) {
-        $.cookie('language', lang, {path:'/'});
+        $.cookie('language', lang);
         document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
         updateContent($.cookie('language'),document.getElementById("div-content"));
     }

@@ -119,7 +119,7 @@ function scaling(){
 }
 
 function selectLang(lang){
-    $.cookie('language',lang,{path:'/'});
+    $.cookie('language',lang);
     document.getElementById("welcome-text").innerHTML = landing[lang]['welcome-text'];
     document.getElementById("welcome-text2").innerHTML = landing[lang]['welcome-text2'];
     document.getElementById("grammar-header").innerHTML = landing[lang]['landing-grammar-header'];

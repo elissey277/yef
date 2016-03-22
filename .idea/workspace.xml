@@ -2,13 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryTexts.js" afterPath="$PROJECT_DIR$/js/LibraryTexts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Landing.js" afterPath="$PROJECT_DIR$/js/Landing.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" afterPath="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advice/index.html" afterPath="$PROJECT_DIR$/advice/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/texts/index.html" afterPath="$PROJECT_DIR$/library/texts/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -47,11 +42,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LibraryTexts.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="LibraryTexts.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-              <caret line="273" column="1" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.841853" vertical-offset="0" max-vertical-offset="646">
+              <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
               <folding>
                 <element signature="e#19#221#0" expanded="false" />
                 <element signature="n#!!block;n#updateContent#0" expanded="false" />
@@ -80,35 +75,6 @@
                 <marker date="1458635245412" expanded="true" signature="9909:9919" placeholder="..." />
                 <marker date="1458635245412" expanded="true" signature="10139:10201" placeholder="..." />
                 <marker date="1458635245412" expanded="true" signature="10258:10320" placeholder="..." />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/library/texts/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.32" vertical-offset="46" max-vertical-offset="850">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Page.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/Page.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-              <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
-              <folding>
-                <element signature="e#11#1321#0" expanded="false" />
-                <element signature="e#1337#1878#0" expanded="false" />
-                <element signature="n#!!block;n#loadPage#0" expanded="false" />
-                <element signature="n#!!block;n#getTitle#0" expanded="false" />
-                <element signature="n#!!block;n#getHeader#0" expanded="false" />
-                <element signature="n#!!block;n#getAds#0" expanded="false" />
-                <element signature="n#!!block;n#getFooter#0" expanded="false" />
-                <marker date="1458635934887" expanded="false" signature="2621:2693" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -158,7 +124,6 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ajax/advice/likeAdvice.php" />
         <option value="$PROJECT_DIR$/ajax/advice/unlikeAdvice.php" />
-        <option value="$PROJECT_DIR$/js/Landing.js" />
         <option value="$PROJECT_DIR$/js/Main.js" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceList.php" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php" />
@@ -178,6 +143,7 @@
         <option value="$PROJECT_DIR$/library/texts/index.html" />
         <option value="$PROJECT_DIR$/advice/index.html" />
         <option value="$PROJECT_DIR$/js/Page.js" />
+        <option value="$PROJECT_DIR$/js/Landing.js" />
       </list>
     </option>
   </component>
@@ -550,7 +516,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458593702478</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="JS refactoring&#10;Other bugfixes">
+      <created>1458635996944</created>
+      <option name="number" value="00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1458635996944</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -617,7 +589,8 @@
     <MESSAGE value="Refactor JavaScript" />
     <MESSAGE value="Read/Like Advices&#10;Landing page improvements&#10;Preview implementation" />
     <MESSAGE value="Refactoring&#10;Advice - improvements&#10;Library Texts - implementation&#10;Other bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring&#10;Advice - improvements&#10;Library Texts - implementation&#10;Other bugfixes" />
+    <MESSAGE value="JS refactoring&#10;Other bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="JS refactoring&#10;Other bugfixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1046,31 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="3332">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#612#638#0" expanded="false" />
-            <element signature="e#677#904#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5974441" vertical-offset="0" max-vertical-offset="626">
-          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="n#!!block;n#scaling#0" expanded="false" />
-            <element signature="n#!!block;n#selectLang#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/template.css">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5798722" vertical-offset="2799" max-vertical-offset="4760">
@@ -1134,10 +1082,68 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/advice/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="799">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
+          <folding>
+            <element signature="e#11#1321#0" expanded="false" />
+            <element signature="e#1337#1878#0" expanded="false" />
+            <element signature="n#!!block;n#loadPage#0" expanded="false" />
+            <element signature="n#!!block;n#getTitle#0" expanded="false" />
+            <element signature="n#!!block;n#getHeader#0" expanded="false" />
+            <element signature="n#!!block;n#getAds#0" expanded="false" />
+            <element signature="n#!!block;n#getFooter#0" expanded="false" />
+            <marker date="1458636529927" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="3332">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
+          <folding>
+            <element signature="e#612#638#0" expanded="false" />
+            <element signature="e#677#904#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12939297" vertical-offset="4" max-vertical-offset="697">
+          <caret line="121" column="28" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
+          <folding>
+            <element signature="e#14#3858#0" expanded="false" />
+            <element signature="n#!!block;n#scaling#0" expanded="false" />
+            <element signature="n#!!block;n#signInUp#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.39666668" vertical-offset="0" max-vertical-offset="850">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
-          <caret line="273" column="1" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.841853" vertical-offset="0" max-vertical-offset="646">
+          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
           <folding>
             <element signature="e#19#221#0" expanded="false" />
             <element signature="n#!!block;n#updateContent#0" expanded="false" />
@@ -1167,39 +1173,6 @@
             <marker date="1458635245412" expanded="true" signature="10139:10201" placeholder="..." />
             <marker date="1458635245412" expanded="true" signature="10258:10320" placeholder="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
-          <folding>
-            <element signature="e#11#1321#0" expanded="false" />
-            <element signature="e#1337#1878#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getAds#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <marker date="1458635934887" expanded="false" signature="2621:2693" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advice/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="799">
-          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.32" vertical-offset="46" max-vertical-offset="850">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
