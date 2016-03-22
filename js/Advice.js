@@ -12,138 +12,145 @@ var advice = [
 function updateContent(language,divContent){
     divContent.innerHTML = '';
     if(getParam('all') != -1) {
-        divContent.innerHTML += '<p class="page-header">'+advice[language]["page-header"]+'</p>';
-        divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-all"]+'">';
-        if(isAuthorized()){
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-liked"]+'">';
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#recommended\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-recommended"]+'"></br>';
+        contentAll(language,divContent);
+    } else if(getParam('liked') != -1) {
+        contentLiked(language,divContent);
+    } else if(getParam('recommended') != -1) {
+        contentRecommended(language,divContent);
+    } else if(getParam('id') != -1) {
+        contentId(language,divContent);
+    } else {
+        defaultTab(language,divContent);
+    }
+}
+
+function contentAll(language,divContent) {
+    contentHeader(language,divContent);
+    contentTabs(language,divContent,1);
+    $.ajax({
+        type: "POST",
+        url: "../ajax/advice/getAdviceList.php",
+        data: "language=" + language,
+        success: function (data) {
+            divContent.innerHTML += contentList(language,JSON.parse(data));
         }
+    });
+}
+
+function contentLiked(language,divContent) {
+    if(isAuthorized()) {
+        contentHeader(language,divContent);
+        contentTabs(language,divContent,2);
         $.ajax({
             type: "POST",
-            url: "../ajax/advice/getAdviceList.php",
-            data: "language=" + language,
+            url: "../ajax/advice/getAdviceLikedList.php",
+            data: "language=" + language + "&user=" + $.cookie('user'),
             success: function (data) {
-                var advices = JSON.parse(data);
-                var cont = '';
-                if(advices.length>0){
-                    cont += '<table>';
-                    for (var i=0; i<advices.length; i++) {
-                        cont += '<tr>' +
-                        '<td><img class="list-image" src="http://' + location.hostname + advices[i][2] + '"></td>' +
-                        '<td><p class="list-text" onclick="document.location.hash = \'#id=' + advices[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + advices[i][1] + '</p></td>' +
-                        '</tr>';
-                    }
-                    cont += '</table>';
-                } else {
-                    cont += '<p class="not-found-text">'+advice[language]['not-found']+'</p>'
-                }
-                divContent.innerHTML += cont;
+                divContent.innerHTML += contentList(language,JSON.parse(data));
             }
         });
+    } else {
+        defaultTab(language,divContent);
     }
-    else if(getParam('liked') != -1) {
-        if(isAuthorized()) {
-            divContent.innerHTML += '<p class="page-header">'+advice[language]["page-header"]+'</p>';
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#all\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
-            divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-liked"]+'">';
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#recommended\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-recommended"]+'"></br>';
-            $.ajax({
-                type: "POST",
-                url: "../ajax/advice/getAdviceLikedList.php",
-                data: "language=" + language + "&user=" + $.cookie('user'),
-                success: function (data) {
-                    var advices = JSON.parse(data);
-                    var cont = '';
-                    if(advices.length>0){
-                        cont += '<table>';
-                        for (var i=0; i<advices.length; i++) {
-                            cont += '<tr>' +
-                            '<td><img class="list-image" src="http://' + location.hostname + advices[i][2] + '"></td>' +
-                            '<td><p class="list-text" onclick="document.location.hash = \'#id=' + advices[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + advices[i][1] + '</p></td>' +
-                            '</tr>';
-                        }
-                        cont += '</table>';
-                    } else {
-                        cont += '<p class="not-found-text">'+advice[language]['not-found']+'</p>'
-                    }
-                    divContent.innerHTML += cont;
-                }
-            });
-        } else {
-            document.location.hash = '#all';
-            updateContent($.cookie('language'),document.getElementById('div-content'));
-        }
-    }
-    else if(getParam('recommended') != -1) {
-        if(isAuthorized()) {
-            divContent.innerHTML += '<p class="page-header">'+advice[language]["page-header"]+'</p>';
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#all\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-liked"]+'">';
-            divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-recommended"]+'"></br>';
-            $.ajax({
-                type: "POST",
-                url: "../ajax/advice/getAdviceRecommendedList.php",
-                data: "language=" + language + "&user=" + $.cookie('user'),
-                success: function (data) {
-                    if(data != '') {
-                        var advices = JSON.parse(data);
-                    } else {
-                        var advices = [];
-                    }
-                    var cont = '';
-                    if(advices.length>0){
-                        cont += '<table>';
-                        for (var i=0; i<advices.length; i++) {
-                            cont += '<tr>' +
-                            '<td><img class="list-image" src="http://' + location.hostname + advices[i][2] + '"></td>' +
-                            '<td><p class="list-text" onclick="document.location.hash = \'#id=' + advices[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + advices[i][1] + '</p></td>' +
-                            '</tr>';
-                        }
-                        cont += '</table>';
-                    } else {
-                        cont += '<p class="not-found-text">'+advice[language]['not-found']+'</p>'
-                    }
-                    divContent.innerHTML += cont;
-                }
-            });
-        } else {
-            document.location.hash = '#all';
-            updateContent($.cookie('language'),document.getElementById('div-content'));
-        }
-    }
-    else if(getParam('id') != -1) {
-        divContent.innerHTML += '<p class="page-header">'+advice[language]["page-header"]+'</p>';
-        divContent.innerHTML += '<input onclick="document.location.hash = \'#all\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
-        if(isAuthorized()){
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-liked"]+'">';
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#recommended\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-recommended"]+'"></br>';
-        }
-        if(isAuthorized()){
-            var user = $.cookie('user');
-        } else {
-            var user = 0;
-        }
+}
+
+function contentRecommended(language,divContent) {
+    if(isAuthorized()) {
+        contentHeader(language,divContent);
+        contentTabs(language,divContent,3);
         $.ajax({
             type: "POST",
-            url: "../ajax/advice/getAdvice.php",
-            data: "language=" + language + "&id=" + getParam('id') + "&user=" + user,
+            url: "../ajax/advice/getAdviceRecommendedList.php",
+            data: "language=" + language + "&user=" + $.cookie('user'),
             success: function (data) {
-                var advice = JSON.parse(data);
-                divContent.innerHTML += '<table><tr><td><img class="advice-image" height="100" src="http://'+location.hostname+advice[3]+'"></td>' +
-                    '<td><a class="page-title">'+advice[1]+'</a></td></tr></table>'+'<p class="page-text">'+advice[2]+'</p>';
-                if(isAuthorized()){
-                    if(advice[4] == 0) {
-                        divContent.innerHTML += '<div id="like"><input type="button" class="not-liked" value="'+advice[5]+' &#10084;" onclick="like()"></div>';
-                    } else {
-                        divContent.innerHTML += '<div id="like"><input type="button" class="liked" value="'+advice[5]+' &#10084;" onclick="unlike()"></div>';
-                    }
+                if(data == ''){
+                    divContent.innerHTML += contentList(language,[]);
+                } else {
+                    divContent.innerHTML += contentList(language,JSON.parse(data));
                 }
             }
         });
     } else {
-        document.location.hash = '#all';
-        updateContent($.cookie('language'),document.getElementById('div-content'));
+        defaultTab(language,divContent);
     }
+}
+
+function contentId(language,divContent) {
+    contentHeader(language,divContent);
+    contentTabs(language,divContent,0);
+    if(isAuthorized()){
+        var user = $.cookie('user');
+    } else {
+        var user = 0;
+    }
+    $.ajax({
+        type: "POST",
+        url: "../ajax/advice/getAdvice.php",
+        data: "language=" + language + "&id=" + getParam('id') + "&user=" + user,
+        success: function (data) {
+            divContent.innerHTML += contentItem(language,JSON.parse(data));
+        }
+    });
+}
+
+function defaultTab(language,divContent) {
+    document.location.hash = '#all';
+    updateContent(language,divContent);
+}
+
+function contentHeader(language,divContent) {
+    divContent.innerHTML += '<p class="page-header">'+advice[language]["page-header"]+'</p>';
+}
+
+function contentTabs(language,divContent,activeTab) {
+    if(activeTab == 1){
+        divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-all"]+'">';
+    } else {
+        divContent.innerHTML += '<input onclick="document.location.hash = \'#all\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
+    }
+    if(isAuthorized()){
+        if(activeTab == 2) {
+            divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-liked"] + '">';
+        } else {
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
+        }
+        if(activeTab == 3) {
+            divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-recommended"] + '"></br>';
+        } else {
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#recommended\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-recommended"] + '"></br>';
+        }
+    }
+}
+
+function contentList(language,items) {
+    var cont = '';
+    if(items.length>0){
+        cont += '<table>';
+        for (var i=0; i<items.length; i++) {
+            cont += '<tr>' +
+            '<td><img class="list-image" src="http://' + location.hostname + items[i][2] + '"></td>' +
+            '<td><p class="list-text" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td>' +
+            '</tr>';
+        }
+        cont += '</table>';
+    } else {
+        cont += '<p class="not-found-text">'+advice[language]['not-found']+'</p>'
+    }
+    return cont;
+}
+
+function contentItem(language,item) {
+    var cont = '';
+    cont += '<table><tr><td><img class="advice-image" height="100" src="http://'+location.hostname+item[3]+'"></td>' +
+    '<td><a class="page-title">'+item[1]+'</a></td></tr></table>'+'<p class="page-text">'+item[2]+'</p>';
+    if(isAuthorized()){
+        if(item[4] == 0) {
+            cont += '<div id="like"><input type="button" class="not-liked" value="'+item[5]+' &#10084;" onclick="like()"></div>';
+        } else {
+            cont += '<div id="like"><input type="button" class="liked" value="'+item[5]+' &#10084;" onclick="unlike()"></div>';
+        }
+    }
+    return cont;
 }
 
 function like(){

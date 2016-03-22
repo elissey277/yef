@@ -87,10 +87,10 @@ function getHeader(language){
                             '<table>'+
                                 '<tr>'+
                                     '<td>'+
-                                        '<a onclick="selectLang(0)"><img onclick="selectLang(0)" src="http://'+location.hostname+'/images/lang/en.png" class="image-flag"></a>'+
+                                        '<a><img onclick="selectLang(0)" src="http://'+location.hostname+'/images/lang/en.png" class="image-flag"></a>'+
                                     '</td>'+
                                     '<td>'+
-                                        '<a onclick="selectLang(1)"><img onclick="selectLang(1)" src="http://'+location.hostname+'/images/lang/ru.png" class="image-flag"></a>'+
+                                        '<a><img onclick="selectLang(1)" src="http://'+location.hostname+'/images/lang/ru.png" class="image-flag"></a>'+
                                     '</td>'+
                                 '</tr>'+
                             '</table>'+
@@ -163,3 +163,10 @@ function getFooter(language){
     return 'Brave Raccoons &copy; 2015-2016';
 }
 
+function selectLang(lang) {
+    if($.cookie('language')!=lang) {
+        $.cookie('language', lang, {path:'/'});
+        document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
+        updateContent($.cookie('language'),document.getElementById("div-content"));
+    }
+}

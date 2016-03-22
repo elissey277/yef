@@ -2,29 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/LibraryTexts.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/getText.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsCategoriesList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/likeText.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/texts/unlikeText.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\chat-messages\sendMessage.php" afterPath="$PROJECT_DIR$/ajax/chat/messages/sendMessage.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\chat-messages\viewLatestMessages.php" afterPath="$PROJECT_DIR$/ajax/chat/messages/viewLatestMessages.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\chat-messages\viewUnreadMessages.php" afterPath="$PROJECT_DIR$/ajax/chat/messages/viewUnreadMessages.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\js\Chat.js" afterPath="$PROJECT_DIR$/js/ChatProfile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Main.js" afterPath="$PROJECT_DIR$/js/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryTexts.js" afterPath="$PROJECT_DIR$/js/LibraryTexts.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/advice/getAdvice.php" afterPath="$PROJECT_DIR$/ajax/advice/getAdvice.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php" afterPath="$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/advice/getAdviceList.php" afterPath="$PROJECT_DIR$/ajax/advice/getAdviceList.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" afterPath="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advice/index.html" afterPath="$PROJECT_DIR$/advice/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/texts/index.html" afterPath="$PROJECT_DIR$/library/texts/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/template.css" afterPath="$PROJECT_DIR$/css/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -63,12 +47,69 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="template.css" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/css/template.css">
+      <file leaf-file-name="LibraryTexts.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5798722" vertical-offset="2799" max-vertical-offset="4760">
-              <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+              <caret line="273" column="1" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
+              <folding>
+                <element signature="e#19#221#0" expanded="false" />
+                <element signature="n#!!block;n#updateContent#0" expanded="false" />
+                <element signature="n#!!block;n#contentAll#0" expanded="false" />
+                <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+                <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+                <element signature="n#!!block;n#contentSearch#0" expanded="false" />
+                <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
+                <element signature="n#!!block;n#contentId#0" expanded="false" />
+                <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+                <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+                <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+                <element signature="n#!!block;n#contentList#0" expanded="false" />
+                <element signature="n#!!block;n#contentItem#0" expanded="false" />
+                <element signature="n#!!block;n#like#0" expanded="false" />
+                <element signature="n#!!block;n#unlike#0" expanded="false" />
+                <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
+                <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
+                <marker date="1458635245412" expanded="true" signature="2689:2703" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="8722:8734" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="8839:8850" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="8962:8974" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="9197:9208" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="9792:9803" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="9829:9839" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="9909:9919" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="10139:10201" placeholder="..." />
+                <marker date="1458635245412" expanded="true" signature="10258:10320" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/library/texts/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.32" vertical-offset="46" max-vertical-offset="850">
+              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Page.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/Page.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+              <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+              <folding>
+                <element signature="e#11#1321#0" expanded="false" />
+                <element signature="e#1337#1878#0" expanded="false" />
+                <element signature="n#!!block;n#loadPage#0" expanded="false" />
+                <element signature="n#!!block;n#getTitle#0" expanded="false" />
+                <element signature="n#!!block;n#getHeader#0" expanded="false" />
+                <element signature="n#!!block;n#getAds#0" expanded="false" />
+                <element signature="n#!!block;n#getFooter#0" expanded="false" />
+                <marker date="1458635934887" expanded="false" signature="2621:2693" placeholder="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -118,25 +159,25 @@
         <option value="$PROJECT_DIR$/ajax/advice/likeAdvice.php" />
         <option value="$PROJECT_DIR$/ajax/advice/unlikeAdvice.php" />
         <option value="$PROJECT_DIR$/js/Landing.js" />
-        <option value="$PROJECT_DIR$/advice/index.html" />
         <option value="$PROJECT_DIR$/js/Main.js" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceList.php" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php" />
-        <option value="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
-        <option value="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsCategoriesList.php" />
-        <option value="$PROJECT_DIR$/library/texts/index.html" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
-        <option value="$PROJECT_DIR$/js/Page.js" />
-        <option value="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" />
-        <option value="$PROJECT_DIR$/js/Advice.js" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdvice.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getText.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/unlikeText.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/likeText.php" />
         <option value="$PROJECT_DIR$/css/template.css" />
+        <option value="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
+        <option value="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" />
+        <option value="$PROJECT_DIR$/js/Advice.js" />
+        <option value="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
         <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
+        <option value="$PROJECT_DIR$/library/texts/index.html" />
+        <option value="$PROJECT_DIR$/advice/index.html" />
+        <option value="$PROJECT_DIR$/js/Page.js" />
       </list>
     </option>
   </component>
@@ -234,20 +275,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -517,7 +544,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458438119509</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Refactoring&#10;Advice - improvements&#10;Library Texts - implementation&#10;Other bugfixes">
+      <created>1458593702478</created>
+      <option name="number" value="00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1458593702478</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -583,11 +616,12 @@
     <MESSAGE value="Test" />
     <MESSAGE value="Refactor JavaScript" />
     <MESSAGE value="Read/Like Advices&#10;Landing page improvements&#10;Preview implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="Read/Like Advices&#10;Landing page improvements&#10;Preview implementation" />
+    <MESSAGE value="Refactoring&#10;Advice - improvements&#10;Library Texts - implementation&#10;Other bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring&#10;Advice - improvements&#10;Library Texts - implementation&#10;Other bugfixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="25" />
+      <option name="time" value="28" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -908,31 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="3332">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-          <folding>
-            <element signature="e#612#638#0" expanded="false" />
-            <element signature="e#677#904#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5974441" vertical-offset="0" max-vertical-offset="626">
-          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
-          <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="n#!!block;n#scaling#0" expanded="false" />
-            <element signature="n#!!block;n#selectLang#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="323">
@@ -959,28 +968,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="459">
-          <caret line="12" column="108" selection-start-line="12" selection-start-column="22" selection-end-line="12" selection-end-column="108" />
-          <folding>
-            <marker date="1458576476332" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="714" max-vertical-offset="1445">
-          <caret line="57" column="9" selection-start-line="57" selection-start-column="9" selection-end-line="57" selection-end-column="9" />
-          <folding>
-            <marker date="1458577212782" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
-            <marker date="1458577212782" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
-            <marker date="1458577212782" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.110929854" vertical-offset="0" max-vertical-offset="646">
@@ -999,14 +986,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="952">
-          <caret line="10" column="36" selection-start-line="10" selection-start-column="36" selection-end-line="10" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4633731" vertical-offset="0" max-vertical-offset="748">
@@ -1014,39 +993,6 @@
           <folding>
             <marker date="1458585028229" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="1.629393" vertical-offset="0" max-vertical-offset="1564">
-          <caret line="60" column="31" selection-start-line="60" selection-start-column="31" selection-end-line="60" selection-end-column="31" />
-          <folding>
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <marker date="1458587888676" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7366667" vertical-offset="612" max-vertical-offset="1428">
-          <caret line="62" column="0" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding>
-            <marker date="1458589256198" expanded="true" signature="-1:-1" placeholder="SELECT advic..advices..." />
-            <marker date="1458589256198" expanded="true" signature="-1:-1" placeholder="SELECT advic..advicesrecommended..." />
-            <marker date="1458589256198" expanded="true" signature="-1:-1" placeholder="SELECT advic..advicesrecommended..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Advice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9168026" vertical-offset="1869" max-vertical-offset="2958">
-          <caret line="143" column="38" selection-start-line="143" selection-start-column="38" selection-end-line="143" selection-end-column="38" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1100,42 +1046,28 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.66721046" vertical-offset="3977" max-vertical-offset="5253">
-          <caret line="258" column="32" selection-start-line="258" selection-start-column="32" selection-end-line="258" selection-end-column="32" />
+        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="3332">
+          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
           <folding>
-            <marker date="1458593525844" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
-            <marker date="1458593525844" expanded="true" signature="-1:-1" placeholder="..." />
+            <element signature="e#612#638#0" expanded="false" />
+            <element signature="e#677#904#0" expanded="false" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/advice/index.html">
+    <entry file="file://$PROJECT_DIR$/js/Landing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.51" vertical-offset="0" max-vertical-offset="884">
-          <caret line="18" column="16" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-          <folding />
+        <state vertical-scroll-proportion="0.5974441" vertical-offset="0" max-vertical-offset="626">
+          <caret line="167" column="1" selection-start-line="167" selection-start-column="1" selection-end-line="167" selection-end-column="1" />
+          <folding>
+            <element signature="e#14#3858#0" expanded="false" />
+            <element signature="n#!!block;n#scaling#0" expanded="false" />
+            <element signature="n#!!block;n#selectLang#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1143,6 +1075,130 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5798722" vertical-offset="2799" max-vertical-offset="4760">
           <caret line="186" column="18" selection-start-line="186" selection-start-column="18" selection-end-line="186" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4633731" vertical-offset="0" max-vertical-offset="587">
+          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
+          <folding>
+            <marker date="1458633420652" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.425" vertical-offset="612" max-vertical-offset="1428">
+          <caret line="51" column="27" selection-start-line="51" selection-start-column="27" selection-end-line="51" selection-end-column="27" />
+          <folding>
+            <marker date="1458633924422" expanded="true" signature="-1:-1" placeholder="SELECT advic..advices..." />
+            <marker date="1458633924422" expanded="true" signature="-1:-1" placeholder="SELECT advic..advicesrecommended..." />
+            <marker date="1458633924422" expanded="true" signature="-1:-1" placeholder="SELECT advic..advicesrecommended..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Advice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.22185971" vertical-offset="0" max-vertical-offset="765">
+          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+          <folding>
+            <element signature="e#13#194#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#contentId#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentItem#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.057921637" vertical-offset="0" max-vertical-offset="1479">
+          <caret line="2" column="13" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding>
+            <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
+            <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
+            <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="646">
+          <caret line="273" column="1" selection-start-line="273" selection-start-column="1" selection-end-line="273" selection-end-column="1" />
+          <folding>
+            <element signature="e#19#221#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#contentSearch#0" expanded="false" />
+            <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
+            <element signature="n#!!block;n#contentId#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentList#0" expanded="false" />
+            <element signature="n#!!block;n#contentItem#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+            <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
+            <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
+            <marker date="1458635245412" expanded="true" signature="2689:2703" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="8722:8734" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="8839:8850" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="8962:8974" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="9197:9208" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="9792:9803" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="9829:9839" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="9909:9919" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="10139:10201" placeholder="..." />
+            <marker date="1458635245412" expanded="true" signature="10258:10320" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
+          <caret line="171" column="1" selection-start-line="171" selection-start-column="1" selection-end-line="171" selection-end-column="1" />
+          <folding>
+            <element signature="e#11#1321#0" expanded="false" />
+            <element signature="e#1337#1878#0" expanded="false" />
+            <element signature="n#!!block;n#loadPage#0" expanded="false" />
+            <element signature="n#!!block;n#getTitle#0" expanded="false" />
+            <element signature="n#!!block;n#getHeader#0" expanded="false" />
+            <element signature="n#!!block;n#getAds#0" expanded="false" />
+            <element signature="n#!!block;n#getFooter#0" expanded="false" />
+            <marker date="1458635934887" expanded="false" signature="2621:2693" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advice/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="799">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.32" vertical-offset="46" max-vertical-offset="850">
+          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
       </provider>

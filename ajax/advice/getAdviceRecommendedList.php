@@ -49,7 +49,7 @@ while($row = mysqli_fetch_array($readrecs)) {
 usort($reclist, "cmp");
 
 $json = array();
-for($i=0;$i<count($reclist)&&$i<10;$i++){
+for($i=0;$i<count($reclist);$i++){
     $advices = mysqli_query($db,
         "SELECT advices.Id, advices.Title".$_POST["language"]." as Title, advices.Image FROM advices
             WHERE advices.Id = ".$reclist[$i][0])

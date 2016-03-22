@@ -10,11 +10,6 @@
         loadPage($.cookie('language'));
         updateContent($.cookie('language'),document.getElementById("div-content"));
     };
-    function selectLang(lang) {
-        $.cookie('language', lang, {path:'/'});
-        document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
-        updateContent($.cookie('language'),document.getElementById("div-content"));
-    }
     VK.Widgets.Group("vk_groups", {
         mode: 0,
         width: "225",

@@ -1,5 +1,6 @@
 <?php
 include '../../../config.php';
+$perPage = 10;
 // search all read
 $allliked = mysqli_query($db,
     "SELECT texts.Id FROM texts
@@ -49,7 +50,7 @@ while($row = mysqli_fetch_array($readrecs)) {
 usort($reclist, "cmp");
 
 $json = array();
-for($i=0;$i<count($reclist)&&$i<10;$i++){
+for($i=($_POST['page']-1)*$perPage;$i<count($reclist)&&$i<$_POST['page']*$perPage;$i++){
     $texts = mysqli_query($db,
         "SELECT texts.Id, texts.Title".$_POST["language"]." as Title, texts.Difficulty, textscategories.Title".$_POST["language"]." as Category, textscategories.Image FROM texts
             INNER JOIN textscategories ON texts.CategoryId = textscategories.Id
@@ -60,6 +61,7 @@ for($i=0;$i<count($reclist)&&$i<10;$i++){
 }
 
 $json = array_reverse($json);
+array_push($json, ceil(count($reclist)/$perPage));
 echo json_encode($json);
 
 function isInList($list, $id) {
