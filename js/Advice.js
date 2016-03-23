@@ -10,6 +10,7 @@ var advice = [
 ];
 
 function updateContent(language,divContent){
+    updateLastActivity();
     divContent.innerHTML = '';
     if(getParam('all') != -1) {
         contentAll(language,divContent);
@@ -154,6 +155,7 @@ function contentItem(language,item) {
 }
 
 function like(){
+    updateLastActivity();
     $.ajax({
         type: "POST",
         url: "../ajax/advice/likeAdvice.php",
@@ -165,6 +167,7 @@ function like(){
 }
 
 function unlike(){
+    updateLastActivity();
     $.ajax({
         type: "POST",
         url: "../ajax/advice/unlikeAdvice.php",

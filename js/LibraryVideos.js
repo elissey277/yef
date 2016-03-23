@@ -1,11 +1,11 @@
-var libraryTexts = [
+var libraryVideos = [
     {
-        'page-header': "Library (Texts)",
-        'not-found': "Texts are not found."
+        'page-header': "Library (Videos)",
+        'not-found': "Videos are not found."
     },
     {
-        'page-header': "Библиотека (Тексты)",
-        'not-found': "Тексты не найдены."
+        'page-header': "Библиотека (Видео)",
+        'not-found': "Видео не найдены."
     }
 ];
 
@@ -32,7 +32,7 @@ function contentAll(language,divContent) {
     contentTabs(language,divContent,1);
     $.ajax({
         type: "POST",
-        url: "../../ajax/library/texts/getTextsList.php",
+        url: "../../ajax/library/videos/getVideosList.php",
         data: "language=" + language + "&page=" + getParam('page'),
         success: function (data) {
             divContent.innerHTML += contentList(language,JSON.parse(data),'all');
@@ -46,7 +46,7 @@ function contentLiked(language,divContent) {
         contentTabs(language, divContent, 2);
         $.ajax({
             type: "POST",
-            url: "../../ajax/library/texts/getTextsLikedList.php",
+            url: "../../ajax/library/videos/getVideosLikedList.php",
             data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
             success: function (data) {
                 divContent.innerHTML += contentList(language, JSON.parse(data), 'liked');
@@ -63,7 +63,7 @@ function contentRecommended(language,divContent) {
         contentTabs(language,divContent,3);
         $.ajax({
             type: "POST",
-            url: "../../ajax/library/texts/getTextsRecommendedList.php",
+            url: "../../ajax/library/videos/getVideosRecommendedList.php",
             data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
             success: function (data) {
                 if(data == '') {
@@ -82,12 +82,12 @@ function contentRecommended(language,divContent) {
 function contentSearch(language,divContent) {
     contentHeader(language,divContent);
     contentTabs(language,divContent,4);
-    var searchParameters = JSON.parse($.cookie('searchTexts'));
+    var searchParameters = JSON.parse($.cookie('searchVideos'));
     divContent.innerHTML += '<div id="search-panel" style="margin: 10px 0"></div>';
     contentSearchPanel(language,searchParameters,document.getElementById('search-panel'));
     $.ajax({
         type: "POST",
-        url: "../../ajax/library/texts/getTextsSearchList.php",
+        url: "../../ajax/library/videos/getVideosSearchList.php",
         data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page') +
         "&title=" + searchParameters["title"] + "&difficulty=" + searchParameters["difficulty"] + "&category=" + searchParameters["category"],
         success: function (data) {
@@ -99,7 +99,7 @@ function contentSearch(language,divContent) {
 function contentSearchPanel(language,searchParameters,divPanel) {
     $.ajax({
         type: "POST",
-        url: "../../ajax/library/texts/getTextsCategoriesList.php",
+        url: "../../ajax/library/videos/getVideosCategoriesList.php",
         data: "language=" + language,
         success: function (data) {
             var categories = JSON.parse(data);
@@ -159,7 +159,7 @@ function contentId(language,divContent) {
     }
     $.ajax({
         type: "POST",
-        url: "../../ajax/library/texts/getText.php",
+        url: "../../ajax/library/videos/getVideo.php",
         data: "language=" + langTrns + "&id=" + getParam('id') + "&user=" + user,
         success: function (data) {
             divContent.innerHTML += contentItem(language,JSON.parse(data));
@@ -173,7 +173,7 @@ function defaultTab(language,divContent) {
 }
 
 function contentHeader(language,divContent) {
-    divContent.innerHTML += '<p class="page-header">'+libraryTexts[language]["page-header"]+'</p>';
+    divContent.innerHTML += '<p class="page-header">'+libraryVideos[language]["page-header"]+'</p>';
 }
 
 function contentTabs(language,divContent,activeTab) {
@@ -220,7 +220,7 @@ function contentList(language,items,link) {
         cont += '</table>';
         cont += getPages(items[items.length-1],getParam('page'),link);
     } else {
-        cont += '<p class="not-found-text">'+libraryTexts[language]['not-found']+'</p>'
+        cont += '<p class="not-found-text">'+libraryVideos[language]['not-found']+'</p>'
     }
     return cont;
 }
@@ -228,6 +228,7 @@ function contentList(language,items,link) {
 function contentItem(language,item) {
     var cont = '';
     cont += '<table style="width:100%;">' +
+    '<tr><td colspan="2" align="center">' + item[7] + '</td></tr>' +
     '<tr><td style="width:50%;"><p class="page-title" align="center">'+item[1]+'</p></td><td style="width:50%;"><p class="page-title" align="center">'+item[3]+'</p></td></tr>';
     var engText = item[2].split('\n');
     var trnsText = item[4].split('\n');
@@ -249,7 +250,7 @@ function like(){
     updateLastActivity();
     $.ajax({
         type: "POST",
-        url: "../../ajax/library/texts/likeText.php",
+        url: "../../ajax/library/videos/likeVideo.php",
         data: "id=" + getParam('id') + "&user=" + $.cookie('user'),
         success: function (data) {
             document.getElementById("like").innerHTML = '<input type="button" class="liked" value="'+data+' &#10084;" onclick="unlike()">';
@@ -261,7 +262,7 @@ function unlike(){
     updateLastActivity();
     $.ajax({
         type: "POST",
-        url: "../../ajax/library/texts/unlikeText.php",
+        url: "../../ajax/library/videos/unlikeVideo.php",
         data: "id=" + getParam('id') + "&user=" + $.cookie('user'),
         success: function (data) {
             document.getElementById("like").innerHTML = '<input type="button" class="not-liked" value="'+data+' &#10084;" onclick="like()">';
@@ -270,9 +271,9 @@ function unlike(){
 }
 
 function clearSearchParameters(){
-    $.cookie('searchTexts',JSON.stringify({'title':'','difficulty':0,'category':0}),{path:'/'});
+    $.cookie('searchVideos',JSON.stringify({'title':'','difficulty':0,'category':0}),{path:'/'});
 }
 
 function setSearchParameters(title,difficulty,category){
-    $.cookie('searchTexts',JSON.stringify({'title':title,'difficulty':difficulty,'category':category}),{path:'/'});
+    $.cookie('searchVideos',JSON.stringify({'title':title,'difficulty':difficulty,'category':category}),{path:'/'});
 }

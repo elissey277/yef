@@ -1,10 +1,15 @@
 <?php
 include '../../../config.php';
 $perPage = 10;
+if($_POST['language']==0){
+    $lang = 1;
+} else {
+    $lang = $_POST['language'];
+}
 if($_POST['title']==''){
     $searchTitle = '1';
 } else {
-    $searchTitle = '(texts.Title'.$_POST['language'].' LIKE "%'.$_POST['title'].'%" OR texts.Text'.$_POST['language'].' LIKE "%'.$_POST['title'].'%")';
+    $searchTitle = '(texts.Title0 LIKE "%'.$_POST['title'].'%" OR texts.Text0 LIKE "%'.$_POST['title'].'%" OR texts.Title'.$lang.' LIKE "%'.$_POST['title'].'%" OR texts.Text'.$lang.' LIKE "%'.$_POST['title'].'%")';
 }
 if($_POST['difficulty']==0){
     $searchDifficulty = '1';

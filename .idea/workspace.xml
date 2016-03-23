@@ -2,6 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/LibraryVideos.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosCategoriesList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosRecommendedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/likeVideo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/library/videos/unlikeVideo.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/updateLastActivity.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryTexts.js" afterPath="$PROJECT_DIR$/js/LibraryTexts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/videos/index.html" afterPath="$PROJECT_DIR$/library/videos/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -40,19 +55,17 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LibraryTexts.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
+      <file leaf-file-name="Advice.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/Advice.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.841853" vertical-offset="0" max-vertical-offset="646">
-              <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+            <state vertical-scroll-proportion="0.6517572" vertical-offset="0" max-vertical-offset="626">
+              <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
               <folding>
-                <element signature="e#19#221#0" expanded="false" />
+                <element signature="e#13#194#0" expanded="false" />
                 <element signature="n#!!block;n#updateContent#0" expanded="false" />
                 <element signature="n#!!block;n#contentAll#0" expanded="false" />
                 <element signature="n#!!block;n#contentLiked#0" expanded="false" />
                 <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-                <element signature="n#!!block;n#contentSearch#0" expanded="false" />
-                <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
                 <element signature="n#!!block;n#contentId#0" expanded="false" />
                 <element signature="n#!!block;n#defaultTab#0" expanded="false" />
                 <element signature="n#!!block;n#contentHeader#0" expanded="false" />
@@ -61,18 +74,6 @@
                 <element signature="n#!!block;n#contentItem#0" expanded="false" />
                 <element signature="n#!!block;n#like#0" expanded="false" />
                 <element signature="n#!!block;n#unlike#0" expanded="false" />
-                <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
-                <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
-                <marker date="1458635245412" expanded="true" signature="2689:2703" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="8722:8734" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="8839:8850" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="8962:8974" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="9197:9208" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="9792:9803" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="9829:9839" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="9909:9919" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="10139:10201" placeholder="..." />
-                <marker date="1458635245412" expanded="true" signature="10258:10320" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -91,17 +92,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/www/ajax/viewUnreadMessages.php" />
-        <option value="$PROJECT_DIR$/www/config.php" />
-        <option value="$PROJECT_DIR$/www/chat/messages/index.html" />
-        <option value="$PROJECT_DIR$/www/advice/index.html" />
-        <option value="$PROJECT_DIR$/www/test.html" />
-        <option value="$PROJECT_DIR$/www/index.html" />
-        <option value="$PROJECT_DIR$/www/ajax/advice/getAdviceList.php" />
-        <option value="$PROJECT_DIR$/www/ajax/advice/getAdviceLikedList.php" />
-        <option value="$PROJECT_DIR$/www/ajax/advice/getAdviceRecommendedList.php" />
-        <option value="$PROJECT_DIR$/www/ajax/advice/getAdvice.php" />
-        <option value="$PROJECT_DIR$/www/css/landing.css" />
         <option value="$PROJECT_DIR$/www/js/Templates.js" />
         <option value="$PROJECT_DIR$/www/css/template.css" />
         <option value="$PROJECT_DIR$/chat/friends/index.html" />
@@ -127,7 +117,6 @@
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsCategoriesList.php" />
-        <option value="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdvice.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getText.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/unlikeText.php" />
@@ -135,13 +124,25 @@
         <option value="$PROJECT_DIR$/css/template.css" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" />
-        <option value="$PROJECT_DIR$/js/Advice.js" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
-        <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
         <option value="$PROJECT_DIR$/library/texts/index.html" />
         <option value="$PROJECT_DIR$/advice/index.html" />
-        <option value="$PROJECT_DIR$/js/Page.js" />
         <option value="$PROJECT_DIR$/js/Landing.js" />
+        <option value="$PROJECT_DIR$/library/videos/index.html" />
+        <option value="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/unlikeVideo.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/likeVideo.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/getVideo.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/getVideosCategoriesList.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/getVideosList.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php" />
+        <option value="$PROJECT_DIR$/ajax/library/videos/getVideosRecommendedList.php" />
+        <option value="$PROJECT_DIR$/js/Page.js" />
+        <option value="$PROJECT_DIR$/ajax/updateLastActivity.php" />
+        <option value="$PROJECT_DIR$/js/LibraryVideos.js" />
+        <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
+        <option value="$PROJECT_DIR$/js/Advice.js" />
       </list>
     </option>
   </component>
@@ -159,7 +160,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="2" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectReloadState">
@@ -206,39 +207,21 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="texts" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -275,11 +258,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\library" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\js" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\library\texts" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\advice" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\vocabulary" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\advice" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\chat-messages\messages" />
@@ -526,7 +509,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458636690921</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="Other bugfixes">
+      <created>1458646971952</created>
+      <option name="number" value="00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1458646971952</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -599,185 +588,15 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="28" />
+      <option name="time" value="32" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6018">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#612#638#0" expanded="false" />
-            <element signature="e#677#904#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3876">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!block;n#getParam#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2295" max-vertical-offset="6018">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-          <folding>
-            <element signature="e#612#638#0" expanded="false" />
-            <element signature="e#677#904#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="1479" max-vertical-offset="3876">
-          <caret line="305" column="16" selection-start-line="305" selection-start-column="16" selection-end-line="305" selection-end-column="25" />
-          <caret line="304" column="16" selection-start-line="304" selection-start-column="16" selection-end-line="304" selection-end-column="25" />
-          <caret line="303" column="16" selection-start-line="303" selection-start-column="16" selection-end-line="303" selection-end-column="25" />
-          <caret line="302" column="16" selection-start-line="302" selection-start-column="16" selection-end-line="302" selection-end-column="25" />
-          <caret line="301" column="16" selection-start-line="301" selection-start-column="16" selection-end-line="301" selection-end-column="25" />
-          <caret line="300" column="16" selection-start-line="300" selection-start-column="16" selection-end-line="300" selection-end-column="25" />
-          <caret line="299" column="16" selection-start-line="299" selection-start-column="16" selection-end-line="299" selection-end-column="25" />
-          <caret line="298" column="16" selection-start-line="298" selection-start-column="16" selection-end-line="298" selection-end-column="25" />
-          <caret line="296" column="16" selection-start-line="296" selection-start-column="16" selection-end-line="296" selection-end-column="25" />
-          <caret line="295" column="16" selection-start-line="295" selection-start-column="16" selection-end-line="295" selection-end-column="25" />
-          <caret line="294" column="16" selection-start-line="294" selection-start-column="16" selection-end-line="294" selection-end-column="25" />
-          <caret line="293" column="16" selection-start-line="293" selection-start-column="16" selection-end-line="293" selection-end-column="25" />
-          <caret line="292" column="16" selection-start-line="292" selection-start-column="16" selection-end-line="292" selection-end-column="25" />
-          <caret line="288" column="16" selection-start-line="288" selection-start-column="16" selection-end-line="288" selection-end-column="25" />
-          <caret line="287" column="16" selection-start-line="287" selection-start-column="16" selection-end-line="287" selection-end-column="25" />
-          <caret line="286" column="16" selection-start-line="286" selection-start-column="16" selection-end-line="286" selection-end-column="17" />
-          <caret line="285" column="16" selection-start-line="285" selection-start-column="16" selection-end-line="285" selection-end-column="25" />
-          <caret line="284" column="16" selection-start-line="284" selection-start-column="16" selection-end-line="284" selection-end-column="25" />
-          <caret line="283" column="16" selection-start-line="283" selection-start-column="16" selection-end-line="283" selection-end-column="25" />
-          <caret line="282" column="16" selection-start-line="282" selection-start-column="16" selection-end-line="282" selection-end-column="25" />
-          <caret line="281" column="16" selection-start-line="281" selection-start-column="16" selection-end-line="281" selection-end-column="25" />
-          <caret line="280" column="16" selection-start-line="280" selection-start-column="16" selection-end-line="280" selection-end-column="25" />
-          <caret line="279" column="16" selection-start-line="279" selection-start-column="16" selection-end-line="279" selection-end-column="25" />
-          <caret line="278" column="16" selection-start-line="278" selection-start-column="16" selection-end-line="278" selection-end-column="25" />
-          <caret line="277" column="16" selection-start-line="277" selection-start-column="16" selection-end-line="277" selection-end-column="25" />
-          <caret line="276" column="16" selection-start-line="276" selection-start-column="16" selection-end-line="276" selection-end-column="25" />
-          <caret line="275" column="16" selection-start-line="275" selection-start-column="16" selection-end-line="275" selection-end-column="25" />
-          <caret line="274" column="16" selection-start-line="274" selection-start-column="16" selection-end-line="274" selection-end-column="25" />
-          <caret line="272" column="16" selection-start-line="272" selection-start-column="16" selection-end-line="272" selection-end-column="25" />
-          <caret line="271" column="16" selection-start-line="271" selection-start-column="16" selection-end-line="271" selection-end-column="25" />
-          <caret line="270" column="16" selection-start-line="270" selection-start-column="16" selection-end-line="270" selection-end-column="25" />
-          <caret line="269" column="16" selection-start-line="269" selection-start-column="16" selection-end-line="269" selection-end-column="25" />
-          <caret line="268" column="16" selection-start-line="268" selection-start-column="16" selection-end-line="268" selection-end-column="25" />
-          <caret line="267" column="16" selection-start-line="267" selection-start-column="16" selection-end-line="267" selection-end-column="25" />
-          <caret line="266" column="16" selection-start-line="266" selection-start-column="16" selection-end-line="266" selection-end-column="25" />
-          <caret line="263" column="16" selection-start-line="263" selection-start-column="16" selection-end-line="263" selection-end-column="25" />
-          <caret line="260" column="16" selection-start-line="260" selection-start-column="16" selection-end-line="260" selection-end-column="25" />
-          <caret line="258" column="16" selection-start-line="258" selection-start-column="16" selection-end-line="258" selection-end-column="25" />
-          <caret line="257" column="16" selection-start-line="257" selection-start-column="16" selection-end-line="257" selection-end-column="25" />
-          <caret line="256" column="16" selection-start-line="256" selection-start-column="16" selection-end-line="256" selection-end-column="19" />
-          <caret line="255" column="16" selection-start-line="255" selection-start-column="16" selection-end-line="255" selection-end-column="25" />
-          <caret line="252" column="16" selection-start-line="252" selection-start-column="16" selection-end-line="252" selection-end-column="25" />
-          <caret line="251" column="16" selection-start-line="251" selection-start-column="16" selection-end-line="251" selection-end-column="25" />
-          <caret line="250" column="16" selection-start-line="250" selection-start-column="16" selection-end-line="250" selection-end-column="24" />
-          <caret line="246" column="16" selection-start-line="246" selection-start-column="16" selection-end-line="246" selection-end-column="25" />
-          <caret line="245" column="16" selection-start-line="245" selection-start-column="16" selection-end-line="245" selection-end-column="25" />
-          <caret line="244" column="16" selection-start-line="244" selection-start-column="16" selection-end-line="244" selection-end-column="25" />
-          <caret line="241" column="16" selection-start-line="241" selection-start-column="16" selection-end-line="241" selection-end-column="25" />
-          <caret line="240" column="16" selection-start-line="240" selection-start-column="16" selection-end-line="240" selection-end-column="25" />
-          <caret line="239" column="16" selection-start-line="239" selection-start-column="16" selection-end-line="239" selection-end-column="25" />
-          <caret line="237" column="16" selection-start-line="237" selection-start-column="16" selection-end-line="237" selection-end-column="20" />
-          <caret line="236" column="16" selection-start-line="236" selection-start-column="16" selection-end-line="236" selection-end-column="25" />
-          <caret line="233" column="16" selection-start-line="233" selection-start-column="16" selection-end-line="233" selection-end-column="25" />
-          <caret line="232" column="16" selection-start-line="232" selection-start-column="16" selection-end-line="232" selection-end-column="25" />
-          <caret line="229" column="16" selection-start-line="229" selection-start-column="16" selection-end-line="229" selection-end-column="25" />
-          <caret line="228" column="16" selection-start-line="228" selection-start-column="16" selection-end-line="228" selection-end-column="25" />
-          <caret line="227" column="16" selection-start-line="227" selection-start-column="16" selection-end-line="227" selection-end-column="25" />
-          <caret line="226" column="16" selection-start-line="226" selection-start-column="16" selection-end-line="226" selection-end-column="25" />
-          <caret line="223" column="16" selection-start-line="223" selection-start-column="16" selection-end-line="223" selection-end-column="18" />
-          <caret line="221" column="16" selection-start-line="221" selection-start-column="16" selection-end-line="221" selection-end-column="19" />
-          <folding>
-            <element signature="n#!!block;n#getParam#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advice/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="6018">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#612#638#0" expanded="false" />
-            <element signature="e#677#904#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/messages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="2703">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/tables.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33283132" vertical-offset="2975" max-vertical-offset="4250">
-          <caret line="188" column="22" selection-start-line="188" selection-start-column="22" selection-end-line="188" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DHTML.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33282906" vertical-offset="16304" max-vertical-offset="76500">
-          <caret line="972" column="0" selection-start-line="972" selection-start-column="0" selection-end-line="972" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/lib/phpstorm.jar!/resources/html5-schema/html5/common.rnc">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334" vertical-offset="1926" max-vertical-offset="8721">
-          <caret line="126" column="18" selection-start-line="126" selection-start-column="18" selection-end-line="126" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/lib/JavaScriptLanguage.jar!/com/intellij/lang/javascript/index/predefined/DOMCore.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33282906" vertical-offset="4336" max-vertical-offset="18700">
-          <caret line="268" column="0" selection-start-line="268" selection-start-column="0" selection-end-line="269" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34666666" vertical-offset="16146" max-vertical-offset="18734">
           <caret line="962" column="9" selection-start-line="962" selection-start-column="9" selection-end-line="962" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/friends/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="867">
-          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="8" selection-end-column="9" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -912,14 +731,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/ChatProfile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4888179" vertical-offset="0" max-vertical-offset="626">
-          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="323">
@@ -961,16 +772,6 @@
         <state vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="600">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4633731" vertical-offset="0" max-vertical-offset="748">
-          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
-          <folding>
-            <marker date="1458585028229" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1054,27 +855,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Advice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22185971" vertical-offset="0" max-vertical-offset="765">
-          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
-          <folding>
-            <element signature="e#13#194#0" expanded="false" />
-            <element signature="n#!!block;n#updateContent#0" expanded="false" />
-            <element signature="n#!!block;n#contentAll#0" expanded="false" />
-            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
-            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-            <element signature="n#!!block;n#contentId#0" expanded="false" />
-            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
-            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
-            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-            <element signature="n#!!block;n#contentItem#0" expanded="false" />
-            <element signature="n#!!block;n#like#0" expanded="false" />
-            <element signature="n#!!block;n#unlike#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.057921637" vertical-offset="0" max-vertical-offset="1479">
@@ -1092,23 +872,6 @@
         <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="799">
           <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="442">
-          <caret line="167" column="33" selection-start-line="167" selection-start-column="33" selection-end-line="167" selection-end-column="33" />
-          <folding>
-            <element signature="e#11#1321#0" expanded="false" />
-            <element signature="e#1337#1878#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getAds#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <marker date="1458636529927" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1139,18 +902,165 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/library/texts/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39666668" vertical-offset="0" max-vertical-offset="850">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state vertical-scroll-proportion="0.05666667" vertical-offset="0" max-vertical-offset="850">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="71" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
+          <caret line="0" column="5" selection-start-line="0" selection-start-column="5" selection-end-line="0" selection-end-column="5" />
+          <folding>
+            <marker date="1458755545454" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/chat/friends/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17677642" vertical-offset="0" max-vertical-offset="867">
+          <caret line="6" column="8" selection-start-line="6" selection-start-column="8" selection-end-line="8" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/likeVideo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.26516464" vertical-offset="0" max-vertical-offset="577">
+          <caret line="9" column="21" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <marker date="1458768414341" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1458768414341" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosliked..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/unlikeVideo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11785095" vertical-offset="0" max-vertical-offset="577">
+          <caret line="4" column="53" selection-start-line="4" selection-start-column="46" selection-end-line="4" selection-end-column="53" />
+          <folding>
+            <marker date="1458764419799" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1458764419799" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosliked..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideo.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.79333335" vertical-offset="102" max-vertical-offset="731">
+          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
+          <folding>
+            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosliked..." />
+            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosliked..." />
+            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosread..." />
+            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="UPDATE video..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideosCategoriesList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
+          <caret line="5" column="33" selection-start-line="5" selection-start-column="33" selection-end-line="5" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76831347" vertical-offset="246" max-vertical-offset="833">
+          <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+          <folding>
+            <marker date="1458769736115" expanded="true" signature="-1:-1" placeholder="SELECT video..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideosList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11584327" vertical-offset="0" max-vertical-offset="587">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="18" />
+          <folding>
+            <marker date="1458769425990" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.40545145" vertical-offset="0" max-vertical-offset="587">
+          <caret line="14" column="103" selection-start-line="14" selection-start-column="103" selection-end-line="14" selection-end-column="103" />
+          <folding>
+            <marker date="1458769596272" expanded="true" signature="-1:-1" placeholder="SELECT video..videos..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideosRecommendedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.318569" vertical-offset="229" max-vertical-offset="1479">
+          <caret line="59" column="103" selection-start-line="59" selection-start-column="103" selection-end-line="59" selection-end-column="103" />
+          <folding>
+            <marker date="1458770033890" expanded="true" signature="-1:-1" placeholder="SELECT video..videos..." />
+            <marker date="1458770033890" expanded="true" signature="-1:-1" placeholder="SELECT video..videosrecommended..." />
+            <marker date="1458770033890" expanded="true" signature="-1:-1" placeholder="SELECT video..videosrecommended..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/videos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="867">
+          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.841853" vertical-offset="0" max-vertical-offset="646">
-          <caret line="270" column="0" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.813099" vertical-offset="1" max-vertical-offset="816">
+          <caret line="261" column="0" selection-start-line="261" selection-start-column="0" selection-end-line="261" selection-end-column="0" />
           <folding>
             <element signature="e#19#221#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#contentSearch#0" expanded="false" />
+            <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
+            <element signature="n#!!block;n#contentId#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentList#0" expanded="false" />
+            <element signature="n#!!block;n#contentItem#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
+            <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+            <marker date="1458773438082" expanded="true" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/LibraryVideos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.75399363" vertical-offset="4" max-vertical-offset="646">
+          <caret line="260" column="17" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
+          <folding>
+            <element signature="e#20#222#0" expanded="false" />
             <element signature="n#!!block;n#updateContent#0" expanded="false" />
             <element signature="n#!!block;n#contentAll#0" expanded="false" />
             <element signature="n#!!block;n#contentLiked#0" expanded="false" />
@@ -1167,16 +1077,77 @@
             <element signature="n#!!block;n#unlike#0" expanded="false" />
             <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
             <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
-            <marker date="1458635245412" expanded="true" signature="2689:2703" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="8722:8734" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="8839:8850" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="8962:8974" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="9197:9208" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="9792:9803" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="9829:9839" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="9909:9919" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="10139:10201" placeholder="..." />
-            <marker date="1458635245412" expanded="true" signature="10258:10320" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/updateLastActivity.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
+          <caret line="5" column="22" selection-start-line="5" selection-start-column="22" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <marker date="1458772864090" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1458772864090" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1458772864090" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4345048" vertical-offset="0" max-vertical-offset="626">
+          <caret line="175" column="30" selection-start-line="175" selection-start-column="30" selection-end-line="175" selection-end-column="30" />
+          <folding>
+            <element signature="e#11#1321#0" expanded="false" />
+            <element signature="e#1337#2189#0" expanded="false" />
+            <element signature="n#!!block;n#loadPage#0" expanded="false" />
+            <element signature="n#!!block;n#getTitle#0" expanded="false" />
+            <element signature="n#!!block;n#getHeader#0" expanded="false" />
+            <element signature="n#!!block;n#getAds#0" expanded="false" />
+            <element signature="n#!!block;n#getFooter#0" expanded="false" />
+            <element signature="n#!!block;n#selectLang#0" expanded="false" />
+            <element signature="n#!!block;n#updateLastActivity#0" expanded="false" />
+            <marker date="1458772761832" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/ChatProfile.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4888179" vertical-offset="0" max-vertical-offset="626">
+          <caret line="18" column="11" selection-start-line="18" selection-start-column="11" selection-end-line="18" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Advice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6517572" vertical-offset="0" max-vertical-offset="626">
+          <caret line="178" column="1" selection-start-line="178" selection-start-column="1" selection-end-line="178" selection-end-column="1" />
+          <folding>
+            <element signature="e#13#194#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#contentId#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentList#0" expanded="false" />
+            <element signature="n#!!block;n#contentItem#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
           </folding>
         </state>
       </provider>

@@ -49,7 +49,8 @@ var titles = [
         'button-search': "Search",
         'search-title': "Input text...",
         'search-search': "Search",
-        'search-reset': "Reset"
+        'search-reset': "Reset",
+        'access-denied': "<b>Access denied!</b><br>Only authorized users can view this page.<br>Please authorize or register."
     },
     {
         'button-all': "Все",
@@ -58,7 +59,8 @@ var titles = [
         'button-search': "Поиск",
         'search-title': "Введите текст...",
         'search-search': "Поиск",
-        'search-reset': "Сброс"
+        'search-reset': "Сброс",
+        'access-denied': "<b>Доступ запрещен!</b><br>Только авторизированные пользователи могут просматривать данную страницу.<br>Пожалуйста, авторизируйтесь или зарегистрируйтесь."
     }
 ];
 
@@ -163,10 +165,22 @@ function getFooter(language){
     return 'Brave Raccoons &copy; 2015-2016';
 }
 
-function selectLang(lang) {
-    if($.cookie('language')!=lang) {
-        $.cookie('language', lang);
+function selectLang(language) {
+    if($.cookie('language')!=language) {
+        $.cookie('language', language);
         document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
         updateContent($.cookie('language'),document.getElementById("div-content"));
+    }
+}
+
+function updateLastActivity() {
+    if(isAuthorized()){
+        $.ajax({
+            type: "POST",
+            url: "../../ajax/updateLastActivity.php",
+            data: "user=" + $.cookie('user'),
+            success: function (data) {
+            }
+        });
     }
 }
