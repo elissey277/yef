@@ -172,7 +172,7 @@ ul.menu li ul {
 }
 .page-title {
     font-size: 20px;
-    margin-left: 5px;
+    margin-left: 10px;
     font-family: "Tahoma", serif;
     color: #0064af;
 }
@@ -272,4 +272,44 @@ ul.menu li ul {
     font-size: 16px;
     font-family: "Tahoma", serif;
     color: #000000;
+}
+.grammar-text {
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #000000;
+}
+.grammar-text-link {
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    color: #0064af;
+    text-decoration: none;
+}
+.grammar-text-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+.grammar-title {
+    font-size: 15px;
+    font-weight: bold;
+    margin-left: 10px;
+    font-family: "Tahoma", serif;
+    color: #0064af;
+}
+.grammar-example {
+    margin-left: 10px;
+    width: 450px;
+    padding: 5px;
+    font-size: 16px;
+    font-style: italic;
+    font-family: "Tahoma", serif;
+    color: #000000;
+    background-color: #F8F8F8;
+    border: 1px solid #E8E8E8;
+    border-radius: 2px;
+}
+.grammar-table {
+    border-collapse: collapse;
+}
+.grammar-td {
+    border: 1px solid #0064af;
 }

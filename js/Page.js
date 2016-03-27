@@ -105,7 +105,7 @@ function getHeader(language){
                         '<ul class="menu">'+
                             '<li class="item"><a class="menu-text">'+menu[language]['menu-grammar']+'</a>'+
                                 '<ul>'+
-                                    '<li><a href="http://'+location.hostname+'/grammar/rules" class="menu-text">'+menu[language]['menu-rules']+'</a></li>';
+                                    '<li><a href="http://'+location.hostname+'/grammar/rules#all" class="menu-text">'+menu[language]['menu-rules']+'</a></li>';
     if(isAuthorized()) {
         header +=                   '<li><a href="http://' + location.hostname + '/grammar/exercises" class="menu-text">' + menu[language]['menu-exercises'] + '</a></li>';
     }
