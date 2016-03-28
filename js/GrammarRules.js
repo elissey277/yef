@@ -36,7 +36,7 @@ function contentAll(language,divContent) {
         url: "../../ajax/grammar/rules/getRulesList.php",
         data: "language=" + lang,
         success: function (data) {
-            divContent.innerHTML += contentList(language,JSON.parse(data),'all');
+            divContent.innerHTML += contentList(language, JSON.parse(data), 'all', true);
         }
     });
 }
@@ -55,7 +55,7 @@ function contentLiked(language,divContent) {
             url: "../../ajax/grammar/rules/getRulesLikedList.php",
             data: "language=" + lang + "&user=" + $.cookie('user'),
             success: function (data) {
-                divContent.innerHTML += contentList(language, JSON.parse(data), 'liked');
+                divContent.innerHTML += contentList(language, JSON.parse(data), 'liked', false);
             }
         });
     } else {
@@ -81,7 +81,12 @@ function contentId(language,divContent) {
         url: "../../ajax/grammar/rules/getRule.php",
         data: "language=" + lang + "&id=" + getParam('id') + "&user=" + user,
         success: function (data) {
-            divContent.innerHTML += contentItem(language,JSON.parse(data));
+            var item = JSON.parse(data);
+            if(item[0] == null) {
+                defaultTab(language,divContent);
+            } else {
+                divContent.innerHTML += contentItem(language, JSON.parse(data));
+            }
         }
     });
 }
@@ -110,15 +115,15 @@ function contentTabs(language,divContent,activeTab) {
     }
 }
 
-function contentList(language,items,link) {
+function contentList(language,items,link,hasHeaders) {
     var cont = '';
     if(items.length>0){
         cont += '<table style="width: 100%;">';
         for (var i=0; i<items.length; i++) {
-            if(items[i][2]==0) {
-                cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
-            } else {
+            if(items[i][2]==1 && hasHeaders) {
                 cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px; font-weight: bold" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
+            } else {
+                cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
             }
         }
         cont += '</table>';

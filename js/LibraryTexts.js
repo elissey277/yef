@@ -94,6 +94,9 @@ function contentSearch(language,divContent) {
             divContent.innerHTML += contentList(language,JSON.parse(data),'search');
         }
     });
+    if(document.getElementById('search-panel').innerHTML == ''){
+        contentSearchPanel(language,searchParameters,document.getElementById('search-panel'));
+    }
 }
 
 function contentSearchPanel(language,searchParameters,divPanel) {
@@ -162,7 +165,12 @@ function contentId(language,divContent) {
         url: "../../ajax/library/texts/getText.php",
         data: "language=" + langTrns + "&id=" + getParam('id') + "&user=" + user,
         success: function (data) {
-            divContent.innerHTML += contentItem(language,JSON.parse(data));
+            var item = JSON.parse(data);
+            if(item[0] == null) {
+                defaultTab(language,divContent);
+            } else {
+                divContent.innerHTML += contentItem(language, JSON.parse(data));
+            }
         }
     });
 }

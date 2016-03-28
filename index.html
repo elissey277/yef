@@ -7,7 +7,7 @@
     window.onload = function () {
         checkLanguage();
         if(isAuthorized()) {
-            document.location.href = '/grammar/rules';
+            document.location.href = '/grammar/rules#all';
         }
         selectLang($.cookie('language'));
         scaling();
@@ -65,23 +65,35 @@
                             И он поможет Вам выучить английский язык быстро и интересно!</p>
         </td>
         <td rowspan="3">
-            <div class="div-sign" id="sign-form" align="left">
-                <p class="sign-header" id="header-up">Регистрация</p>
-                <p class="sign-header hidden" id="header-in">Вход</p>
-                <p class="error-msg" id="error-msg"></p>
-                <input class="input" type="email" placeholder="Email" autofocus="true" id="email"><br>
-                <input class="input" placeholder="Имя" autofocus="true" id="name">
-                <input class="input" type="password" placeholder="Пароль" id="password"><br>
-                <div class="div-sign-buttons" style="display: block" id="buttons-up">
-                    <input type="button" class="action" value="Регистрация" id="button-up" onclick="register(false)">
-                    <a class="sign-text" id="text-up" onclick="signInUp(1)">Вход</a><br>
-                    <a class="sign-text" id="text-up2" onclick="document.location.href = '/grammar/rules';">Предпросмотр</a>
-                </div>
-                <div class="div-sign-buttons" style="display: none" id="buttons-in">
-                    <input type="button" class="action" value="Вход" id="button-in" onclick="authorize(false)">
-                    <a class="sign-text" id="text-in" onclick="signInUp(2)">Регистрация</a><br>
-                    <a class="sign-text" id="text-in2">Забыли пароль?</a>
-                </div>
+            <div class="div-sign" id="reg-form" align="left">
+                <p class="sign-header" id="reg-header">Регистрация</p>
+                <p class="error-msg" id="reg-error-msg"></p>
+                <input class="input" type="email" placeholder="Email" autofocus="true" id="reg-email"><br>
+                <input class="input" placeholder="Имя" autofocus="true" id="reg-name">
+                <input class="input" type="password" placeholder="Пароль" id="reg-password"><br>
+                <input class="input" type="password" placeholder="Подтверждение пароля" id="reg-password-confirm"><br>
+                <input type="button" class="action" value="Регистрация" id="reg-button" onclick="register(false)">
+                <a class="sign-text" id="reg-text-auth" onclick="changeForm(1)">Вход</a><br>
+                <a class="sign-text" id="reg-text-preview" onclick="document.location.href = '/grammar/rules#all';">Предпросмотр</a>
+            </div>
+            <div class="div-sign hidden" id="auth-form" align="left">
+                <p class="sign-header" id="auth-header">Вход</p>
+                <p class="error-msg" id="auth-error-msg"></p>
+                <input class="input" type="email" placeholder="Email" autofocus="true" id="auth-email"><br>
+                <input class="input" type="password" placeholder="Пароль" id="auth-password"><br>
+                <input type="button" class="action" value="Вход" id="auth-button" onclick="authorize(false)">
+                <a class="sign-text" id="auth-text-reg" onclick="changeForm(2)">Регистрация</a><br>
+                <a class="sign-text" id="auth-text-rest" onclick="changeForm(3)">Восстановление пароля</a>
+            </div>
+            <div class="div-sign hidden" id="rest-form" align="left">
+                <p class="sign-header" id="rest-header">Восстановление пароля</p>
+                <p class="error-msg" id="rest-error-msg"></p>
+                <input class="input" type="email" placeholder="Email" autofocus="true" id="rest-email"><br>
+                <input class="input" type="text" placeholder="Код" autofocus="true" id="rest-code"><br>
+                <input class="input" type="password" placeholder="Новый пароль" id="rest-password"><br>
+                <input class="input" type="password" placeholder="Подтверждение пароля" id="rest-password-confirm"><br>
+                <input type="button" class="action" value="Вход" id="rest-button" onclick="authorize(false)">
+                <a class="sign-text" id="rest-text-reg" onclick="changeForm(2)">Вход</a><br>
             </div>
         </td>
     </tr>

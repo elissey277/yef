@@ -18,6 +18,12 @@ function register(reload){
             if (document.getElementById("password").value == '') {
                 errorMessage += landing[$.cookie('language')]['error-empty-pass'] + '\n';
             }
+            if (document.getElementById("password-confirm").value == '') {
+                errorMessage += landing[$.cookie('language')]['error-empty-pass-conf'] + '\n';
+            }
+            if (document.getElementById("password").value != document.getElementById("password-confirm").value) {
+                errorMessage += landing[$.cookie('language')]['error-not-same-pass'] + '\n';
+            }
             if(errorMessage != '') {
                 document.getElementById("error-msg").innerText = errorMessage;
             } else {

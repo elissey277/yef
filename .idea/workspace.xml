@@ -2,26 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/GrammarRules.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/grammar/rules/getRule.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/grammar/rules/getRulesList.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/grammar/rules/likeRule.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/grammar/rules/unlikeRule.php" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\images\landing\test.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\images\lang\bl.png" afterPath="" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\images\lang\kz.png" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/advices.jpg" afterPath="$PROJECT_DIR$/images/landing/advices.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/chatting.jpg" afterPath="$PROJECT_DIR$/images/landing/chatting.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/exercises.jpg" afterPath="$PROJECT_DIR$/images/landing/exercises.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/grammar.jpg" afterPath="$PROJECT_DIR$/images/landing/grammar.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/library.jpg" afterPath="$PROJECT_DIR$/images/landing/library.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/testing.jpg" afterPath="$PROJECT_DIR$/images/landing/testing.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/images/landing/vocabulary.jpg" afterPath="$PROJECT_DIR$/images/landing/vocabulary.jpg" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grammar/rules/index.html" afterPath="$PROJECT_DIR$/grammar/rules/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/template.css" afterPath="$PROJECT_DIR$/css/template.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/GrammarRules.js" afterPath="$PROJECT_DIR$/js/GrammarRules.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Landing.js" afterPath="$PROJECT_DIR$/js/Landing.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryTexts.js" afterPath="$PROJECT_DIR$/js/LibraryTexts.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryVideos.js" afterPath="$PROJECT_DIR$/js/LibraryVideos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/RegAuth.js" afterPath="$PROJECT_DIR$/js/RegAuth.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" afterPath="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -68,19 +56,34 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="GrammarRules.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/js/GrammarRules.js">
+      <file leaf-file-name="Landing.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/Landing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.1680261" vertical-offset="1529" max-vertical-offset="2550">
-              <caret line="118" column="182" selection-start-line="118" selection-start-column="168" selection-end-line="118" selection-end-column="182" />
+            <state vertical-scroll-proportion="0.543131" vertical-offset="0" max-vertical-offset="2992">
+              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegAuth.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
+              <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-19.807692" vertical-offset="930" max-vertical-offset="3536">
+              <caret line="95" column="84" selection-start-line="95" selection-start-column="84" selection-end-line="95" selection-end-column="84" />
               <folding>
-                <element signature="e#19#224#0" expanded="false" />
-                <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-                <marker date="1459079898031" expanded="false" signature="3752:3764" placeholder="..." />
-                <marker date="1459079898031" expanded="true" signature="3887:3899" placeholder="..." />
-                <marker date="1459079898031" expanded="true" signature="3929:3950" placeholder="..." />
-                <marker date="1459079898031" expanded="true" signature="4193:4205" placeholder="..." />
-                <marker date="1459079898031" expanded="true" signature="4235:4275" placeholder="..." />
+                <element signature="e#616#642#0" expanded="false" />
+                <element signature="e#681#908#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -107,9 +110,7 @@
         <option value="$PROJECT_DIR$/ajax/chat-messages/sendMessage.php" />
         <option value="$PROJECT_DIR$/ajax/chat-messages/viewLatestMessages.php" />
         <option value="$PROJECT_DIR$/ajax/chat-messages/viewUnreadMessages.php" />
-        <option value="$PROJECT_DIR$/js/RegAuth.js" />
         <option value="$PROJECT_DIR$/js/Chat.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/ajax/advice/likeAdvice.php" />
         <option value="$PROJECT_DIR$/ajax/advice/unlikeAdvice.php" />
         <option value="$PROJECT_DIR$/js/Main.js" />
@@ -126,7 +127,6 @@
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
         <option value="$PROJECT_DIR$/library/texts/index.html" />
         <option value="$PROJECT_DIR$/advice/index.html" />
-        <option value="$PROJECT_DIR$/js/Landing.js" />
         <option value="$PROJECT_DIR$/library/videos/index.html" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/unlikeVideo.php" />
@@ -138,18 +138,21 @@
         <option value="$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/getVideosRecommendedList.php" />
         <option value="$PROJECT_DIR$/ajax/updateLastActivity.php" />
-        <option value="$PROJECT_DIR$/js/LibraryVideos.js" />
-        <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
-        <option value="$PROJECT_DIR$/js/Advice.js" />
         <option value="$PROJECT_DIR$/grammar/rules/index.html" />
         <option value="$PROJECT_DIR$/js/Page.js" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/unlikeRule.php" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/likeRule.php" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/getRule.php" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/getRulesList.php" />
-        <option value="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" />
-        <option value="$PROJECT_DIR$/js/GrammarRules.js" />
         <option value="$PROJECT_DIR$/css/template.css" />
+        <option value="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" />
+        <option value="$PROJECT_DIR$/js/RegAuth.js" />
+        <option value="$PROJECT_DIR$/js/Advice.js" />
+        <option value="$PROJECT_DIR$/js/GrammarRules.js" />
+        <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
+        <option value="$PROJECT_DIR$/js/LibraryVideos.js" />
+        <option value="$PROJECT_DIR$/js/Landing.js" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -275,28 +278,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="ajax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ajax" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grammar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rules" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -596,7 +577,13 @@
       <option name="project" value="LOCAL" />
       <updated>1458773636431</updated>
     </task>
-    <option name="localTasksCounter" value="35" />
+    <task id="LOCAL-00035" summary="Implemented Grammar-Rules&#10;Landing icons&#10;Other bugfixes">
+      <created>1459084718531</created>
+      <option name="number" value="00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1459084718531</updated>
+    </task>
+    <option name="localTasksCounter" value="36" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -640,7 +627,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Примерный вид меню, но надо переделывать" />
     <MESSAGE value="Доработано меню + некоторые исправления" />
     <MESSAGE value="Сделан примерный вид блоков сайта, начат разрабатываться блок контента библиотеки." />
     <MESSAGE value="Подключение и тест AngularJS" />
@@ -665,7 +651,8 @@
     <MESSAGE value="JS refactoring&#10;Other bugfixes" />
     <MESSAGE value="Other bugfixes" />
     <MESSAGE value="Implemented Library-Videos&#10;Other bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Library-Videos&#10;Other bugfixes" />
+    <MESSAGE value="Implemented Grammar-Rules&#10;Landing icons&#10;Other bugfixes" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented Grammar-Rules&#10;Landing icons&#10;Other bugfixes" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -701,14 +688,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="600">
           <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7284345" vertical-offset="173" max-vertical-offset="1326">
-          <caret line="37" column="19" selection-start-line="37" selection-start-column="19" selection-end-line="37" selection-end-column="19" />
           <folding />
         </state>
       </provider>
@@ -772,16 +751,6 @@
         <state vertical-scroll-proportion="0.11333334" vertical-offset="0" max-vertical-offset="600">
           <caret line="4" column="31" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="493">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-          <folding>
-            <marker date="1458576554861" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,31 +838,6 @@
             <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
             <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
             <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="3332">
-          <caret line="11" column="16" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="16" />
-          <folding>
-            <element signature="e#612#638#0" expanded="false" />
-            <element signature="e#677#904#0" expanded="false" />
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#1;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Landing.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.12939297" vertical-offset="4" max-vertical-offset="697">
-          <caret line="121" column="28" selection-start-line="121" selection-start-column="28" selection-end-line="121" selection-end-column="28" />
-          <folding>
-            <element signature="e#14#3858#0" expanded="false" />
-            <element signature="n#!!block;n#scaling#0" expanded="false" />
-            <element signature="n#!!block;n#signInUp#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -998,42 +942,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/LibraryVideos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75399363" vertical-offset="4" max-vertical-offset="646">
-          <caret line="260" column="17" selection-start-line="260" selection-start-column="17" selection-end-line="260" selection-end-column="17" />
-          <folding>
-            <element signature="e#20#222#0" expanded="false" />
-            <element signature="n#!!block;n#updateContent#0" expanded="false" />
-            <element signature="n#!!block;n#contentAll#0" expanded="false" />
-            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
-            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-            <element signature="n#!!block;n#contentSearch#0" expanded="false" />
-            <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
-            <element signature="n#!!block;n#contentId#0" expanded="false" />
-            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
-            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
-            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-            <element signature="n#!!block;n#contentList#0" expanded="false" />
-            <element signature="n#!!block;n#contentItem#0" expanded="false" />
-            <element signature="n#!!block;n#like#0" expanded="false" />
-            <element signature="n#!!block;n#unlike#0" expanded="false" />
-            <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
-            <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773405523" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/updateLastActivity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
@@ -1134,39 +1042,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Advice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.75559103" vertical-offset="3" max-vertical-offset="714">
-          <caret line="150" column="20" selection-start-line="150" selection-start-column="20" selection-end-line="150" selection-end-column="20" />
-          <folding>
-            <element signature="e#13#194#0" expanded="false" />
-            <element signature="n#!!block;n#updateContent#0" expanded="false" />
-            <element signature="n#!!block;n#contentAll#0" expanded="false" />
-            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
-            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-            <element signature="n#!!block;n#contentId#0" expanded="false" />
-            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
-            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
-            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-            <element signature="n#!!block;n#contentList#0" expanded="false" />
-            <element signature="n#!!block;n#like#0" expanded="false" />
-            <element signature="n#!!block;n#unlike#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/grammar/rules/getRulesList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="306">
           <caret line="9" column="72" selection-start-line="9" selection-start-column="54" selection-end-line="9" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="340">
-          <caret line="11" column="72" selection-start-line="11" selection-start-column="72" selection-end-line="11" selection-end-column="72" />
           <folding />
         </state>
       </provider>
@@ -1201,19 +1080,54 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.23168655" vertical-offset="0" max-vertical-offset="587">
+          <caret line="8" column="42" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="42" />
+          <folding>
+            <marker date="1458576554861" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19833334" vertical-offset="0" max-vertical-offset="600">
+          <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Advice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.46166134" vertical-offset="102" max-vertical-offset="1071">
+          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#194#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentList#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/LibraryTexts.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.76038337" vertical-offset="0" max-vertical-offset="646">
-          <caret line="259" column="17" selection-start-line="259" selection-start-column="17" selection-end-line="259" selection-end-column="17" />
+        <state vertical-scroll-proportion="0.8042414" vertical-offset="1224" max-vertical-offset="2176">
+          <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
           <folding>
             <element signature="e#19#221#0" expanded="false" />
             <element signature="n#!!block;n#updateContent#0" expanded="false" />
             <element signature="n#!!block;n#contentAll#0" expanded="false" />
             <element signature="n#!!block;n#contentLiked#0" expanded="false" />
             <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-            <element signature="n#!!block;n#contentSearch#0" expanded="false" />
-            <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
-            <element signature="n#!!block;n#contentId#0" expanded="false" />
             <element signature="n#!!block;n#defaultTab#0" expanded="false" />
             <element signature="n#!!block;n#contentHeader#0" expanded="false" />
             <element signature="n#!!block;n#contentTabs#0" expanded="false" />
@@ -1223,33 +1137,93 @@
             <element signature="n#!!block;n#unlike#0" expanded="false" />
             <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
             <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
-            <marker date="1458773438082" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494324" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/GrammarRules.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.1680261" vertical-offset="1529" max-vertical-offset="2550">
-          <caret line="118" column="182" selection-start-line="118" selection-start-column="168" selection-end-line="118" selection-end-column="182" />
+        <state vertical-scroll-proportion="0.88907015" vertical-offset="798" max-vertical-offset="2635">
+          <caret line="88" column="13" selection-start-line="83" selection-start-column="12" selection-end-line="88" selection-end-column="13" />
           <folding>
             <element signature="e#19#224#0" expanded="false" />
             <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-            <marker date="1459079898031" expanded="false" signature="3752:3764" placeholder="..." />
-            <marker date="1459079898031" expanded="true" signature="3887:3899" placeholder="..." />
-            <marker date="1459079898031" expanded="true" signature="3929:3950" placeholder="..." />
-            <marker date="1459079898031" expanded="true" signature="4193:4205" placeholder="..." />
-            <marker date="1459079898031" expanded="true" signature="4235:4275" placeholder="..." />
+            <marker date="1459103494346" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494346" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494346" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494346" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103494346" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/LibraryVideos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7781403" vertical-offset="1240" max-vertical-offset="2176">
+          <caret line="172" column="13" selection-start-line="172" selection-start-column="13" selection-end-line="172" selection-end-column="13" />
+          <folding>
+            <element signature="e#20#222#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentList#0" expanded="false" />
+            <element signature="n#!!block;n#contentItem#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+            <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
+            <element signature="n#!!block;n#setSearchParameters#0" expanded="false" />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459103521092" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
+          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-19.807692" vertical-offset="930" max-vertical-offset="3536">
+          <caret line="95" column="84" selection-start-line="95" selection-start-column="84" selection-end-line="95" selection-end-column="84" />
+          <folding>
+            <element signature="e#616#642#0" expanded="false" />
+            <element signature="e#681#908#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Landing.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.543131" vertical-offset="0" max-vertical-offset="2992">
+          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
+          <folding />
         </state>
       </provider>
     </entry>

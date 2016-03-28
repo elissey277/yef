@@ -89,7 +89,12 @@ function contentId(language,divContent) {
         url: "../ajax/advice/getAdvice.php",
         data: "language=" + language + "&id=" + getParam('id') + "&user=" + user,
         success: function (data) {
-            divContent.innerHTML += contentItem(language,JSON.parse(data));
+            var item = JSON.parse(data);
+            if(item[0] == null) {
+                defaultTab(language,divContent);
+            } else {
+                divContent.innerHTML += contentItem(language,item);
+            }
         }
     });
 }

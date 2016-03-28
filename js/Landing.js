@@ -1,13 +1,12 @@
 var landing = [
     {
-        'language': "English \u25bc",
         'lang-img': "images/lang/en.png",
         'welcome-text': "Make friends with <b>Your English Friend</b>!<br>And he will help you to learn English fast and interesting!",
         'welcome-text2': "Sign up for <b>FREE</b><br>and start learning English right now!",
         'landing-grammar-header': "Grammar",
         'landing-grammar-text': "Simple and clear description of grammar rules",
         'landing-vocabulary-header': "Vocabulary",
-        'landing-vocabulary-text': "Words compilations for talking on different topics",
+        'landing-vocabulary-text': "Words glossaries, differences and synonyms",
         'landing-exercises-header': "Exercises",
         'landing-exercises-text': "Consolidating grammar rules by exercises",
         'landing-testing-header': "Testing",
@@ -18,24 +17,24 @@ var landing = [
         'landing-library-text': "Big collection of text, audio and video materials",
         'landing-advices-header': "Useful Advices",
         'landing-advices-text': "Useful articles about learning English",
-        'sign-up-header': "Sign Up",
-        'sign-in-header': "Sign In",
-        'sign-up-button': "Sign Up",
-        'sign-in-button': "Sign In",
-        'sign-up-text': "Sign In",
-        'sign-in-text': "Sign Up",
-        'sign-up-text2': "Preview",
-        'sign-in-text2': "Forgot password?",
+        'reg-text': "Sign Up",
+        'auth-text': "Sign In",
+        'rest-text': "Restore Password",
+        'preview-text': "Preview",
         'reg-form-password': "Password",
+        'reg-form-new-password': "New password",
+        'reg-form-password-confirm': "Password confirmation",
         'reg-form-name': "Name",
+        'reg-form-code': "Code",
         'error-same-email': "User with this Email already exists.",
         'error-empty-email': "Email should be inputted.",
         'error-empty-name': "Name should be inputted.",
         'error-empty-pass': "Password should be inputted.",
+        'error-empty-pass-conf': "Password confirmation should be inputted.",
+        'error-not-same-pass': "Password and Password confirmation don't match.",
         'error-no-user': "Email or Password is incorrect."
     },
     {
-        'language': "Русский \u25bc",
         'lang-img': "images/lang/ru.png",
         'welcome-text': "Подружитесь с <b>Your English Friend</b>!<br>И он поможет Вам выучить английский язык быстро и интересно!",
         'welcome-text2': "Пройдите <b>БЕСПЛАТНУЮ</b> регистрацию<br>и начинайте учить английский язык прямо сейчас!",
@@ -53,20 +52,21 @@ var landing = [
         'landing-library-text': "Большой сборник текстовых, аудио и видео материалов",
         'landing-advices-header': "Полезные советы",
         'landing-advices-text': "Полезные статьи по изучению английского языка",
-        'sign-up-header': "Регистрация",
-        'sign-in-header': "Вход",
-        'sign-up-button': "Регистрация",
-        'sign-in-button': "Вход",
-        'sign-up-text': "Вход",
-        'sign-in-text': "Регистрация",
-        'sign-up-text2': "Предпросмотр",
-        'sign-in-text2': "Забыли пароль?",
+        'reg-text': "Регистрация",
+        'auth-text': "Вход",
+        'rest-text': "Восстановление пароля",
+        'preview-text': "Предпросмотр",
         'reg-form-password': "Пароль",
+        'reg-form-new-password': "Новый пароль",
+        'reg-form-password-confirm': "Подтверждение пароля",
         'reg-form-name': "Имя",
+        'reg-form-code': "Код",
         'error-same-email': "Пользователь с таким Email уже существует.",
         'error-empty-email': "Email должен быть введен.",
         'error-empty-name': "Имя должно быть введено.",
         'error-empty-pass': "Пароль должен быть введен.",
+        'error-empty-pass-conf': "Подтверждение пароля должно быть введено.",
+        'error-not-same-pass': "Пароль и подтверждение пароля не совпадают.",
         'error-no-user': "Email или Пароль введены неправильно."
     }
 ];
@@ -102,10 +102,12 @@ function scaling(){
     var signInput = 14 + index;
     document.getElementById("email").style.fontSize = signInput;
     document.getElementById("password").style.fontSize = signInput;
+    document.getElementById("password-confirm").style.fontSize = signInput;
     document.getElementById("name").style.fontSize = signInput;
     var signInputHeight = 24 + index * 2;
     document.getElementById("email").style.height = signInputHeight;
     document.getElementById("password").style.height = signInputHeight;
+    document.getElementById("password-confirm").style.height = signInputHeight;
     document.getElementById("name").style.height = signInputHeight;
     var signButton = 15 + index;
     document.getElementById("button-in").style.fontSize = signButton;
@@ -145,6 +147,7 @@ function selectLang(lang){
     document.getElementById("text-up2").innerHTML = landing[lang]['sign-up-text2'];
     document.getElementById("text-in2").innerHTML = landing[lang]['sign-in-text2'];
     document.getElementById("password").placeholder = landing[lang]['reg-form-password'];
+    document.getElementById("password-confirm").placeholder = landing[lang]['reg-form-password-confirm'];
     document.getElementById("name").placeholder = landing[lang]['reg-form-name'];
     scaling();
 }
