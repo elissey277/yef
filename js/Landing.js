@@ -6,68 +6,90 @@ var landing = [
         'landing-grammar-header': "Grammar",
         'landing-grammar-text': "Simple and clear description of grammar rules",
         'landing-vocabulary-header': "Vocabulary",
-        'landing-vocabulary-text': "Words glossaries, differences and synonyms",
+        'landing-vocabulary-text': "Glossaries for talking on different topics, etc.",
         'landing-exercises-header': "Exercises",
-        'landing-exercises-text': "Consolidating grammar rules by exercises",
+        'landing-exercises-text': "Consolidating of grammar rules by exercises",
         'landing-testing-header': "Testing",
-        'landing-testing-text': "7 types of tests for rapid words learning",
+        'landing-testing-text': "7 levels of testings for rapid words learning",
         'landing-chatting-header': "Chat",
-        'landing-chatting-text': "Chat in English with your friends and new mates",
+        'landing-chatting-text': "Talking in English with your friends and new mates",
         'landing-library-header': "Library",
-        'landing-library-text': "Big collection of text, audio and video materials",
-        'landing-advices-header': "Useful Advices",
-        'landing-advices-text': "Useful articles about learning English",
+        'landing-library-text': "Huge collection of text and video materials",
+        'landing-advices-header': "Advice",
+        'landing-advices-text': "Useful advice about English learning",
         'reg-text': "Sign Up",
         'auth-text': "Sign In",
         'rest-text': "Restore Password",
         'preview-text': "Preview",
-        'reg-form-password': "Password",
-        'reg-form-new-password': "New password",
-        'reg-form-password-confirm': "Password confirmation",
-        'reg-form-name': "Name",
-        'reg-form-code': "Code",
+        'email': "Email",
+        'password': "Password",
+        'new-password': "New password",
+        'password-confirm': "Confirm password",
+        'name': "Name",
+        'code': "Code",
+        'reg': "Sign Up",
+        'auth': "Sign In",
+        'restore': "Restore",
+        'confirm': "Confirm",
+        'save': "Save",
         'error-same-email': "User with this Email already exists.",
         'error-empty-email': "Email should be inputted.",
         'error-empty-name': "Name should be inputted.",
         'error-empty-pass': "Password should be inputted.",
-        'error-empty-pass-conf': "Password confirmation should be inputted.",
-        'error-not-same-pass': "Password and Password confirmation don't match.",
-        'error-no-user': "Email or Password is incorrect."
+        'error-empty-pass-conf': "Confirm password should be inputted.",
+        'error-not-same-pass': "Password and Confirm password don't match.",
+        'error-no-user': "Email or Password is incorrect.",
+        'error-empty-code': "Code should be inputted.",
+        'error-no-code': "Code is incorrect.",
+        'error-no-email': "User with this Email doesn't exist.",
+        'info-code': "Code has been sent to your Email. <a class=\"info-msg-link\" onclick=\"sendEmailRestorePassword(document.getElementById('rest-email').value)\">Resend</a>.",
+        'info-password': "Input new password."
     },
     {
         'lang-img': "images/lang/ru.png",
         'welcome-text': "Подружитесь с <b>Your English Friend</b>!<br>И он поможет Вам выучить английский язык быстро и интересно!",
         'welcome-text2': "Пройдите <b>БЕСПЛАТНУЮ</b> регистрацию<br>и начинайте учить английский язык прямо сейчас!",
         'landing-grammar-header': "Грамматика",
-        'landing-grammar-text': "Просто и понятно изложенные правила грамматики",
+        'landing-grammar-text': "Простое и понятное объяснение правил грамматики",
         'landing-vocabulary-header': "Лексика",
-        'landing-vocabulary-text': "Подборки слов для общения на разные темы",
+        'landing-vocabulary-text': "Глоссарии для общения на разные темы и т.д.",
         'landing-exercises-header': "Упражнения",
         'landing-exercises-text': "Закрепление правил грамматики упражнениями",
-        'landing-testing-header': "Тестирование",
-        'landing-testing-text': "7 видов тестов для быстрого изучения слов",
+        'landing-testing-header': "Тестирования",
+        'landing-testing-text': "7 уровней тестирования для быстрого изучения слов",
         'landing-chatting-header': "Общение",
         'landing-chatting-text': "Общение на английском с друзьями и новыми знакомыми",
         'landing-library-header': "Библиотека",
-        'landing-library-text': "Большой сборник текстовых, аудио и видео материалов",
-        'landing-advices-header': "Полезные советы",
-        'landing-advices-text': "Полезные статьи по изучению английского языка",
+        'landing-library-text': "Большой сборник текстовых и видео материалов",
+        'landing-advices-header': "Советы",
+        'landing-advices-text': "Полезные советы по изучению английского языка",
         'reg-text': "Регистрация",
         'auth-text': "Вход",
         'rest-text': "Восстановление пароля",
         'preview-text': "Предпросмотр",
-        'reg-form-password': "Пароль",
-        'reg-form-new-password': "Новый пароль",
-        'reg-form-password-confirm': "Подтверждение пароля",
-        'reg-form-name': "Имя",
-        'reg-form-code': "Код",
+        'email': "Email",
+        'password': "Пароль",
+        'new-password': "Новый пароль",
+        'password-confirm': "Подтверждение пароля",
+        'name': "Имя",
+        'code': "Код",
+        'reg': "Зарегистрироваться",
+        'auth': "Войти",
+        'restore': "Восстановить",
+        'confirm': "Подтвердить",
+        'save': "Сохранить",
         'error-same-email': "Пользователь с таким Email уже существует.",
         'error-empty-email': "Email должен быть введен.",
         'error-empty-name': "Имя должно быть введено.",
         'error-empty-pass': "Пароль должен быть введен.",
         'error-empty-pass-conf': "Подтверждение пароля должно быть введено.",
         'error-not-same-pass': "Пароль и подтверждение пароля не совпадают.",
-        'error-no-user': "Email или Пароль введены неправильно."
+        'error-no-user': "Email или Пароль введены неправильно.",
+        'error-empty-code': "Код должен быть введен.",
+        'error-no-code': "Код введен неправильно.",
+        'error-no-email': "Пользователь с таким Email не существует.",
+        'info-code': "Код был отправлен на Ваш Email. <a class=\"info-msg-link\" onclick=\"sendEmailRestorePassword(document.getElementById('rest-email').value)\">Отправить заново</a>.",
+        'info-password': "Введите новый пароль."
     }
 ];
 
@@ -95,29 +117,52 @@ function scaling(){
     document.getElementById("logo-image").style.height = 50 + index * 3;
     document.getElementById("welcome-text").style.fontSize = 18 + index;
     document.getElementById("welcome-text2").style.fontSize = 16 + index;
-    document.getElementById("sign-form").style.width = 225 + index * 10;
+    var formSize = 225 + index * 10;
+    document.getElementById("reg-form").style.width = formSize;
+    document.getElementById("auth-form").style.width = formSize;
+    document.getElementById("rest-form").style.width = formSize;
     var signHeader = 20 + index;
-    document.getElementById("header-in").style.fontSize = signHeader;
-    document.getElementById("header-up").style.fontSize = signHeader;
+    document.getElementById("reg-header").style.fontSize = signHeader;
+    document.getElementById("auth-header").style.fontSize = signHeader;
+    document.getElementById("rest-header").style.fontSize = signHeader;
     var signInput = 14 + index;
-    document.getElementById("email").style.fontSize = signInput;
-    document.getElementById("password").style.fontSize = signInput;
-    document.getElementById("password-confirm").style.fontSize = signInput;
-    document.getElementById("name").style.fontSize = signInput;
+    document.getElementById("reg-email").style.fontSize = signInput;
+    document.getElementById("reg-password").style.fontSize = signInput;
+    document.getElementById("reg-password-confirm").style.fontSize = signInput;
+    document.getElementById("reg-name").style.fontSize = signInput;
+    document.getElementById("auth-email").style.fontSize = signInput;
+    document.getElementById("auth-password").style.fontSize = signInput;
+    document.getElementById("rest-email").style.fontSize = signInput;
+    document.getElementById("rest-password").style.fontSize = signInput;
+    document.getElementById("rest-password-confirm").style.fontSize = signInput;
+    document.getElementById("rest-code").style.fontSize = signInput;
     var signInputHeight = 24 + index * 2;
-    document.getElementById("email").style.height = signInputHeight;
-    document.getElementById("password").style.height = signInputHeight;
-    document.getElementById("password-confirm").style.height = signInputHeight;
-    document.getElementById("name").style.height = signInputHeight;
+    document.getElementById("reg-email").style.height = signInputHeight;
+    document.getElementById("reg-password").style.height = signInputHeight;
+    document.getElementById("reg-password-confirm").style.height = signInputHeight;
+    document.getElementById("reg-name").style.height = signInputHeight;
+    document.getElementById("auth-email").style.height = signInputHeight;
+    document.getElementById("auth-password").style.height = signInputHeight;
+    document.getElementById("rest-email").style.height = signInputHeight;
+    document.getElementById("rest-password").style.height = signInputHeight;
+    document.getElementById("rest-password-confirm").style.height = signInputHeight;
+    document.getElementById("rest-code").style.height = signInputHeight;
     var signButton = 15 + index;
-    document.getElementById("button-in").style.fontSize = signButton;
-    document.getElementById("button-up").style.fontSize = signButton;
+    document.getElementById("reg-button").style.fontSize = signButton;
+    document.getElementById("auth-button").style.fontSize = signButton;
+    document.getElementById("rest-button").style.fontSize = signButton;
+    document.getElementById("rest-button-code").style.fontSize = signButton;
+    document.getElementById("rest-button-save").style.fontSize = signButton;
     var signText = 14 + Math.ceil(index * 0.5);
-    document.getElementById("text-in").style.fontSize = signText;
-    document.getElementById("text-up").style.fontSize = signText;
-    document.getElementById("text-in2").style.fontSize = signText;
-    document.getElementById("text-up2").style.fontSize = signText;
-    document.getElementById("error-msg").style.fontSize = signText;
+    document.getElementById("reg-text-auth").style.fontSize = signText;
+    document.getElementById("reg-text-preview").style.fontSize = signText;
+    document.getElementById("auth-text-reg").style.fontSize = signText;
+    document.getElementById("auth-text-rest").style.fontSize = signText;
+    document.getElementById("rest-text-auth").style.fontSize = signText;
+    document.getElementById("reg-error-msg").style.fontSize = signText;
+    document.getElementById("auth-error-msg").style.fontSize = signText;
+    document.getElementById("rest-error-msg").style.fontSize = signText;
+    document.getElementById("rest-info-msg").style.fontSize = signText;
 }
 
 function selectLang(lang){
@@ -138,34 +183,57 @@ function selectLang(lang){
     document.getElementById("library-text").innerHTML = landing[lang]['landing-library-text'];
     document.getElementById("advices-header").innerHTML = landing[lang]['landing-advices-header'];
     document.getElementById("advices-text").innerHTML = landing[lang]['landing-advices-text'];
-    document.getElementById("header-up").innerHTML = landing[lang]['sign-up-header'];
-    document.getElementById("header-in").innerHTML = landing[lang]['sign-in-header'];
-    document.getElementById("button-up").value = landing[lang]['sign-up-button'];
-    document.getElementById("button-in").value = landing[lang]['sign-in-button'];
-    document.getElementById("text-up").innerHTML = landing[lang]['sign-up-text'];
-    document.getElementById("text-in").innerHTML = landing[lang]['sign-in-text'];
-    document.getElementById("text-up2").innerHTML = landing[lang]['sign-up-text2'];
-    document.getElementById("text-in2").innerHTML = landing[lang]['sign-in-text2'];
-    document.getElementById("password").placeholder = landing[lang]['reg-form-password'];
-    document.getElementById("password-confirm").placeholder = landing[lang]['reg-form-password-confirm'];
-    document.getElementById("name").placeholder = landing[lang]['reg-form-name'];
+    document.getElementById("reg-header").innerText = landing[lang]['reg-text'];
+    document.getElementById("auth-header").innerText = landing[lang]['auth-text'];
+    document.getElementById("rest-header").innerText = landing[lang]['rest-text'];
+    document.getElementById("reg-email").placeholder = landing[lang]['email'];
+    document.getElementById("reg-name").placeholder = landing[lang]['name'];
+    document.getElementById("reg-password").placeholder = landing[lang]['password'];
+    document.getElementById("reg-password-confirm").placeholder = landing[lang]['password-confirm'];
+    document.getElementById("auth-email").placeholder = landing[lang]['email'];
+    document.getElementById("auth-password").placeholder = landing[lang]['password'];
+    document.getElementById("rest-email").placeholder = landing[lang]['email'];
+    document.getElementById("rest-code").placeholder = landing[lang]['code'];
+    document.getElementById("rest-password").placeholder = landing[lang]['new-password'];
+    document.getElementById("rest-password-confirm").placeholder = landing[lang]['password-confirm'];
+    document.getElementById("reg-button").value = landing[lang]['reg'];
+    document.getElementById("auth-button").value = landing[lang]['auth'];
+    document.getElementById("rest-button").value = landing[lang]['restore'];
+    document.getElementById("rest-button-code").value = landing[lang]['confirm'];
+    document.getElementById("rest-button-save").value = landing[lang]['save'];
+    document.getElementById("reg-text-auth").innerText = landing[lang]['auth-text'];
+    document.getElementById("reg-text-preview").innerText = landing[lang]['preview-text'];
+    document.getElementById("auth-text-reg").innerText = landing[lang]['reg-text'];
+    document.getElementById("auth-text-rest").innerText = landing[lang]['rest-text'];
+    document.getElementById("rest-text-auth").innerText = landing[lang]['auth-text'];
     scaling();
 }
 
-function signInUp(choice) {
-    document.getElementById("error-msg").innerText = "";
-    document.getElementById("email").focus();
-    if (choice == 1) {
-        document.getElementById("header-up").style.display = "none";
-        document.getElementById("header-in").style.display = "block";
-        document.getElementById("name").style.display = "none";
-        document.getElementById("buttons-up").style.display = "none";
-        document.getElementById("buttons-in").style.display = "block";
-    } else {
-        document.getElementById("header-up").style.display = "block";
-        document.getElementById("header-in").style.display = "none";
-        document.getElementById("name").style.display = "block";
-        document.getElementById("buttons-up").style.display = "block";
-        document.getElementById("buttons-in").style.display = "none";
+function changeForm(choice) {
+    switch (choice) {
+        case 1:
+            document.getElementById("reg-form").style.display = "block";
+            document.getElementById("auth-form").style.display = "none";
+            document.getElementById("rest-form").style.display = "none";
+            document.getElementById("reg-email").focus();
+            break;
+        case 2:
+            document.getElementById("reg-form").style.display = "none";
+            document.getElementById("auth-form").style.display = "block";
+            document.getElementById("rest-form").style.display = "none";
+            document.getElementById("auth-email").focus();
+            break;
+        case 3:
+            document.getElementById("reg-form").style.display = "none";
+            document.getElementById("auth-form").style.display = "none";
+            document.getElementById("rest-form").style.display = "block";
+            document.getElementById("rest-email").focus();
+            break;
+        default:
+            document.getElementById("reg-form").style.display = "block";
+            document.getElementById("auth-form").style.display = "none";
+            document.getElementById("rest-form").style.display = "none";
+            document.getElementById("reg-email").focus();
+            break;
     }
 }

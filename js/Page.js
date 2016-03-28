@@ -50,7 +50,8 @@ var titles = [
         'search-title': "Input text...",
         'search-search': "Search",
         'search-reset': "Reset",
-        'access-denied': "<b>Access denied!</b><br>Only authorized users can view this page.<br>Please authorize or register."
+        'access-denied': "<b>Access denied!</b><br>Only authorized users can view this page.<br>Please authorize or register.",
+        'sign': "Sign Up"
     },
     {
         'button-all': "Все",
@@ -60,7 +61,8 @@ var titles = [
         'search-title': "Введите текст...",
         'search-search': "Поиск",
         'search-reset': "Сброс",
-        'access-denied': "<b>Доступ запрещен!</b><br>Только авторизированные пользователи могут просматривать данную страницу.<br>Пожалуйста, авторизируйтесь или зарегистрируйтесь."
+        'access-denied': "<b>Доступ запрещен!</b><br>Только авторизированные пользователи могут просматривать данную страницу.<br>Пожалуйста, авторизируйтесь или зарегистрируйтесь.",
+        'sign': "Регистрация"
     }
 ];
 
@@ -150,15 +152,14 @@ function getHeader(language){
 }
 
 function getAds(language){
-    if(isAuthorized()){
-        return '<div id="vk_groups"></div>'+
-        '<img src="http://'+location.hostname+'/images/google-ad.PNG"><br>'+
-        '<img src="http://'+location.hostname+'/images/google-ad.PNG">';
-    } else {
-        return '<div id="vk_groups"></div>'+
-        '<img src="http://'+location.hostname+'/images/google-ad.PNG"><br>'+
-        '<img src="http://'+location.hostname+'/images/google-ad.PNG">';
+    var ads = '';
+    if(!isAuthorized()){
+        ads += '<input type="button" class="action" value="'+titles[language]['sign']+'" id="reg-button" onclick="document.location.href = \'/\'">';
     }
+    ads += '<div id="vk_groups"></div>'+
+        '<img src="http://'+location.hostname+'/images/google-ad.PNG"><br>'+
+        '<img src="http://'+location.hostname+'/images/google-ad.PNG">';
+    return ads;
 }
 
 function getFooter(language){
@@ -169,6 +170,9 @@ function selectLang(language) {
     if($.cookie('language')!=language) {
         $.cookie('language', language);
         document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
+        if(!isAuthorized()) {
+            document.getElementById("reg-button").value = titles[language]['sign'];
+        }
         updateContent($.cookie('language'),document.getElementById("div-content"));
     }
 }

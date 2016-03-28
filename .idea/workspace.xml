@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BookmarkManager">
+    <bookmark url="file://$PROJECT_DIR$/js/RegAuth.js" line="163" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/GrammarRules.js" afterPath="$PROJECT_DIR$/js/GrammarRules.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/auth-reg/canBeRestored.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/auth-reg/changePassword.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getText.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getTextsCategoriesList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getTextsLikedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getTextsList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getTextsRecommendedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getTextsSearchList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/auth-reg/isCorrectCode.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/likeText.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/unlikeText.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Landing.js" afterPath="$PROJECT_DIR$/js/Landing.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryTexts.js" afterPath="$PROJECT_DIR$/js/LibraryTexts.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/LibraryVideos.js" afterPath="$PROJECT_DIR$/js/LibraryVideos.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Main.js" afterPath="$PROJECT_DIR$/js/Main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/RegAuth.js" afterPath="$PROJECT_DIR$/js/RegAuth.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" afterPath="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/advice/index.html" afterPath="$PROJECT_DIR$/advice/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/grammar/rules/index.html" afterPath="$PROJECT_DIR$/grammar/rules/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/texts/index.html" afterPath="$PROJECT_DIR$/library/texts/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/library/videos/index.html" afterPath="$PROJECT_DIR$/library/videos/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/landing.css" afterPath="$PROJECT_DIR$/css/landing.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/template.css" afterPath="$PROJECT_DIR$/css/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -59,31 +76,12 @@
       <file leaf-file-name="Landing.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/js/Landing.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.543131" vertical-offset="0" max-vertical-offset="2992">
-              <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="RegAuth.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-              <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/index.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-19.807692" vertical-offset="930" max-vertical-offset="3536">
-              <caret line="95" column="84" selection-start-line="95" selection-start-column="84" selection-end-line="95" selection-end-column="84" />
+            <state vertical-scroll-proportion="0.33278957" vertical-offset="663" max-vertical-offset="1785">
+              <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
               <folding>
-                <element signature="e#616#642#0" expanded="false" />
-                <element signature="e#681#908#0" expanded="false" />
+                <element signature="n#!!block;n#scaling#0" expanded="false" />
+                <element signature="n#!!block;n#selectLang#0" expanded="false" />
+                <element signature="n#!!block;n#changeForm#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -102,10 +100,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/js/Templates.js" />
-        <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/ajax/auth-reg/canBeAuthorized.php" />
-        <option value="$PROJECT_DIR$/ajax/auth-reg/canBeRegistred.php" />
         <option value="$PROJECT_DIR$/ajax/auth-reg/registerUser.php" />
         <option value="$PROJECT_DIR$/ajax/chat-messages/sendMessage.php" />
         <option value="$PROJECT_DIR$/ajax/chat-messages/viewLatestMessages.php" />
@@ -113,7 +107,6 @@
         <option value="$PROJECT_DIR$/js/Chat.js" />
         <option value="$PROJECT_DIR$/ajax/advice/likeAdvice.php" />
         <option value="$PROJECT_DIR$/ajax/advice/unlikeAdvice.php" />
-        <option value="$PROJECT_DIR$/js/Main.js" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceList.php" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
@@ -125,9 +118,6 @@
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
         <option value="$PROJECT_DIR$/ajax/advice/getAdviceRecommendedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsRecommendedList.php" />
-        <option value="$PROJECT_DIR$/library/texts/index.html" />
-        <option value="$PROJECT_DIR$/advice/index.html" />
-        <option value="$PROJECT_DIR$/library/videos/index.html" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/unlikeVideo.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/likeVideo.php" />
@@ -138,21 +128,29 @@
         <option value="$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/getVideosRecommendedList.php" />
         <option value="$PROJECT_DIR$/ajax/updateLastActivity.php" />
-        <option value="$PROJECT_DIR$/grammar/rules/index.html" />
-        <option value="$PROJECT_DIR$/js/Page.js" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/unlikeRule.php" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/likeRule.php" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/getRule.php" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/getRulesList.php" />
-        <option value="$PROJECT_DIR$/css/template.css" />
         <option value="$PROJECT_DIR$/ajax/grammar/rules/getRulesLikedList.php" />
-        <option value="$PROJECT_DIR$/js/RegAuth.js" />
         <option value="$PROJECT_DIR$/js/Advice.js" />
         <option value="$PROJECT_DIR$/js/GrammarRules.js" />
         <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
         <option value="$PROJECT_DIR$/js/LibraryVideos.js" />
-        <option value="$PROJECT_DIR$/js/Landing.js" />
+        <option value="$PROJECT_DIR$/js/Main.js" />
+        <option value="$PROJECT_DIR$/css/template.css" />
+        <option value="$PROJECT_DIR$/advice/index.html" />
+        <option value="$PROJECT_DIR$/grammar/rules/index.html" />
+        <option value="$PROJECT_DIR$/library/texts/index.html" />
+        <option value="$PROJECT_DIR$/library/videos/index.html" />
+        <option value="$PROJECT_DIR$/js/Page.js" />
+        <option value="$PROJECT_DIR$/ajax/auth-reg/canBeRestored.php" />
+        <option value="$PROJECT_DIR$/css/landing.css" />
         <option value="$PROJECT_DIR$/index.html" />
+        <option value="$PROJECT_DIR$/ajax/auth-reg/isCorrectCode.php" />
+        <option value="$PROJECT_DIR$/ajax/auth-reg/changePassword.php" />
+        <option value="$PROJECT_DIR$/js/RegAuth.js" />
+        <option value="$PROJECT_DIR$/js/Landing.js" />
       </list>
     </option>
   </component>
@@ -231,39 +229,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="grammar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rules" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="grammar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -280,18 +246,12 @@
               <option name="myItemId" value="ajax" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
+              <option name="myItemId" value="vocabulary" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="advice" />
+              <option name="myItemId" value="glossaries" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -314,11 +274,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\auth-reg" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\js" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\grammar" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\library" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\library\texts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\chat-messages\messages" />
@@ -583,12 +543,18 @@
       <option name="project" value="LOCAL" />
       <updated>1459084718531</updated>
     </task>
-    <option name="localTasksCounter" value="36" />
+    <task id="LOCAL-00036" summary="Bugfixes&#10;Landing page improvements">
+      <created>1459146029434</created>
+      <option name="number" value="00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1459146029434</updated>
+    </task>
+    <option name="localTasksCounter" value="37" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="36" width="1534" height="762" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -598,7 +564,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18445323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18445323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -627,7 +593,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Доработано меню + некоторые исправления" />
     <MESSAGE value="Сделан примерный вид блоков сайта, начат разрабатываться блок контента библиотеки." />
     <MESSAGE value="Подключение и тест AngularJS" />
     <MESSAGE value="Новый вид главной страницы" />
@@ -652,62 +617,16 @@
     <MESSAGE value="Other bugfixes" />
     <MESSAGE value="Implemented Library-Videos&#10;Other bugfixes" />
     <MESSAGE value="Implemented Grammar-Rules&#10;Landing icons&#10;Other bugfixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Grammar-Rules&#10;Landing icons&#10;Other bugfixes" />
+    <MESSAGE value="Bugfixes&#10;Landing page improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bugfixes&#10;Landing page improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="34" />
+      <option name="time" value="40" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ajax/auth-reg/registerUser.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.31166667" vertical-offset="0" max-vertical-offset="600">
-          <caret line="11" column="14" selection-start-line="11" selection-start-column="14" selection-end-line="11" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/chat/messages/sendMessage.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05666667" vertical-offset="0" max-vertical-offset="600">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/chat/messages/viewLatestMessages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="600">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/chat/messages/viewUnreadMessages.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="600">
-          <caret line="8" column="19" selection-start-line="8" selection-start-column="19" selection-end-line="8" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/messages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.87833333" vertical-offset="357" max-vertical-offset="2754">
-          <caret line="52" column="6" selection-start-line="48" selection-start-column="4" selection-end-line="52" selection-end-column="6" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="dbDummy://db-console:/490093e1/2398acfa-02cb-4111-a835-d41019f4c54a/">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="626">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/advice/likeAdvice.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.1923075" vertical-offset="0" max-vertical-offset="289">
@@ -738,14 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3076923" vertical-offset="0" max-vertical-offset="323">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="6" selection-end-column="46" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.11333334" vertical-offset="0" max-vertical-offset="600">
@@ -754,35 +665,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Main.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.110929854" vertical-offset="0" max-vertical-offset="646">
-          <caret line="16" column="40" selection-start-line="16" selection-start-column="30" selection-end-line="16" selection-end-column="40" />
-          <folding>
-            <element signature="n#!!block;n#getParam#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/library/texts/getTextsCategoriesList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.34" vertical-offset="0" max-vertical-offset="600">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdvice.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45333335" vertical-offset="0" max-vertical-offset="731">
-          <caret line="16" column="33" selection-start-line="16" selection-start-column="33" selection-end-line="16" selection-end-column="33" />
-          <folding>
-            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesliked..." />
-            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesliked..." />
-            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesread..." />
-            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="UPDATE advic..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -839,14 +726,6 @@
             <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
             <marker date="1458634396109" expanded="true" signature="-1:-1" placeholder="SELECT texts..textsrecommended..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05666667" vertical-offset="0" max-vertical-offset="850">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="71" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -934,14 +813,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/library/videos/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="867">
-          <caret line="10" column="20" selection-start-line="10" selection-start-column="20" selection-end-line="10" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/updateLastActivity.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
@@ -968,32 +839,6 @@
           <caret line="28" column="53" selection-start-line="28" selection-start-column="53" selection-end-line="28" selection-end-column="53" />
           <folding>
             <marker date="1458755545454" expanded="true" signature="-1:-1" placeholder="SELECT texts..texts..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/advice/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="799">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7177814" vertical-offset="155" max-vertical-offset="1547">
-          <caret line="107" column="96" selection-start-line="107" selection-start-column="96" selection-end-line="107" selection-end-column="96" />
-          <folding>
-            <element signature="e#11#1321#0" expanded="false" />
-            <element signature="e#1337#2189#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getAds#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#selectLang#0" expanded="false" />
-            <element signature="n#!!block;n#updateLastActivity#0" expanded="false" />
-            <marker date="1459045512626" expanded="false" signature="-1:-1" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -1050,22 +895,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/grammar/rules/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="799">
-          <caret line="5" column="27" selection-start-line="5" selection-start-column="27" selection-end-line="5" selection-end-column="27" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.91853034" vertical-offset="4746" max-vertical-offset="5440">
-          <caret line="313" column="29" selection-start-line="313" selection-start-column="29" selection-end-line="313" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/grammar/rules/getRule.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.425" vertical-offset="102" max-vertical-offset="731">
@@ -1095,26 +924,6 @@
         <state vertical-scroll-proportion="0.19833334" vertical-offset="0" max-vertical-offset="600">
           <caret line="7" column="22" selection-start-line="7" selection-start-column="22" selection-end-line="7" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Advice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.46166134" vertical-offset="102" max-vertical-offset="1071">
-          <caret line="91" column="0" selection-start-line="91" selection-start-column="0" selection-end-line="92" selection-end-column="0" />
-          <folding>
-            <element signature="e#13#194#0" expanded="false" />
-            <element signature="n#!!block;n#updateContent#0" expanded="false" />
-            <element signature="n#!!block;n#contentAll#0" expanded="false" />
-            <element signature="n#!!block;n#contentLiked#0" expanded="false" />
-            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
-            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
-            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-            <element signature="n#!!block;n#contentList#0" expanded="false" />
-            <element signature="n#!!block;n#like#0" expanded="false" />
-            <element signature="n#!!block;n#unlike#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1200,30 +1009,214 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
+    <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1428">
-          <caret line="17" column="66" selection-start-line="17" selection-start-column="66" selection-end-line="17" selection-end-column="66" />
+        <state vertical-scroll-proportion="0.110929854" vertical-offset="0" max-vertical-offset="646">
+          <caret line="16" column="29" selection-start-line="16" selection-start-column="29" selection-end-line="16" selection-end-column="29" />
+          <folding>
+            <element signature="n#!!block;n#getParam#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/grammar/rules/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11333334" vertical-offset="0" max-vertical-offset="782">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11333334" vertical-offset="0" max-vertical-offset="833">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/library/videos/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.11333334" vertical-offset="0" max-vertical-offset="850">
+          <caret line="4" column="0" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/advice/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.425" vertical-offset="0" max-vertical-offset="782">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdvice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-3.2692308" vertical-offset="0" max-vertical-offset="731">
+          <caret line="5" column="22" selection-start-line="2" selection-start-column="8" selection-end-line="5" selection-end-column="22" />
+          <folding>
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesliked..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesliked..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesread..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="UPDATE advic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.17" vertical-offset="0" max-vertical-offset="600">
+          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Advice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3258786" vertical-offset="51" max-vertical-offset="1326">
+          <caret line="49" column="61" selection-start-line="49" selection-start-column="61" selection-end-line="49" selection-end-column="61" />
+          <folding>
+            <element signature="e#13#194#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#contentList#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="600">
+          <caret line="10" column="14" selection-start-line="9" selection-start-column="7" selection-end-line="10" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.91517127" vertical-offset="0" max-vertical-offset="765">
+          <caret line="153" column="25" selection-start-line="153" selection-start-column="25" selection-end-line="153" selection-end-column="25" />
+          <folding>
+            <element signature="e#11#1321#0" expanded="false" />
+            <element signature="n#!!block;n#loadPage#0" expanded="false" />
+            <element signature="n#!!block;n#getTitle#0" expanded="false" />
+            <element signature="n#!!block;n#getHeader#0" expanded="false" />
+            <element signature="n#!!block;n#getAds#0" expanded="false" />
+            <element signature="n#!!block;n#getFooter#0" expanded="false" />
+            <element signature="n#!!block;n#selectLang#0" expanded="false" />
+            <element signature="n#!!block;n#updateLastActivity#0" expanded="false" />
+            <marker date="1459166700568" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="7.761981" vertical-offset="462" max-vertical-offset="5678">
+          <caret line="313" column="29" selection-start-line="313" selection-start-column="29" selection-end-line="313" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/auth-reg/canBeRestored.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
+          <caret line="5" column="2" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="2" />
+          <folding>
+            <marker date="1459168927445" expanded="true" signature="-1:-1" placeholder="SELECT Id FR..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/auth-reg/isCorrectCode.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.28333333" vertical-offset="0" max-vertical-offset="600">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+          <folding>
+            <marker date="1459181880790" expanded="true" signature="-1:-1" placeholder="SELECT Id,Pa..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/landing.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5223642" vertical-offset="982" max-vertical-offset="2924">
+          <caret line="77" column="25" selection-start-line="77" selection-start-column="25" selection-end-line="77" selection-end-column="25" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.807692" vertical-offset="930" max-vertical-offset="3536">
-          <caret line="95" column="84" selection-start-line="95" selection-start-column="84" selection-end-line="95" selection-end-column="84" />
+        <state vertical-scroll-proportion="0.9" vertical-offset="429" max-vertical-offset="3196">
+          <caret line="104" column="99" selection-start-line="104" selection-start-column="99" selection-end-line="104" selection-end-column="99" />
           <folding>
-            <element signature="e#616#642#0" expanded="false" />
-            <element signature="e#681#908#0" expanded="false" />
+            <element signature="e#388#579#0" expanded="false" />
+            <element signature="e#681#1308#0" expanded="false" />
+            <element signature="tag#table#0;tag#div#0;tag#body#0;tag#html#0" expanded="false" />
+            <element signature="tag#td#0;tag#tr#0;tag#table#0;tag#body#0;tag#html#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/auth-reg/changePassword.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.028333334" vertical-offset="0" max-vertical-offset="600">
+          <caret line="1" column="27" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding>
+            <marker date="1459183395996" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1459183395996" expanded="true" signature="-1:-1" placeholder="UPDATE users..." />
+            <marker date="1459183395996" expanded="true" signature="-1:-1" placeholder="SELECT Id FR..users..." />
+            <marker date="1459183395996" expanded="true" signature="-1:-1" placeholder="SELECT Id FR..users..." />
+            <marker date="1459183395996" expanded="true" signature="-1:-1" placeholder="SELECT Id FR..users..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/RegAuth.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.76038337" vertical-offset="0" max-vertical-offset="884">
+          <caret line="154" column="96" selection-start-line="154" selection-start-column="96" selection-end-line="154" selection-end-column="96" />
+          <folding>
+            <element signature="n#!!block;n#signUp#0" expanded="false" />
+            <element signature="n#!!block;n#signIn#0" expanded="false" />
+            <element signature="n#!!block;n#restorePass#0" expanded="false" />
+            <element signature="n#!!block;n#confirmCode#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getText.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <marker date="1458591498129" expanded="true" signature="-1:-1" placeholder="SELECT UserI..textsliked..." />
+            <marker date="1458591498129" expanded="true" signature="-1:-1" placeholder="SELECT UserI..textsliked..." />
+            <marker date="1458591498129" expanded="true" signature="-1:-1" placeholder="SELECT UserI..textsread..." />
+            <marker date="1458591498129" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1458591498129" expanded="true" signature="-1:-1" placeholder="UPDATE texts..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/js/Landing.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.543131" vertical-offset="0" max-vertical-offset="2992">
-          <caret line="20" column="28" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
+        <state vertical-scroll-proportion="0.33278957" vertical-offset="663" max-vertical-offset="1785">
+          <caret line="51" column="47" selection-start-line="51" selection-start-column="47" selection-end-line="51" selection-end-column="47" />
+          <folding>
+            <element signature="n#!!block;n#scaling#0" expanded="false" />
+            <element signature="n#!!block;n#selectLang#0" expanded="false" />
+            <element signature="n#!!block;n#changeForm#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
