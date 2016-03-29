@@ -5,24 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/VocabularyGlossaries.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/likeGlossary.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/removeWord.php" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/unlikeGlossary.php" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\getTextsCategoriesList.php" afterPath="" />
-      <change type="DELETED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\unlikeText.php" afterPath="" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\getText.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossary.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\getTextsLikedList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesLikedList.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\getTextsList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesList.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\getTextsRecommendedList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesRecommendedList.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\getTextsSearchList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesSearchList.php" />
-      <change type="MOVED" beforePath="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\glossaries\likeText.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/addWord.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/Vocabulary.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/VocabularyGlossaries.js" afterPath="$PROJECT_DIR$/js/VocabularyGlossaries.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/glossaries/index.html" afterPath="$PROJECT_DIR$/vocabulary/glossaries/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/template.css" afterPath="$PROJECT_DIR$/css/template.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -69,21 +54,49 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="VocabularyGlossaries.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="VocabularyGlossaries.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/js/VocabularyGlossaries.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.6949429" vertical-offset="3212" max-vertical-offset="3859">
-              <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="2770" max-vertical-offset="3383">
+              <caret line="246" column="1" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
               <folding>
                 <element signature="e#27#222#0" expanded="false" />
                 <element signature="n#!!block;n#defaultTab#0" expanded="false" />
                 <element signature="n#!!block;n#contentHeader#0" expanded="false" />
                 <element signature="n#!!block;n#contentTabs#0" expanded="false" />
                 <element signature="n#!!block;n#contentList#0" expanded="false" />
-                <marker date="1459231001193" expanded="false" signature="2870:2884" placeholder="..." />
-                <marker date="1459231001193" expanded="true" signature="8681:8731" placeholder="..." />
-                <marker date="1459231001193" expanded="true" signature="8806:8856" placeholder="..." />
+                <marker date="1459231663220" expanded="false" signature="2870:2884" placeholder="..." />
+                <marker date="1459231663220" expanded="true" signature="8681:8731" placeholder="..." />
+                <marker date="1459231663220" expanded="true" signature="8806:8856" placeholder="..." />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/vocabulary/glossaries/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.30333334" vertical-offset="250" max-vertical-offset="850">
+              <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+              <folding>
+                <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Vocabulary.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/js/Vocabulary.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,7 +157,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/ajax/library/texts/getText.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/unlikeText.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/likeText.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
@@ -183,7 +195,6 @@
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/unlikeGlossaries.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php" />
-        <option value="$PROJECT_DIR$/vocabulary/glossaries/index.html" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesLikedList.php" />
@@ -192,9 +203,11 @@
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesRecommendedList.php" />
         <option value="$PROJECT_DIR$/css/template.css" />
         <option value="$PROJECT_DIR$/js/Page.js" />
-        <option value="$PROJECT_DIR$/js/VocabularyGlossaries.js" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/addWord.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/removeWord.php" />
+        <option value="$PROJECT_DIR$/js/Vocabulary.js" />
+        <option value="$PROJECT_DIR$/js/VocabularyGlossaries.js" />
+        <option value="$PROJECT_DIR$/vocabulary/glossaries/index.html" />
       </list>
     </option>
   </component>
@@ -278,38 +291,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="glossaries" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="www" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="library" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="texts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,8 +413,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\js" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\auth-reg" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\grammar" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax" />
@@ -713,12 +694,18 @@
       <option name="project" value="LOCAL" />
       <updated>1459194136736</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Implemented glossaries&#10;Add/remove words&#10;Other improvements">
+      <created>1459231523793</created>
+      <option name="number" value="00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1459231523793</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="39" y="36" width="1534" height="762" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -728,7 +715,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18445323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18445323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -757,7 +744,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Подключение и тест AngularJS" />
     <MESSAGE value="Новый вид главной страницы" />
     <MESSAGE value="Дополнения" />
     <MESSAGE value="Новый лендинг + часть мобильного лендинга" />
@@ -782,7 +768,8 @@
     <MESSAGE value="Implemented Grammar-Rules&#10;Landing icons&#10;Other bugfixes" />
     <MESSAGE value="Bugfixes&#10;Landing page improvements" />
     <MESSAGE value="Landing page improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Landing page improvements" />
+    <MESSAGE value="Implemented glossaries&#10;Add/remove words&#10;Other improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implemented glossaries&#10;Add/remove words&#10;Other improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -791,20 +778,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideo.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.79333335" vertical-offset="102" max-vertical-offset="731">
-          <caret line="34" column="45" selection-start-line="34" selection-start-column="45" selection-end-line="34" selection-end-column="45" />
-          <folding>
-            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosliked..." />
-            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosliked..." />
-            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="SELECT UserI..videosread..." />
-            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
-            <marker date="1458768743455" expanded="true" signature="-1:-1" placeholder="UPDATE video..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/library/videos/getVideosCategoriesList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.14166667" vertical-offset="0" max-vertical-offset="600">
@@ -1253,22 +1226,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vocabulary/glossaries/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.255" vertical-offset="0" max-vertical-offset="833">
-          <caret line="9" column="119" selection-start-line="9" selection-start-column="119" selection-end-line="9" selection-end-column="119" />
-          <folding>
-            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/js/Main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.110929854" vertical-offset="0" max-vertical-offset="646">
@@ -1386,19 +1343,43 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/js/Vocabulary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4760">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/js/VocabularyGlossaries.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.6949429" vertical-offset="3212" max-vertical-offset="3859">
-          <caret line="267" column="21" selection-start-line="267" selection-start-column="21" selection-end-line="267" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2770" max-vertical-offset="3383">
+          <caret line="246" column="1" selection-start-line="246" selection-start-column="1" selection-end-line="246" selection-end-column="1" />
           <folding>
             <element signature="e#27#222#0" expanded="false" />
             <element signature="n#!!block;n#defaultTab#0" expanded="false" />
             <element signature="n#!!block;n#contentHeader#0" expanded="false" />
             <element signature="n#!!block;n#contentTabs#0" expanded="false" />
             <element signature="n#!!block;n#contentList#0" expanded="false" />
-            <marker date="1459231001193" expanded="false" signature="2870:2884" placeholder="..." />
-            <marker date="1459231001193" expanded="true" signature="8681:8731" placeholder="..." />
-            <marker date="1459231001193" expanded="true" signature="8806:8856" placeholder="..." />
+            <marker date="1459231663220" expanded="false" signature="2870:2884" placeholder="..." />
+            <marker date="1459231663220" expanded="true" signature="8681:8731" placeholder="..." />
+            <marker date="1459231663220" expanded="true" signature="8806:8856" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vocabulary/glossaries/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.30333334" vertical-offset="250" max-vertical-offset="850">
+          <caret line="4" column="32" selection-start-line="4" selection-start-column="32" selection-end-line="4" selection-end-column="32" />
+          <folding>
+            <element signature="n#style#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>
