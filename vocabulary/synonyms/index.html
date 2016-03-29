@@ -1,15 +1,18 @@
 ﻿<script src="../../js/libraries/jquery-2.1.1.js" type="text/javascript"></script>
 <script src="../../js/libraries/jquery-cookie/jquery.cookie.js" type="text/javascript"></script>
 <script src="../../js/Main.js" type="text/javascript"></script>
+<script src="../../js/Page.js" type="text/javascript"></script>
+<script src="../../js/Vocabulary.js" type="text/javascript"></script>
+<script src="../../js/VocabularySynonyms.js" type="text/javascript"></script>
 <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
 <script type="text/javascript">
     window.onload = function() {
         loadPage($.cookie('language'));
+        if($.cookie('searchSynonyms') == null || $.cookie('searchSynonyms') == 'null' || $.cookie('searchSynonyms') == undefined){
+            clearSearchParameters();
+        }
+        updateContent($.cookie('language'),document.getElementById('div-content'));
     };
-    function selectLang(lang) {
-        $.cookie('language', lang, {path:'/'});
-        document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
-    }
     VK.Widgets.Group("vk_groups", {
         mode: 0,
         width: "225",

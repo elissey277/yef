@@ -8,9 +8,9 @@ if($_POST['language']==0){
 }
 // search all read
 $allliked = mysqli_query($db,
-    "SELECT glossaries.Id FROM glossaries
-        INNER JOIN glossariesliked ON glossaries.Id = glossariesliked.GlossaryId
-        WHERE glossariesliked.UserId = ".$_POST["user"])
+    "SELECT synonyms.Id FROM synonyms
+        INNER JOIN synonymsliked ON synonyms.Id = synonymsliked.SynonymsId
+        WHERE synonymsliked.UserId = ".$_POST["user"])
 or die(mysql_error());
 $inliked = '';
 $inliked .= '(';
@@ -24,15 +24,15 @@ for($i=0;$i<mysqli_num_rows($allliked);$i++){
 $inliked .= ')';
 // search recommendations by liked
 $likedrecs = mysqli_query($db,
-    "SELECT glossariesrecommended.Glossary2Id as Id FROM glossariesrecommended
-	  INNER JOIN glossariesliked ON glossariesliked.GlossaryId = glossariesrecommended.Glossary1Id
-        WHERE glossariesliked.UserId = ".$_POST["user"]." AND glossariesrecommended.Glossary2Id NOT IN ".$inliked)
+    "SELECT synonymsrecommended.Synonyms2Id as Id FROM synonymsrecommended
+	    INNER JOIN synonymsliked ON synonymsliked.SynonymsId = synonymsrecommended.Synonyms1Id
+        WHERE synonymsliked.UserId = ".$_POST["user"]." AND synonymsrecommended.Synonyms2Id NOT IN ".$inliked)
 or die(mysql_error());
 // search recommendations by read
 $readrecs = mysqli_query($db,
-    "SELECT glossariesrecommended.Glossary2Id as Id FROM glossariesrecommended
-	  INNER JOIN glossariesread ON glossariesread.GlossaryId = glossariesrecommended.Glossary1Id
-        WHERE glossariesread.UserId = ".$_POST["user"]." AND glossariesrecommended.Glossary2Id NOT IN ".$inliked)
+    "SELECT synonymsrecommended.Synonyms2Id as Id FROM synonymsrecommended
+	    INNER JOIN synonymsread ON synonymsread.SynonymsId = synonymsrecommended.Synonyms1Id
+        WHERE synonymsread.UserId = ".$_POST["user"]." AND synonymsrecommended.Synonyms2Id NOT IN ".$inliked)
 or die(mysql_error());
 //create complete list of recommendations
 $reclist = array();
@@ -57,8 +57,9 @@ usort($reclist, "cmp");
 $json = array();
 for($i=($_POST['page']-1)*$perPage;$i<count($reclist)&&$i<$_POST['page']*$perPage;$i++){
     $glossaries = mysqli_query($db,
-        "SELECT Id, Title0 as TitleEn, Title".$lang." as Title, Image FROM glossaries
-            WHERE glossaries.Id = ".$reclist[$i][0])
+        "SELECT synonyms.Id, dictionary.Word0 as TitleEn, dictionary.Word".$lang." as Title, synonyms.Image FROM synonyms
+	        INNER JOIN dictionary ON dictionary.Id = synonyms.WordId
+            WHERE synonyms.Id = ".$reclist[$i][0])
     or die(mysql_error());
     $glossary = mysqli_fetch_array($glossaries);
     array_push($json, array($glossary['Id'],$glossary['TitleEn'],$glossary['Title'],$glossary['Image']));
