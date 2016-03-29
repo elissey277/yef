@@ -16,7 +16,9 @@ while($video = mysqli_fetch_array($videos)) {
 }
 
 $allvideos = mysqli_query($db,
-    "SELECT videos.Id FROM videos")
+    "SELECT videos.Id FROM videos
+        INNER JOIN videosliked ON videos.Id = videosliked.VideoId
+        WHERE videosliked.UserId = ".$_POST["user"])
 or die(mysql_error());
 
 array_push($json, ceil(mysqli_num_rows($allvideos)/$perPage));

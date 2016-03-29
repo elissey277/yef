@@ -16,7 +16,9 @@ while($text = mysqli_fetch_array($texts)) {
 }
 
 $alltexts = mysqli_query($db,
-    "SELECT texts.Id FROM texts")
+    "SELECT texts.Id FROM texts
+        INNER JOIN textsliked ON texts.Id = textsliked.TextId
+        WHERE textsliked.UserId = ".$_POST["user"]."")
 or die(mysql_error());
 
 array_push($json, ceil(mysqli_num_rows($alltexts)/$perPage));

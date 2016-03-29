@@ -51,7 +51,9 @@ var titles = [
         'search-search': "Search",
         'search-reset': "Reset",
         'access-denied': "<b>Access denied!</b><br>Only authorized users can view this page.<br>Please authorize or register.",
-        'sign': "Sign Up"
+        'sign': "Sign Up",
+        'add-word': "Add to Dictionary",
+        'remove-word': "Delete from Dictionary"
     },
     {
         'button-all': "Все",
@@ -62,7 +64,9 @@ var titles = [
         'search-search': "Поиск",
         'search-reset': "Сброс",
         'access-denied': "<b>Доступ запрещен!</b><br>Только авторизированные пользователи могут просматривать данную страницу.<br>Пожалуйста, авторизируйтесь или зарегистрируйтесь.",
-        'sign': "Регистрация"
+        'sign': "Регистрация",
+        'add-word': "Добавить в Словарь",
+        'remove-word': "Удалить из Словаря"
     }
 ];
 
@@ -115,9 +119,9 @@ function getHeader(language){
                             '</li>'+
                             '<li class="item"><a class="menu-text">'+menu[language]['menu-vocabulary']+'</a>'+
                                 '<ul>'+
-                                    '<li><a href="http://'+location.hostname+'/vocabulary/glossaries" class="menu-text">'+menu[language]['menu-glossary']+'</a></li>'+
-                                    '<li><a href="http://'+location.hostname+'/vocabulary/synonyms" class="menu-text">'+menu[language]['menu-synonyms']+'</a></li>'+
-                                    '<li><a href="http://'+location.hostname+'/vocabulary/differences" class="menu-text">'+menu[language]['menu-differences']+'</a></li>';
+                                    '<li><a href="http://'+location.hostname+'/vocabulary/glossaries/#all?page=1" class="menu-text">'+menu[language]['menu-glossary']+'</a></li>'+
+                                    '<li><a href="http://'+location.hostname+'/vocabulary/synonyms/#all?page=1" class="menu-text">'+menu[language]['menu-synonyms']+'</a></li>'+
+                                    '<li><a href="http://'+location.hostname+'/vocabulary/differences/#all?page=1" class="menu-text">'+menu[language]['menu-differences']+'</a></li>';
     if(isAuthorized()) {
         header +=                   '<li><a href="http://' + location.hostname + '/vocabulary/dictionary" class="menu-text">' + menu[language]['menu-dictionary'] + '</a></li>' +
                                     '<li><a href="http://' + location.hostname + '/vocabulary/testing" class="menu-text">' + menu[language]['menu-testing'] + '</a></li>';
@@ -137,7 +141,7 @@ function getHeader(language){
     header +=               '<li class="item"><a class="menu-text">'+menu[language]['menu-library']+'</a>'+
                                 '<ul>'+
                                     '<li><a href="http://'+location.hostname+'/library/texts/#all?page=1" class="menu-text">'+menu[language]['menu-texts']+'</a></li>'+
-                                    '<li><a href="http://'+location.hostname+'/library/videos" class="menu-text">'+menu[language]['menu-videos']+'</a></li>'+
+                                    '<li><a href="http://'+location.hostname+'/library/videos/#all?page=1" class="menu-text">'+menu[language]['menu-videos']+'</a></li>'+
                                 '</ul>'+
                             '</li>';
     if(isAuthorized()) {

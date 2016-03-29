@@ -1,11 +1,16 @@
 <?php
 include '../../../config.php';
 $perPage = 10;
+if($_POST['language']==0){
+    $lang = 1;
+} else {
+    $lang = $_POST['language'];
+}
 // search all read
 $allliked = mysqli_query($db,
-    "SELECT texts.Id FROM texts
-        INNER JOIN textsliked ON texts.Id = textsliked.TextId
-        WHERE textsliked.UserId = ".$_POST["user"])
+    "SELECT glossaries.Id FROM glossaries
+        INNER JOIN glossariesliked ON glossaries.Id = glossariesliked.GlossaryId
+        WHERE glossariesliked.UserId = ".$_POST["user"])
 or die(mysql_error());
 $inliked = '';
 $inliked .= '(';
@@ -19,15 +24,15 @@ for($i=0;$i<mysqli_num_rows($allliked);$i++){
 $inliked .= ')';
 // search recommendations by liked
 $likedrecs = mysqli_query($db,
-    "SELECT textsrecommended.Text2Id as Id FROM textsrecommended
-	  INNER JOIN textsliked ON textsliked.TextId = textsrecommended.Text1Id
-        WHERE textsliked.UserId = ".$_POST["user"]." AND textsrecommended.Text2Id NOT IN ".$inliked)
+    "SELECT glossariesrecommended.Glossary2Id as Id FROM glossariesrecommended
+	  INNER JOIN glossariesliked ON glossariesliked.GlossaryId = glossariesrecommended.Glossary1Id
+        WHERE glossariesliked.UserId = ".$_POST["user"]." AND glossariesrecommended.Glossary2Id NOT IN ".$inliked)
 or die(mysql_error());
 // search recommendations by read
 $readrecs = mysqli_query($db,
-    "SELECT textsrecommended.Text2Id as Id FROM textsrecommended
-	  INNER JOIN textsread ON textsread.TextId = textsrecommended.Text1Id
-        WHERE textsread.UserId = ".$_POST["user"]." AND textsrecommended.Text2Id NOT IN ".$inliked)
+    "SELECT glossariesrecommended.Glossary2Id as Id FROM glossariesrecommended
+	  INNER JOIN glossariesread ON glossariesread.GlossaryId = glossariesrecommended.Glossary2Id
+        WHERE glossariesread.UserId = ".$_POST["user"]." AND glossariesrecommended.Glossary2Id NOT IN ".$inliked)
 or die(mysql_error());
 //create complete list of recommendations
 $reclist = array();
@@ -51,13 +56,12 @@ usort($reclist, "cmp");
 
 $json = array();
 for($i=($_POST['page']-1)*$perPage;$i<count($reclist)&&$i<$_POST['page']*$perPage;$i++){
-    $texts = mysqli_query($db,
-        "SELECT texts.Id, texts.Title".$_POST["language"]." as Title, texts.Difficulty, textscategories.Title".$_POST["language"]." as Category, textscategories.Image FROM texts
-            INNER JOIN textscategories ON texts.CategoryId = textscategories.Id
-            WHERE texts.Id = ".$reclist[$i][0])
+    $glossaries = mysqli_query($db,
+        "SELECT Id, Title0 as TitleEn, Title".$lang." as Title, Image FROM glossaries
+            WHERE glossaries.Id = ".$reclist[$i][0])
     or die(mysql_error());
-    $text = mysqli_fetch_array($texts);
-    array_push($json, array($text['Id'],$text['Title'],$text['Difficulty'],$text['Category'],$text['Image']));
+    $glossary = mysqli_fetch_array($glossaries);
+    array_push($json, array($glossary['Id'],$glossary['TitleEn'],$glossary['Title'],$glossary['Image']));
 }
 
 $json = array_reverse($json);
