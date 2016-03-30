@@ -279,9 +279,9 @@ function unlike(){
 }
 
 function clearSearchParameters(){
-    $.cookie('searchVideos',JSON.stringify({'title':'','difficulty':0,'category':0}),{path:'/'});
+    $.cookie('searchVideos',JSON.stringify({'title':'','difficulty':0,'category':0}));
 }
 
 function setSearchParameters(title,difficulty,category){
-    $.cookie('searchVideos',JSON.stringify({'title':title,'difficulty':difficulty,'category':category}),{path:'/'});
+    $.cookie('searchVideos',JSON.stringify({'title':title,'difficulty':difficulty,'category':category}));
 }

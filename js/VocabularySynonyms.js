@@ -239,9 +239,9 @@ function unlike(){
 }
 
 function clearSearchParameters(){
-    $.cookie('searchSynonyms',JSON.stringify({'title':''}),{path:'/'});
+    $.cookie('searchSynonyms',JSON.stringify({'title':''}));
 }
 
 function setSearchParameters(title){
-    $.cookie('searchSynonyms',JSON.stringify({'title':title}),{path:'/'});
+    $.cookie('searchSynonyms',JSON.stringify({'title':title}));
 }

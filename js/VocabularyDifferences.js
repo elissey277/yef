@@ -1,11 +1,11 @@
-var vocabularyGlossaries = [
+var vocabularyDifferences = [
     {
-        'page-header': "Glossaries",
-        'not-found': "Glossaries are not found."
+        'page-header': "Differences",
+        'not-found': "Differences are not found."
     },
     {
-        'page-header': "Глоссарии",
-        'not-found': "Глоссарии не найдены."
+        'page-header': "Различия",
+        'not-found': "Различия не найдены."
     }
 ];
 
@@ -32,7 +32,7 @@ function contentAll(language,divContent) {
     contentTabs(language,divContent,1);
     $.ajax({
         type: "POST",
-        url: "../../ajax/vocabulary/glossaries/getGlossariesList.php",
+        url: "../../ajax/vocabulary/differences/getDifferencesList.php",
         data: "language=" + language + "&page=" + getParam('page'),
         success: function (data) {
             divContent.innerHTML += contentList(language,JSON.parse(data),'all');
@@ -46,7 +46,7 @@ function contentLiked(language,divContent) {
         contentTabs(language, divContent, 2);
         $.ajax({
             type: "POST",
-            url: "../../ajax/vocabulary/glossaries/getGlossariesLikedList.php",
+            url: "../../ajax/vocabulary/differences/getDifferencesLikedList.php",
             data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
             success: function (data) {
                 divContent.innerHTML += contentList(language, JSON.parse(data), 'liked');
@@ -63,7 +63,7 @@ function contentRecommended(language,divContent) {
         contentTabs(language,divContent,3);
         $.ajax({
             type: "POST",
-            url: "../../ajax/vocabulary/glossaries/getGlossariesRecommendedList.php",
+            url: "../../ajax/vocabulary/differences/getDifferencesRecommendedList.php",
             data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
             success: function (data) {
                 if(data == '') {
@@ -82,12 +82,12 @@ function contentRecommended(language,divContent) {
 function contentSearch(language,divContent) {
     contentHeader(language,divContent);
     contentTabs(language,divContent,4);
-    var searchParameters = JSON.parse($.cookie('searchGlossaries'));
+    var searchParameters = JSON.parse($.cookie('searchDifferences'));
     divContent.innerHTML += '<div id="search-panel" style="margin: 10px 0"></div>';
     contentSearchPanel(language,searchParameters,document.getElementById('search-panel'));
     $.ajax({
         type: "POST",
-        url: "../../ajax/vocabulary/glossaries/getGlossariesSearchList.php",
+        url: "../../ajax/vocabulary/differences/getDifferencesSearchList.php",
         data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page') + "&title=" + searchParameters["title"],
         success: function (data) {
             divContent.innerHTML += contentList(language,JSON.parse(data),'search');
@@ -118,7 +118,7 @@ function contentId(language,divContent) {
     }
     $.ajax({
         type: "POST",
-        url: "../../ajax/vocabulary/glossaries/getGlossary.php",
+        url: "../../ajax/vocabulary/differences/getDifferences.php",
         data: "language=" + language + "&id=" + getParam('id') + "&user=" + user,
         success: function (data) {
             var item = JSON.parse(data);
@@ -137,7 +137,7 @@ function defaultTab(language,divContent) {
 }
 
 function contentHeader(language,divContent) {
-    divContent.innerHTML += '<p class="page-header">'+vocabularyGlossaries[language]["page-header"]+'</p>';
+    divContent.innerHTML += '<p class="page-header">'+vocabularyDifferences[language]["page-header"]+'</p>';
 }
 
 function contentTabs(language,divContent,activeTab) {
@@ -178,7 +178,7 @@ function contentList(language,items,link) {
         cont += '</table>';
         cont += getPages(items[items.length-1],getParam('page'),link);
     } else {
-        cont += '<p class="not-found-text">'+vocabularyGlossaries[language]['not-found']+'</p>'
+        cont += '<p class="not-found-text">'+vocabularyDifferences[language]['not-found']+'</p>'
     }
     return cont;
 }
@@ -192,8 +192,11 @@ function contentItem(language,items) {
         cont += '<tr>' +
         '<td><img class="audio-image" onclick="playAudio(\'' + items[i][4] + '\')" src="http://' + location.hostname + '/images/icons/audio.png"></td>' +
         '<td><img class="list-image" src="http://' + location.hostname + items[i][3] + '"></td>' +
-        '<td><p class="page-text" style="width: 150px; max-width: 250px; margin-right: 10px">' + items[i][1] + '</p></td>' +
-        '<td><p class="page-text" style="width: 150px; max-width: 250px; margin-right: 10px">' + items[i][2] + '</p></td>';
+        '<td><p class="page-text" style="width: auto; max-width: 150px; margin-right: 20px">' + items[i][1] + '</p></td>';
+        if(i==1){
+            cont += '<td rowspan="'+(items.length-1)+'"><p class="page-text" style="width: auto; max-width: 150px; margin-right: 20px">' + items[0][2] + '</p></td>';
+        }
+        cont += '<td><p class="page-text" style="width: 250px; max-width: 300px; margin-right: 10px">' + items[i][6] + '</p></td>';
         if(isAuthorized()) {
             if (items[i][5] == null) {
                 cont += '<td align="center"><div id="action' + items[i][0] + '"><p class="text-action" onclick="addWord(' + language + ',' + items[i][0] + ')">' + titles[language]['add-word'] + '</p></div></td>';
@@ -218,7 +221,7 @@ function like(){
     updateLastActivity();
     $.ajax({
         type: "POST",
-        url: "../../ajax/vocabulary/glossaries/likeGlossary.php",
+        url: "../../ajax/vocabulary/differences/likeDifferences.php",
         data: "id=" + getParam('id') + "&user=" + $.cookie('user'),
         success: function (data) {
             document.getElementById("like").innerHTML = '<input type="button" class="liked" value="'+data+' &#10084;" onclick="unlike()">';
@@ -230,7 +233,7 @@ function unlike(){
     updateLastActivity();
     $.ajax({
         type: "POST",
-        url: "../../ajax/vocabulary/glossaries/unlikeGlossary.php",
+        url: "../../ajax/vocabulary/differences/unlikeDifferences.php",
         data: "id=" + getParam('id') + "&user=" + $.cookie('user'),
         success: function (data) {
             document.getElementById("like").innerHTML = '<input type="button" class="not-liked" value="'+data+' &#10084;" onclick="like()">';
@@ -239,9 +242,9 @@ function unlike(){
 }
 
 function clearSearchParameters(){
-    $.cookie('searchGlossaries',JSON.stringify({'title':''}));
+    $.cookie('searchDifferences',JSON.stringify({'title':''}));
 }
 
 function setSearchParameters(title){
-    $.cookie('searchGlossaries',JSON.stringify({'title':title}));
+    $.cookie('searchDifferences',JSON.stringify({'title':title}));
 }

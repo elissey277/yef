@@ -14,7 +14,7 @@ function getParam(param) {
 
 function checkLanguage(){
     if($.cookie('language') == null && $.cookie('language') == undefined) {
-        $.cookie('language',1);
+        $.cookie('language',1,{path: '/'});
     }
 }
 

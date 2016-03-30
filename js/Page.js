@@ -172,7 +172,7 @@ function getFooter(language){
 
 function selectLang(language) {
     if($.cookie('language')!=language) {
-        $.cookie('language', language);
+        $.cookie('language', language, {path: '/'});
         document.getElementById("div-header").innerHTML = getHeader($.cookie('language'));
         if(!isAuthorized()) {
             document.getElementById("reg-button").value = titles[language]['sign'];

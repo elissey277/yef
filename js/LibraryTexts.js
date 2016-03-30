@@ -278,9 +278,9 @@ function unlike(){
 }
 
 function clearSearchParameters(){
-    $.cookie('searchTexts',JSON.stringify({'title':'','difficulty':0,'category':0}),{path:'/'});
+    $.cookie('searchTexts',JSON.stringify({'title':'','difficulty':0,'category':0}));
 }
 
 function setSearchParameters(title,difficulty,category){
-    $.cookie('searchTexts',JSON.stringify({'title':title,'difficulty':difficulty,'category':category}),{path:'/'});
+    $.cookie('searchTexts',JSON.stringify({'title':title,'difficulty':difficulty,'category':category}));
 }
