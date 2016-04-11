@@ -5,19 +5,18 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c8d16d90-f1e2-4736-93a7-17af6f64108c" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Advice.js" afterPath="$PROJECT_DIR$/js/Advice.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/js/VocabularyIdioms.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsLikedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsRecommendedList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsSearchList.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/vocabulary/idioms/index.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/likeIdiom.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/ajax/vocabulary/idioms/unlikeIdiom.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/js/Page.js" afterPath="$PROJECT_DIR$/js/Page.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/advice/getAdviceList.php" afterPath="$PROJECT_DIR$/ajax/advice/getAdviceList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/vocabulary/differences/getDifferencesList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/differences/getDifferencesList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/vocabulary/differences/getDifferencesSearchList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/differences/getDifferencesSearchList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesSearchList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesSearchList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsSearchList.php" afterPath="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsSearchList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" afterPath="$PROJECT_DIR$/ajax/library/texts/getTextsSearchList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/videos/getVideosList.php" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosList.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php" afterPath="$PROJECT_DIR$/ajax/library/videos/getVideosSearchList.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/differences/index.html" afterPath="$PROJECT_DIR$/vocabulary/differences/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/vocabulary/synonyms/index.html" afterPath="$PROJECT_DIR$/vocabulary/synonyms/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="your-english-friend.com.iws" />
@@ -63,7 +62,64 @@
     <favorites_list name="your-english-friend.com" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="VocabularyIdioms.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/js/VocabularyIdioms.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.4551282" vertical-offset="1586" max-vertical-offset="2465">
+              <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
+              <folding>
+                <element signature="e#23#204#0" expanded="false" />
+                <element signature="n#!!block;n#contentSearch#0" expanded="false" />
+                <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
+                <element signature="n#!!block;n#contentId#0" expanded="false" />
+                <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+                <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+                <element signature="n#!!block;n#like#0" expanded="false" />
+                <element signature="n#!!block;n#unlike#0" expanded="false" />
+                <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
+                <marker date="1460368497172" expanded="false" signature="2824:2838" placeholder="..." />
+                <marker date="1460368497172" expanded="true" signature="8043:8055" placeholder="..." />
+                <marker date="1460368497172" expanded="true" signature="8088:8098" placeholder="..." />
+                <marker date="1460368497172" expanded="false" signature="8172:8182" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getIdiom.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiom.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-11.769231" vertical-offset="102" max-vertical-offset="884">
+              <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+              <folding>
+                <marker date="1460368434977" expanded="true" signature="154:252" placeholder="SELECT UserI..idiomsliked..." />
+                <marker date="1460368434977" expanded="true" signature="361:427" placeholder="SELECT UserI..idiomsliked..." />
+                <marker date="1460368434977" expanded="true" signature="1439:1554" placeholder="SELECT UserI..synonymsread..." />
+                <marker date="1460368434977" expanded="true" signature="1658:1755" placeholder="INSERT INTO ..." />
+                <marker date="1460368434977" expanded="true" signature="1825:1960" placeholder="UPDATE synon..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="getGlossary.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossary.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-7.3076925" vertical-offset="286" max-vertical-offset="1037">
+              <caret line="28" column="155" selection-start-line="28" selection-start-column="125" selection-end-line="28" selection-end-column="155" />
+              <folding>
+                <marker date="1459207863700" expanded="true" signature="154:260" placeholder="SELECT UserI..glossariesliked..." />
+                <marker date="1459207863700" expanded="true" signature="369:443" placeholder="SELECT UserI..glossariesliked..." />
+                <marker date="1459207863700" expanded="true" signature="1701:1828" placeholder="SELECT UserI..glossariesread..." />
+                <marker date="1459207863700" expanded="true" signature="1932:2035" placeholder="INSERT INTO ..." />
+                <marker date="1459207863700" expanded="true" signature="2105:2254" placeholder="UPDATE gloss..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -76,15 +132,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/library/videos/index.html" />
-        <option value="$PROJECT_DIR$/ajax/auth-reg/canBeRestored.php" />
-        <option value="$PROJECT_DIR$/css/landing.css" />
-        <option value="$PROJECT_DIR$/index.html" />
-        <option value="$PROJECT_DIR$/ajax/auth-reg/isCorrectCode.php" />
-        <option value="$PROJECT_DIR$/ajax/auth-reg/changePassword.php" />
-        <option value="$PROJECT_DIR$/js/RegAuth.js" />
-        <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/likeGlossaries.php" />
-        <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/unlikeGlossaries.php" />
         <option value="$PROJECT_DIR$/ajax/library/texts/getTextsLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/library/videos/getVideosLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesLikedList.php" />
@@ -94,13 +141,11 @@
         <option value="$PROJECT_DIR$/ajax/vocabulary/removeWord.php" />
         <option value="$PROJECT_DIR$/js/Vocabulary.js" />
         <option value="$PROJECT_DIR$/vocabulary/glossaries/index.html" />
-        <option value="$PROJECT_DIR$/vocabulary/synonyms/index.html" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/unlikeSynonyms.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/likeSynonyms.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsLikedList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesRecommendedList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonyms.php" />
-        <option value="$PROJECT_DIR$/vocabulary/differences/index.html" />
         <option value="$PROJECT_DIR$/js/Landing.js" />
         <option value="$PROJECT_DIR$/js/Main.js" />
         <option value="$PROJECT_DIR$/js/LibraryTexts.js" />
@@ -112,7 +157,6 @@
         <option value="$PROJECT_DIR$/ajax/vocabulary/differences/unlikeDifferences.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/differences/getDifferences.php" />
         <option value="$PROJECT_DIR$/js/VocabularyDifferences.js" />
-        <option value="$PROJECT_DIR$/js/Page.js" />
         <option value="$PROJECT_DIR$/js/Advice.js" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsRecommendedList.php" />
@@ -127,6 +171,18 @@
         <option value="$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesSearchList.php" />
         <option value="$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsSearchList.php" />
         <option value="$PROJECT_DIR$/js/VocabularySynonyms.js" />
+        <option value="$PROJECT_DIR$/js/Page.js" />
+        <option value="$PROJECT_DIR$/vocabulary/synonyms/index.html" />
+        <option value="$PROJECT_DIR$/vocabulary/differences/index.html" />
+        <option value="$PROJECT_DIR$/vocabulary/idioms/index.html" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsList.php" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/unlikeIdiom.php" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/likeIdiom.php" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsLikedList.php" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsSearchList.php" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsRecommendedList.php" />
+        <option value="$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiom.php" />
+        <option value="$PROJECT_DIR$/js/VocabularyIdioms.js" />
       </list>
     </option>
   </component>
@@ -206,6 +262,60 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="vocabulary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idioms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vocabulary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="glossaries" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vocabulary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="differences" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -242,6 +352,28 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="www" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ajax" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="vocabulary" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="idioms" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -261,10 +393,10 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\synonyms" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\vocabulary" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\vocabulary\synonyms" />
       <recent name="C:\WebServers\home\your-english-friend.com\www\js" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\auth-reg" />
-      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\grammar" />
+      <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\vocabulary\synonyms" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\WebServers\home\your-english-friend.com\www\ajax\chat-messages\messages" />
@@ -565,20 +697,27 @@
       <option name="project" value="LOCAL" />
       <updated>1459377959745</updated>
     </task>
-    <option name="localTasksCounter" value="42" />
+    <task id="LOCAL-00042" summary="Other bugfixes and improvements">
+      <created>1460362485941</created>
+      <option name="number" value="00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1460362485941</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="40" y="39" width="1534" height="773" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328722" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18445323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.18445323" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -587,7 +726,6 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32874617" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -609,7 +747,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="Новый лендинг + часть мобильного лендинга (дополнение)" />
     <MESSAGE value="Мобильная версия" />
     <MESSAGE value="Масштабируемость" />
     <MESSAGE value="Меню, многоязычность, чат, новая структура" />
@@ -634,107 +771,16 @@
     <MESSAGE value="Improvements in glossaries" />
     <MESSAGE value="Implemented Synonyms&#10;Other bugfixes" />
     <MESSAGE value="Implemented Differences&#10;Other bugfixes and improvements" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented Differences&#10;Other bugfixes and improvements" />
+    <MESSAGE value="Other bugfixes and improvements" />
+    <option name="LAST_COMMIT_MESSAGE" value="Other bugfixes and improvements" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="47" />
+      <option name="time" value="50" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdviceLikedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="600">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/library/texts/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.28333333" vertical-offset="34" max-vertical-offset="833">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$APPLICATION_HOME_DIR$/plugins/php/lib/php.jar!/com/jetbrains/php/lang/psi/stubs/data/standard_8.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.34666666" vertical-offset="16146" max-vertical-offset="18734">
-          <caret line="962" column="9" selection-start-line="962" selection-start-column="9" selection-end-line="962" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesLikedList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.255" vertical-offset="0" max-vertical-offset="600">
-          <caret line="9" column="58" selection-start-line="9" selection-start-column="58" selection-end-line="9" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/library/texts/getText.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14166667" vertical-offset="102" max-vertical-offset="731">
-          <caret line="11" column="22" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/chat/messages/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.765" vertical-offset="1326" max-vertical-offset="2754">
-          <caret line="105" column="33" selection-start-line="104" selection-start-column="20" selection-end-line="105" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/css/template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="2937" max-vertical-offset="5950">
-          <caret line="194" column="0" selection-start-line="194" selection-start-column="0" selection-end-line="194" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossary.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.14480409" vertical-offset="0" max-vertical-offset="1037">
-          <caret line="5" column="31" selection-start-line="5" selection-start-column="31" selection-end-line="5" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/removeWord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="374">
-          <caret line="15" column="120" selection-start-line="15" selection-start-column="120" selection-end-line="15" selection-end-column="120" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/addWord.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537" vertical-offset="0" max-vertical-offset="374">
-          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Vocabulary.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4760">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vocabulary/glossaries/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.05666667" vertical-offset="0" max-vertical-offset="850">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="79" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/synonyms/unlikeSynonyms.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="289">
-          <caret line="3" column="30" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/vocabulary/synonyms/likeSynonyms.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.22666667" vertical-offset="0" max-vertical-offset="600">
@@ -746,6 +792,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-15.692307" vertical-offset="0" max-vertical-offset="612">
           <caret line="24" column="74" selection-start-line="24" selection-start-column="74" selection-end-line="24" selection-end-column="74" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -781,13 +828,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.57921636" vertical-offset="306" max-vertical-offset="1054">
           <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/vocabulary/synonyms/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.5384617" vertical-offset="0" max-vertical-offset="867">
-          <caret line="10" column="8" selection-start-line="10" selection-start-column="8" selection-end-line="14" selection-end-column="6" />
           <folding />
         </state>
       </provider>
@@ -834,14 +874,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/LibraryVideos.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.80587274" vertical-offset="4351" max-vertical-offset="4964">
-          <caret line="285" column="103" selection-start-line="285" selection-start-column="103" selection-end-line="285" selection-end-column="103" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/vocabulary/differences/getDifferencesRecommendedList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.5183333" vertical-offset="692" max-vertical-offset="1547">
@@ -877,19 +909,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/vocabulary/differences/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39666668" vertical-offset="0" max-vertical-offset="867">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
-          <folding>
-            <element signature="n#style#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#0;n#tr#0;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#td#1;n#tr#1;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#tr#2;n#table#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.111292966" vertical-offset="0" max-vertical-offset="3162">
@@ -911,43 +930,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/js/Advice.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.54647434" vertical-offset="934" max-vertical-offset="1581">
-          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
-          <folding>
-            <element signature="e#13#194#0" expanded="false" />
-            <element signature="n#!!block;n#updateContent#0" expanded="false" />
-            <element signature="n#!!block;n#contentAll#0" expanded="false" />
-            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
-            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
-            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
-            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
-            <element signature="n#!!block;n#like#0" expanded="false" />
-            <element signature="n#!!block;n#unlike#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/js/Page.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.42700157" vertical-offset="0" max-vertical-offset="637">
-          <caret line="193" column="1" selection-start-line="193" selection-start-column="1" selection-end-line="193" selection-end-column="1" />
-          <folding>
-            <element signature="e#11#1321#0" expanded="false" />
-            <element signature="e#1337#2424#0" expanded="false" />
-            <element signature="n#!!block;n#loadPage#0" expanded="false" />
-            <element signature="n#!!block;n#getTitle#0" expanded="false" />
-            <element signature="n#!!block;n#getHeader#0" expanded="false" />
-            <element signature="n#!!block;n#getAds#0" expanded="false" />
-            <element signature="n#!!block;n#getFooter#0" expanded="false" />
-            <element signature="n#!!block;n#selectLang#0" expanded="false" />
-            <element signature="n#!!block;n#updateLastActivity#0" expanded="false" />
-            <marker date="1459507353897" expanded="false" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/ajax/vocabulary/synonyms/getSynonymsRecommendedList.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.48608837" vertical-offset="927" max-vertical-offset="1564">
@@ -965,16 +947,6 @@
         <state vertical-scroll-proportion="0.111292966" vertical-offset="0" max-vertical-offset="611">
           <caret line="4" column="22" selection-start-line="4" selection-start-column="22" selection-end-line="4" selection-end-column="22" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesList.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.2782324" vertical-offset="0" max-vertical-offset="611">
-          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-          <folding>
-            <marker date="1460361736145" expanded="true" signature="-1:-1" placeholder="SELECT gloss..glossaries..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1126,6 +1098,238 @@
             <marker date="1460362342782" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1460362342782" expanded="false" signature="-1:-1" placeholder="..." />
             <marker date="1460362342782" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7739403" vertical-offset="51" max-vertical-offset="1105">
+          <caret line="32" column="30" selection-start-line="32" selection-start-column="30" selection-end-line="32" selection-end-column="30" />
+          <folding>
+            <element signature="e#1403#2490#0" expanded="false" />
+            <element signature="n#!!block;n#loadPage#0" expanded="false" />
+            <element signature="n#!!block;n#getTitle#0" expanded="false" />
+            <element signature="n#!!block;n#getHeader#0" expanded="false" />
+            <element signature="n#!!block;n#getAds#0" expanded="false" />
+            <element signature="n#!!block;n#getFooter#0" expanded="false" />
+            <element signature="n#!!block;n#selectLang#0" expanded="false" />
+            <element signature="n#!!block;n#updateLastActivity#0" expanded="false" />
+            <marker date="1460362632148" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vocabulary/synonyms/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.695581" vertical-offset="153" max-vertical-offset="850">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vocabulary/glossaries/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.111292966" vertical-offset="102" max-vertical-offset="850">
+          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="5" selection-end-column="79" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vocabulary/differences/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.7790507" vertical-offset="102" max-vertical-offset="850">
+          <caret line="34" column="0" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/vocabulary/idioms/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08346972" vertical-offset="0" max-vertical-offset="850">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/LibraryVideos.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.12820514" vertical-offset="3932" max-vertical-offset="4964">
+          <caret line="236" column="4" selection-start-line="236" selection-start-column="4" selection-end-line="253" selection-end-column="16" />
+          <folding>
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+            <marker date="1459365603407" expanded="false" signature="-1:-1" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Advice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.54647434" vertical-offset="934" max-vertical-offset="1581">
+          <caret line="151" column="0" selection-start-line="151" selection-start-column="0" selection-end-line="151" selection-end-column="0" />
+          <folding>
+            <element signature="e#13#194#0" expanded="false" />
+            <element signature="n#!!block;n#updateContent#0" expanded="false" />
+            <element signature="n#!!block;n#contentAll#0" expanded="false" />
+            <element signature="n#!!block;n#contentRecommended#0" expanded="false" />
+            <element signature="n#!!block;n#defaultTab#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/unlikeIdiom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.230769" vertical-offset="0" max-vertical-offset="289">
+          <caret line="8" column="45" selection-start-line="8" selection-start-column="34" selection-end-line="8" selection-end-column="45" />
+          <folding>
+            <marker date="1460365177186" expanded="true" signature="-1:-1" placeholder="DELETE FROM ..." />
+            <marker date="1460365177186" expanded="true" signature="-1:-1" placeholder="SELECT UserI..idiomsliked..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/likeIdiom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.08346972" vertical-offset="0" max-vertical-offset="611">
+          <caret line="3" column="28" selection-start-line="3" selection-start-column="28" selection-end-line="3" selection-end-column="28" />
+          <folding>
+            <marker date="1460365192303" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1460365192303" expanded="true" signature="-1:-1" placeholder="SELECT UserI..idiomsliked..." />
+            <marker date="1460365192303" expanded="true" signature="-1:-1" placeholder="SELECT UserI..synonymsliked..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsLikedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.3617021" vertical-offset="0" max-vertical-offset="612">
+          <caret line="13" column="43" selection-start-line="13" selection-start-column="43" selection-end-line="13" selection-end-column="43" />
+          <folding>
+            <marker date="1460365752086" expanded="true" signature="-1:-1" placeholder="SELECT idiom..idioms..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsSearchList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.27659574" vertical-offset="35" max-vertical-offset="697">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsRecommendedList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="1.7806875" vertical-offset="0" max-vertical-offset="1564">
+          <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
+          <folding>
+            <marker date="1460366614320" expanded="true" signature="-1:-1" placeholder="SELECT idiom..idioms..." />
+            <marker date="1460366614320" expanded="true" signature="-1:-1" placeholder="SELECT idiom..idiomsrecommended..." />
+            <marker date="1460366614320" expanded="true" signature="-1:-1" placeholder="SELECT idiom..idiomsrecommended..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiomsList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.8846154" vertical-offset="0" max-vertical-offset="544">
+          <caret line="9" column="115" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="115" />
+          <folding>
+            <marker date="1460365026643" expanded="true" signature="-1:-1" placeholder="SELECT idiom..idioms..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/advice/getAdvice.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="731">
+          <caret line="20" column="103" selection-start-line="20" selection-start-column="86" selection-end-line="20" selection-end-column="103" />
+          <folding>
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesliked..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesliked..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="SELECT UserI..advicesread..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="INSERT INTO ..." />
+            <marker date="1458590792657" expanded="true" signature="-1:-1" placeholder="UPDATE advic..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossariesList.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.2782324" vertical-offset="0" max-vertical-offset="611">
+          <caret line="10" column="24" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <folding>
+            <marker date="1460361736145" expanded="true" signature="-1:-1" placeholder="SELECT gloss..glossaries..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/glossaries/getGlossary.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-7.3076925" vertical-offset="286" max-vertical-offset="1037">
+          <caret line="28" column="155" selection-start-line="28" selection-start-column="125" selection-end-line="28" selection-end-column="155" />
+          <folding>
+            <marker date="1459207863700" expanded="true" signature="154:260" placeholder="SELECT UserI..glossariesliked..." />
+            <marker date="1459207863700" expanded="true" signature="369:443" placeholder="SELECT UserI..glossariesliked..." />
+            <marker date="1459207863700" expanded="true" signature="1701:1828" placeholder="SELECT UserI..glossariesread..." />
+            <marker date="1459207863700" expanded="true" signature="1932:2035" placeholder="INSERT INTO ..." />
+            <marker date="1459207863700" expanded="true" signature="2105:2254" placeholder="UPDATE gloss..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/ajax/vocabulary/idioms/getIdiom.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.769231" vertical-offset="102" max-vertical-offset="884">
+          <caret line="24" column="42" selection-start-line="24" selection-start-column="42" selection-end-line="24" selection-end-column="42" />
+          <folding>
+            <marker date="1460368434977" expanded="true" signature="154:252" placeholder="SELECT UserI..idiomsliked..." />
+            <marker date="1460368434977" expanded="true" signature="361:427" placeholder="SELECT UserI..idiomsliked..." />
+            <marker date="1460368434977" expanded="true" signature="1439:1554" placeholder="SELECT UserI..synonymsread..." />
+            <marker date="1460368434977" expanded="true" signature="1658:1755" placeholder="INSERT INTO ..." />
+            <marker date="1460368434977" expanded="true" signature="1825:1960" placeholder="UPDATE synon..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/Vocabulary.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="624">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/VocabularyIdioms.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.4551282" vertical-offset="1586" max-vertical-offset="2465">
+          <caret line="190" column="16" selection-start-line="190" selection-start-column="16" selection-end-line="190" selection-end-column="16" />
+          <folding>
+            <element signature="e#23#204#0" expanded="false" />
+            <element signature="n#!!block;n#contentSearch#0" expanded="false" />
+            <element signature="n#!!block;n#contentSearchPanel#0" expanded="false" />
+            <element signature="n#!!block;n#contentId#0" expanded="false" />
+            <element signature="n#!!block;n#contentHeader#0" expanded="false" />
+            <element signature="n#!!block;n#contentTabs#0" expanded="false" />
+            <element signature="n#!!block;n#like#0" expanded="false" />
+            <element signature="n#!!block;n#unlike#0" expanded="false" />
+            <element signature="n#!!block;n#clearSearchParameters#0" expanded="false" />
+            <marker date="1460368497172" expanded="false" signature="2824:2838" placeholder="..." />
+            <marker date="1460368497172" expanded="true" signature="8043:8055" placeholder="..." />
+            <marker date="1460368497172" expanded="true" signature="8088:8098" placeholder="..." />
+            <marker date="1460368497172" expanded="false" signature="8172:8182" placeholder="..." />
           </folding>
         </state>
       </provider>

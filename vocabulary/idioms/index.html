@@ -3,12 +3,12 @@
 <script src="../../js/Main.js" type="text/javascript"></script>
 <script src="../../js/Page.js" type="text/javascript"></script>
 <script src="../../js/Vocabulary.js" type="text/javascript"></script>
-<script src="../../js/VocabularyDifferences.js" type="text/javascript"></script>
+<script src="../../js/VocabularyIdioms.js" type="text/javascript"></script>
 <script src="http://vk.com/js/api/openapi.js" type="text/javascript"></script>
 <script type="text/javascript">
     window.onload = function() {
         loadPage($.cookie('language'));
-        if($.cookie('searchDifferences') == null || $.cookie('searchDifferences') == 'null' || $.cookie('searchDifferences') == undefined){
+        if($.cookie('searchIdioms') == null || $.cookie('searchIdioms') == 'null' || $.cookie('searchIdioms') == undefined){
             clearSearchParameters();
         }
         updateContent($.cookie('language'),document.getElementById('div-content'));

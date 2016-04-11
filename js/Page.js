@@ -9,6 +9,7 @@ var menu = [
         'menu-glossary': "Glossaries",
         'menu-synonyms': "Synonyms",
         'menu-differences': "Differences",
+        'menu-idioms': "Idioms",
         'menu-dictionary': "Dictionary",
         'menu-testing': "Testing",
         'menu-chat': "Chat",
@@ -29,6 +30,7 @@ var menu = [
         'menu-glossary': "Глоссарии",
         'menu-synonyms': "Синонимы",
         'menu-differences': "Различия",
+        'menu-idioms': "Идиомы",
         'menu-dictionary': "Словарь",
         'menu-testing': "Тестирования",
         'menu-chat': "Общение",
@@ -121,7 +123,8 @@ function getHeader(language){
                                 '<ul>'+
                                     '<li><a href="http://'+location.hostname+'/vocabulary/glossaries/#all?page=1" class="menu-text">'+menu[language]['menu-glossary']+'</a></li>'+
                                     '<li><a href="http://'+location.hostname+'/vocabulary/synonyms/#all?page=1" class="menu-text">'+menu[language]['menu-synonyms']+'</a></li>'+
-                                    '<li><a href="http://'+location.hostname+'/vocabulary/differences/#all?page=1" class="menu-text">'+menu[language]['menu-differences']+'</a></li>';
+                                    '<li><a href="http://'+location.hostname+'/vocabulary/differences/#all?page=1" class="menu-text">'+menu[language]['menu-differences']+'</a></li>'+
+                                    '<li><a href="http://'+location.hostname+'/vocabulary/idioms/#all?page=1" class="menu-text">'+menu[language]['menu-idioms']+'</a></li>';
     if(isAuthorized()) {
         header +=                   '<li><a href="http://' + location.hostname + '/vocabulary/dictionary#all?page=1" class="menu-text">' + menu[language]['menu-dictionary'] + '</a></li>' +
                                     '<li><a href="http://' + location.hostname + '/vocabulary/testing" class="menu-text">' + menu[language]['menu-testing'] + '</a></li>';
