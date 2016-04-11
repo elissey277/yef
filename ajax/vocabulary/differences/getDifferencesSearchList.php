@@ -17,7 +17,7 @@ $differences = mysqli_query($db,
         INNER JOIN dictionary ON differenceswords.WordId = dictionary.Id
         WHERE ".$searchTitle."
         GROUP BY differences.Id
-        ORDER BY differences.Id ASC
+        ORDER BY TitleEn ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 $json = array();

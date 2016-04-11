@@ -25,7 +25,7 @@ $texts = mysqli_query($db,
     "SELECT texts.Id, texts.Title".$_POST["language"]." as Title, texts.Difficulty, textscategories.Title".$_POST["language"]." as Category, textscategories.Image FROM texts
         INNER JOIN textscategories ON texts.CategoryId = textscategories.Id
         WHERE ".$searchTitle." AND ".$searchDifficulty." AND ".$searchCategory."
-        ORDER BY texts.Id ASC
+        ORDER BY Title ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 

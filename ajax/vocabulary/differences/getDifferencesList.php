@@ -8,7 +8,7 @@ if($_POST['language']==0){
 }
 $differences = mysqli_query($db,
     "SELECT differences.Id, differences.Title0 as TitleEn, differences.Title".$lang." as Title, differences.Image FROM differences
-	    ORDER BY differences.Id ASC
+	    ORDER BY TitleEn ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 

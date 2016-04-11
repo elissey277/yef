@@ -149,14 +149,6 @@ function contentItem(language,item) {
     var cont = '';
     cont += '<table><tr><td><img class="advice-image" height="100" src="http://'+location.hostname+item[3]+'"></td>' +
     '<td><a class="page-title">'+item[1]+'</a></td></tr></table>'+'<p class="page-text">'+item[2]+'</p>';
-    cont += '<table>';
-    for (var i=1; i<items.length; i++) {
-        cont += '<tr>' +
-        '<td><img class="list-image" src="http://' + location.hostname + items[i][3] + '"></td>' +
-        '<td><p class="list-text" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + ' - ' + items[i][2] + '</p></td>' +
-        '</tr>';
-    }
-    cont += '</table>';
     if(isAuthorized()){
         if(item[4] == 0) {
             cont += '<div id="like"><input type="button" class="not-liked" value="'+item[5]+' &#10084;" onclick="like()"></div>';

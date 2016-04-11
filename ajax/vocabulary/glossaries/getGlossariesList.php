@@ -8,7 +8,7 @@ if($_POST['language']==0){
 }
 $glossaries = mysqli_query($db,
     "SELECT Id, Title0 as TitleEn, Title".$lang." as Title, Image FROM glossaries
-        ORDER BY glossaries.Id ASC
+        ORDER BY TitleEn ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 

@@ -9,7 +9,7 @@ if($_POST['language']==0){
 $synonyms = mysqli_query($db,
     "SELECT synonyms.Id, dictionary.Word0 as TitleEn, dictionary.Word".$lang." as Title, synonyms.Image FROM synonyms
 	    INNER JOIN dictionary ON dictionary.Id = synonyms.WordId
-        ORDER BY synonyms.Id ASC
+        ORDER BY TitleEn ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 

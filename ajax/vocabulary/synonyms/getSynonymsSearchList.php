@@ -18,7 +18,7 @@ $synonyms = mysqli_query($db,
         INNER JOIN dictionary as other ON synonymswords.WordId = other.Id
         WHERE ".$searchTitle."
         GROUP BY synonyms.Id
-        ORDER BY synonyms.Id ASC
+        ORDER BY TitleEn ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 $json = array();

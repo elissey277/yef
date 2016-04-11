@@ -123,7 +123,7 @@ function getHeader(language){
                                     '<li><a href="http://'+location.hostname+'/vocabulary/synonyms/#all?page=1" class="menu-text">'+menu[language]['menu-synonyms']+'</a></li>'+
                                     '<li><a href="http://'+location.hostname+'/vocabulary/differences/#all?page=1" class="menu-text">'+menu[language]['menu-differences']+'</a></li>';
     if(isAuthorized()) {
-        header +=                   '<li><a href="http://' + location.hostname + '/vocabulary/dictionary" class="menu-text">' + menu[language]['menu-dictionary'] + '</a></li>' +
+        header +=                   '<li><a href="http://' + location.hostname + '/vocabulary/dictionary#all?page=1" class="menu-text">' + menu[language]['menu-dictionary'] + '</a></li>' +
                                     '<li><a href="http://' + location.hostname + '/vocabulary/testing" class="menu-text">' + menu[language]['menu-testing'] + '</a></li>';
     }
     header+=                    '</ul>'+
@@ -167,7 +167,7 @@ function getAds(language){
 }
 
 function getFooter(language){
-    return 'Brave Raccoons &copy; 2015-2016';
+    return 'Your English Friend &copy; 2015-2016';
 }
 
 function selectLang(language) {

@@ -19,7 +19,7 @@ $glossaries = mysqli_query($db,
         INNER JOIN dictionary ON glossarieswords.WordId = dictionary.Id
         WHERE ".$searchTitle."
         GROUP BY glossaries.Id
-        ORDER BY glossaries.Id ASC
+        ORDER BY TitleEn ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 

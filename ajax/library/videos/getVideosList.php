@@ -4,7 +4,7 @@ $perPage = 10;
 $videos = mysqli_query($db,
     "SELECT videos.Id, videos.Title".$_POST["language"]." as Title, videos.Difficulty, videoscategories.Title".$_POST["language"]." as Category, videoscategories.Image FROM videos
         INNER JOIN videoscategories ON videos.CategoryId = videoscategories.Id
-        ORDER BY videos.Id ASC
+        ORDER BY Title ASC
         LIMIT ".(($_POST["page"]-1)*$perPage).", ".$perPage)
 or die(mysql_error());
 
