@@ -36,7 +36,8 @@ function signUp(){
                     success: function (data) {
                         sendEmailSignUp(document.getElementById("reg-email").value,document.getElementById("reg-name").value,document.getElementById("reg-password").value);
                         $.cookie("user",data,{path:'/'});
-                        document.location.href = '/grammar/rules';
+                        location.hash = '#rules?all';
+                        load();
                     }
                 });
             }
@@ -65,7 +66,8 @@ function signIn(){
                 document.getElementById("auth-error-msg").innerText = errorMessage;
             } else {
                 $.cookie("user",data,{path:'/'});
-                document.location.href = '/grammar/rules#all';
+                location.hash = '#rules?all';
+                load();
             }
         }
     });
@@ -154,7 +156,8 @@ function savePassword(){
             success: function (data) {
                 sendEmailChangePassword("email=" + document.getElementById("rest-email").value);
                 $.cookie("user",data,{path:'/'});
-                document.location.href = '/grammar/rules#all';
+                location.hash = '#rules?all';
+                load();
             }
         });
     }

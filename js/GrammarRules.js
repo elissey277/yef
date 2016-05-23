@@ -79,7 +79,7 @@ function contentId(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/grammar/rules/getRule.php",
-        data: "language=" + lang + "&id=" + getParam('id') + "&user=" + user,
+        data: "language=" + lang + "&id=" + getParam('id=') + "&user=" + user,
         success: function (data) {
             var item = JSON.parse(data);
             if(item[0] == null) {
@@ -104,13 +104,13 @@ function contentTabs(language,divContent,activeTab) {
     if(activeTab == 1){
         divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-all"]+'">';
     } else {
-        divContent.innerHTML += '<input onclick="document.location.hash = \'#all\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
+        divContent.innerHTML += '<input onclick="document.location.hash = \'#rules?all\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
     }
     if(isAuthorized()){
         if(activeTab == 2) {
             divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-liked"] + '">';
         } else {
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#rules?liked\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
         }
     }
 }
@@ -121,9 +121,9 @@ function contentList(language,items,link,hasHeaders) {
         cont += '<table style="width: 100%;">';
         for (var i=0; i<items.length; i++) {
             if(items[i][2]==1 && hasHeaders) {
-                cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px; font-weight: bold" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
+                cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px; font-weight: bold" onclick="document.location.hash = \'#rules?id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
             } else {
-                cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
+                cont += '<tr><td style="width: 300px"><p class="list-text" style="margin: 10px 0 0 20px" onclick="document.location.hash = \'#rules?id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td></tr>';
             }
         }
         cont += '</table>';

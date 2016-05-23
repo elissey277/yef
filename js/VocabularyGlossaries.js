@@ -19,6 +19,9 @@ function updateContent(language,divContent){
     } else if(getParam('recommended') != -1) {
         contentRecommended(language,divContent);
     } else if(getParam('search') != -1) {
+        if($.cookie('searchGlossaries') == null || $.cookie('searchGlossaries') == 'null' || $.cookie('searchGlossaries') == undefined){
+            clearSearchParameters();
+        }
         contentSearch(language,divContent);
     } else if(getParam('id') != -1) {
         contentId(language,divContent);
@@ -33,9 +36,9 @@ function contentAll(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/vocabulary/glossaries/getGlossariesList.php",
-        data: "language=" + language + "&page=" + getParam('page'),
+        data: "language=" + language + "&page=" + getParam('page='),
         success: function (data) {
-            divContent.innerHTML += contentList(language,JSON.parse(data),'all');
+            divContent.innerHTML += contentList(language,JSON.parse(data),'glossaries?all&');
         }
     });
 }
@@ -47,9 +50,9 @@ function contentLiked(language,divContent) {
         $.ajax({
             type: "POST",
             url: "../../ajax/vocabulary/glossaries/getGlossariesLikedList.php",
-            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
+            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page='),
             success: function (data) {
-                divContent.innerHTML += contentList(language, JSON.parse(data), 'liked');
+                divContent.innerHTML += contentList(language, JSON.parse(data), 'glossaries?liked&');
             }
         });
     } else {
@@ -64,14 +67,14 @@ function contentRecommended(language,divContent) {
         $.ajax({
             type: "POST",
             url: "../../ajax/vocabulary/glossaries/getGlossariesRecommendedList.php",
-            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
+            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page='),
             success: function (data) {
                 if(data == '') {
                     var items = [];
                 } else {
                     var items = JSON.parse(data);
                 }
-                divContent.innerHTML += contentList(language,items,'recommended');
+                divContent.innerHTML += contentList(language,items,'glossaries?recommended&');
             }
         });
     } else {
@@ -88,9 +91,9 @@ function contentSearch(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/vocabulary/glossaries/getGlossariesSearchList.php",
-        data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page') + "&title=" + searchParameters["title"],
+        data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page=') + "&title=" + searchParameters["title"],
         success: function (data) {
-            divContent.innerHTML += contentList(language,JSON.parse(data),'search');
+            divContent.innerHTML += contentList(language,JSON.parse(data),'glossaries?search&');
         }
     });
     if(document.getElementById('search-panel').innerHTML == ''){
@@ -119,7 +122,7 @@ function contentId(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/vocabulary/glossaries/getGlossary.php",
-        data: "language=" + language + "&id=" + getParam('id') + "&user=" + user,
+        data: "language=" + language + "&id=" + getParam('id=') + "&user=" + user,
         success: function (data) {
             var item = JSON.parse(data);
             if(item[0][0] == null) {
@@ -132,7 +135,7 @@ function contentId(language,divContent) {
 }
 
 function defaultTab(language,divContent) {
-    document.location.hash = '#all?page=1';
+    document.location.hash = '#glossaries?all&page=1';
     updateContent(language,divContent);
 }
 
@@ -144,24 +147,24 @@ function contentTabs(language,divContent,activeTab) {
     if(activeTab == 1){
         divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-all"]+'">';
     } else {
-        divContent.innerHTML += '<input onclick="document.location.hash = \'#all?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
+        divContent.innerHTML += '<input onclick="document.location.hash = \'#glossaries?all&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
     }
     if(isAuthorized()){
         if(activeTab == 2) {
             divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-liked"] + '">';
         } else {
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#glossaries?liked&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
         }
         if(activeTab == 3) {
             divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-recommended"] + '">';
         } else {
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#recommended?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-recommended"] + '">';
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#glossaries?recommended&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-recommended"] + '">';
         }
     }
     if(activeTab == 4){
         divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-search"]+'"></br>';
     } else {
-        divContent.innerHTML += '<input onclick="document.location.hash = \'#search?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-search"]+'"></br>';
+        divContent.innerHTML += '<input onclick="document.location.hash = \'#glossaries?search&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-search"]+'"></br>';
     }
 }
 
@@ -172,11 +175,11 @@ function contentList(language,items,link) {
         for (var i=0; i<items.length-1; i++) {
             cont += '<tr>' +
             '<td><img class="list-image" src="http://' + location.hostname + items[i][3] + '"></td>' +
-            '<td><p class="list-text" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + ' - ' + items[i][2] + '</p></td>' +
+            '<td><p class="list-text" onclick="document.location.hash = \'#glossaries?id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + ' - ' + items[i][2] + '</p></td>' +
             '</tr>';
         }
         cont += '</table>';
-        cont += getPages(items[items.length-1],getParam('page'),link);
+        cont += getPages(items[items.length-1],getParam('page='),link);
     } else {
         cont += '<p class="not-found-text">'+vocabularyGlossaries[language]['not-found']+'</p>'
     }

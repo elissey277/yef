@@ -24,6 +24,7 @@
 }
 .menu li {
     display: inline;
+    cursor: pointer;
 }
 .menu li a {
     float: left;

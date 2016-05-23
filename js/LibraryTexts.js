@@ -19,6 +19,9 @@ function updateContent(language,divContent){
     } else if(getParam('recommended') != -1) {
         contentRecommended(language,divContent);
     } else if(getParam('search') != -1) {
+        if($.cookie('searchTexts') == null || $.cookie('searchTexts') == 'null' || $.cookie('searchTexts') == undefined){
+            clearSearchParameters();
+        }
         contentSearch(language,divContent);
     } else if(getParam('id') != -1) {
         contentId(language,divContent);
@@ -33,9 +36,9 @@ function contentAll(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/library/texts/getTextsList.php",
-        data: "language=" + language + "&page=" + getParam('page'),
+        data: "language=" + language + "&page=" + getParam('page='),
         success: function (data) {
-            divContent.innerHTML += contentList(language,JSON.parse(data),'all');
+            divContent.innerHTML += contentList(language,JSON.parse(data),'texts?all&');
         }
     });
 }
@@ -47,9 +50,9 @@ function contentLiked(language,divContent) {
         $.ajax({
             type: "POST",
             url: "../../ajax/library/texts/getTextsLikedList.php",
-            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
+            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page='),
             success: function (data) {
-                divContent.innerHTML += contentList(language, JSON.parse(data), 'liked');
+                divContent.innerHTML += contentList(language, JSON.parse(data), 'texts?liked&');
             }
         });
     } else {
@@ -64,14 +67,14 @@ function contentRecommended(language,divContent) {
         $.ajax({
             type: "POST",
             url: "../../ajax/library/texts/getTextsRecommendedList.php",
-            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page'),
+            data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page='),
             success: function (data) {
                 if(data == '') {
                     var items = [];
                 } else {
                     var items = JSON.parse(data);
                 }
-                divContent.innerHTML += contentList(language,items,'recommended');
+                divContent.innerHTML += contentList(language,items,'texts?recommended&');
             }
         });
     } else {
@@ -88,10 +91,10 @@ function contentSearch(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/library/texts/getTextsSearchList.php",
-        data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page') +
+        data: "language=" + language + "&user=" + $.cookie('user') + "&page=" + getParam('page=') +
         "&title=" + searchParameters["title"] + "&difficulty=" + searchParameters["difficulty"] + "&category=" + searchParameters["category"],
         success: function (data) {
-            divContent.innerHTML += contentList(language,JSON.parse(data),'search');
+            divContent.innerHTML += contentList(language,JSON.parse(data),'texts?search&');
         }
     });
     if(document.getElementById('search-panel').innerHTML == ''){
@@ -163,7 +166,7 @@ function contentId(language,divContent) {
     $.ajax({
         type: "POST",
         url: "../../ajax/library/texts/getText.php",
-        data: "language=" + langTrns + "&id=" + getParam('id') + "&user=" + user,
+        data: "language=" + langTrns + "&id=" + getParam('id=') + "&user=" + user,
         success: function (data) {
             var item = JSON.parse(data);
             if(item[0] == null) {
@@ -176,7 +179,7 @@ function contentId(language,divContent) {
 }
 
 function defaultTab(language,divContent) {
-    document.location.hash = '#all?page=1';
+    document.location.hash = '#texts?all&page=1';
     updateContent(language,divContent);
 }
 
@@ -188,24 +191,24 @@ function contentTabs(language,divContent,activeTab) {
     if(activeTab == 1){
         divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-all"]+'">';
     } else {
-        divContent.innerHTML += '<input onclick="document.location.hash = \'#all?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
+        divContent.innerHTML += '<input onclick="document.location.hash = \'#texts?all&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-all"]+'">';
     }
     if(isAuthorized()){
         if(activeTab == 2) {
             divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-liked"] + '">';
         } else {
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#liked?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#texts?liked&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-liked"] + '">';
         }
         if(activeTab == 3) {
             divContent.innerHTML += '<input type="button" class="submenu-button-active" value="' + titles[language]["button-recommended"] + '">';
         } else {
-            divContent.innerHTML += '<input onclick="document.location.hash = \'#recommended?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-recommended"] + '">';
+            divContent.innerHTML += '<input onclick="document.location.hash = \'#texts?recommended&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="' + titles[language]["button-recommended"] + '">';
         }
     }
     if(activeTab == 4){
         divContent.innerHTML += '<input type="button" class="submenu-button-active" value="'+titles[language]["button-search"]+'"></br>';
     } else {
-        divContent.innerHTML += '<input onclick="document.location.hash = \'#search?page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-search"]+'"></br>';
+        divContent.innerHTML += '<input onclick="document.location.hash = \'#texts?search&page=1\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" type="button" class="submenu-button" value="'+titles[language]["button-search"]+'"></br>';
     }
 }
 
@@ -216,7 +219,7 @@ function contentList(language,items,link) {
         for (var i=0; i<items.length-1; i++) {
             cont += '<tr>' +
             '<td style="width: 50px"><img class="list-image" src="http://' + location.hostname + items[i][4] + '"></td>' +
-            '<td style="width: 300px"><p class="list-text" onclick="document.location.hash = \'#id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td>' +
+            '<td style="width: 300px"><p class="list-text" onclick="document.location.hash = \'#texts?id=' + items[i][0] + '\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">' + items[i][1] + '</p></td>' +
             '<td style="width: 70px" align="center"><p class="list-diff">';
             for(var j=0; j<items[i][2]; j++){
                 cont += '&#9733;'
@@ -226,7 +229,7 @@ function contentList(language,items,link) {
             '</tr>';
         }
         cont += '</table>';
-        cont += getPages(items[items.length-1],getParam('page'),link);
+        cont += getPages(items[items.length-1],getParam('page='),link);
     } else {
         cont += '<p class="not-found-text">'+libraryTexts[language]['not-found']+'</p>'
     }
