@@ -407,3 +407,12 @@ ul.menu li ul {
     font-size: 14px;
     color: #FF2F2F;
 }
+.photo-canvas {
+    width: 250px;
+    height: 250px;
+    border: 1px solid #0060B0;
+    background: #FFFFFF;
+}
+.canvas-drag {
+    background: #EEEEFF;
+}

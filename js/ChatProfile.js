@@ -33,7 +33,16 @@ var chatProfile = [
         'password-saved': "Password was saved.",
         'button-change-photo': "Change photo",
         'button-delete-photo': "Delete photo",
-        'button-confirm-delete': "Confirm deletion"
+        'button-confirm-delete': "Confirm deletion",
+        'button-cancel-delete': "Cancel deletion",
+        'english-level': "English level",
+        'english-level-1': "Beginner",
+        'english-level-2': "Elementary",
+        'english-level-3': "Pre-intermediate",
+        'english-level-4': "Intermediate",
+        'english-level-5': "Upper intermediate",
+        'english-level-6': "Advanced",
+        'edit-photo-note': "Drag new photo on the field.<br>Format: PNG, JPG, GIF.<br>Size >= 250px * 250px."
     },
     {
         'first-name': "Имя",
@@ -69,9 +78,19 @@ var chatProfile = [
         'password-saved': "Пароль был сохранен.",
         'button-change-photo': "Изменить фото",
         'button-delete-photo': "Удалить фото",
-        'button-confirm-delete': "Подтвердить удаление"
+        'button-confirm-delete': "Подтвердить удаление",
+        'button-cancel-delete': "Отменить удаление",
+        'english-level': "Уровень английского",
+        'english-level-1': "Beginner",
+        'english-level-2': "Elementary",
+        'english-level-3': "Pre-intermediate",
+        'english-level-4': "Intermediate",
+        'english-level-5': "Upper intermediate",
+        'english-level-6': "Advanced",
+        'edit-photo-note': "Перетащите новое фото на поле.<br>Формат: PNG, JPG, GIF.<br>Размер >= 250px * 250px."
     }
 ];
+var params = null;
 
 function updateContent(language,divContent){
     if(!isAuthorized()) {
@@ -116,7 +135,7 @@ function contentMyEdit(language,divContent) {
         success: function (data) {
             var item = JSON.parse(data);
             divContent.innerHTML += contentProfileEdit(language, item);
-            getEditActions(language, item);
+            getEditActions(language, item[0], 1);
         }
     });
 }
@@ -179,14 +198,6 @@ function contentProfile(language,item) {
     cont += '</tr>';
     cont += '<tr>';
         cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
-            cont += '<p class="page-text"><b>'+chatProfile[language]['language']+'</b></p>';
-        cont += '</td>';
-        cont += '<td style="text-align: left; vertical-align: top">';
-            cont += '<p class="page-text">'+item[5]+'</p>';
-        cont += '</td>';
-    cont += '</tr>';
-    cont += '<tr>';
-        cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
             cont += '<p class="page-text"><b>'+chatProfile[language]['gender']+'</b></p>';
         cont += '</td>';
         cont += '<td style="text-align: left; vertical-align: top">';
@@ -206,7 +217,23 @@ function contentProfile(language,item) {
             }
         cont += '</td>';
     cont += '</tr>';
-        cont += '<tr>';
+    cont += '<tr>';
+        cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
+            cont += '<p class="page-text"><b>'+chatProfile[language]['language']+'</b></p>';
+        cont += '</td>';
+        cont += '<td style="text-align: left; vertical-align: top">';
+            cont += '<p class="page-text">'+item[5]+'</p>';
+        cont += '</td>';
+    cont += '</tr>';
+    cont += '<tr>';
+        cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
+            cont += '<p class="page-text"><b>'+chatProfile[language]['english-level']+'</b></p>';
+        cont += '</td>';
+        cont += '<td style="text-align: left; vertical-align: top">';
+            cont += '<p class="page-text">' + chatProfile[language]['english-level-'+item[10]] + '</p>';
+        cont += '</td>';
+    cont += '</tr>';
+    cont += '<tr>';
         cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
             cont += '<p class="page-text"><b>'+chatProfile[language]['about-me']+'</b></p>';
         cont += '</td>';
@@ -220,21 +247,21 @@ function contentProfile(language,item) {
     cont += '<tr>';
     cont += '<td style="vertical-align: top" colspan="2">';
     cont += '<p class="page-title">'+chatProfile[language]['friends']+
-    ' <a onclick="location.hash = \'#friends?id='+item[0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">('+chatProfile[language]['view-all']+' '+item[10][item[10].length-1]+')</a>'+'</p>'
+    ' <a onclick="location.hash = \'#friends?id='+item[0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">('+chatProfile[language]['view-all']+' '+item[11][item[11].length-1]+')</a>'+'</p>'
     cont += '<div class="user-friends-div">';
-    for(var i=0; i<item[10].length-1; i++){
+    for(var i=0; i<item[11].length-1; i++){
         cont += '<div class="user-friend-div">';
-        if(item[10][i][1] == '') {
+        if(item[11][i][1] == '') {
             cont += '<img src="/images/photos/no-photo.png" style="width: 150px; height: 150px; border: 1px solid #0060B0"><br>';
         } else {
-            cont += '<img src="/images/photos/'+item[10][i][1]+'" style="width: 100px; height: 100px; border: 1px solid #0060B0"><br>';
+            cont += '<img src="/images/photos/'+item[11][i][1]+'" style="width: 100px; height: 100px; border: 1px solid #0060B0"><br>';
         }
         if(item[4] == null){
-            cont += '<a onclick="location.hash = \'#profile?id='+item[10][i][0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" class="friend-text">'+item[10][i][2]+'</a>'
+            cont += '<a onclick="location.hash = \'#profile?id='+item[11][i][0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" class="friend-text">'+item[11][i][2]+'</a>'
         } else {
-            cont += '<a onclick="location.hash = \'#profile?id='+item[10][i][0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" class="friend-text">'+item[10][i][2]+' '+item[10][i][3]+'</a>'
+            cont += '<a onclick="location.hash = \'#profile?id='+item[11][i][0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" class="friend-text">'+item[11][i][2]+' '+item[11][i][3]+'</a>'
         }
-        cont += '<div id="actions'+item[10][i][0]+'"></div>';
+        cont += '<div id="actions'+item[11][i][0]+'"></div>';
         cont += '</div>';
     }
     cont += '</div>';
@@ -253,12 +280,14 @@ function contentProfileEdit(language,item) {
     }
     cont += '<table>';
     cont += '<tr>';
-    cont += '<td style="vertical-align: top">';
+    cont += '<td style="vertical-align: top; width: 250px">';
+    cont += '<div id="photo">';
     if(item[2] == '') {
         cont += '<img src="/images/photos/no-photo.png" style="width: 250px; height: 250px; border: 1px solid #0060B0"><br>';
     } else {
         cont += '<img src="/images/photos/'+item[2]+'" style="width: 250px; height: 250px; border: 1px solid #0060B0"><br>';
     }
+    cont += '</div>';
     cont += '<div id="actions"></div>';
     cont += '</td>';
     cont += '<td>';
@@ -292,17 +321,7 @@ function contentProfileEdit(language,item) {
             cont += '<p class="page-text"><b>'+chatProfile[language]['date-of-birth']+'</b></p>';
         cont += '</td>';
         cont += '<td style="text-align: left; vertical-align: top">';
-            cont += '<p class="page-text"><input id="date-of-birth" type="date" value="'+item[7]+'"></p>';
-        cont += '</td>';
-    cont += '</tr>';
-    cont += '<tr>';
-        cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
-            cont += '<p class="page-text"><b>'+chatProfile[language]['language']+'</b></p>';
-    cont += '</td>';
-        cont += '<td style="text-align: left; vertical-align: top">';
-            cont += '<select class="search-select" style="width: 100px; margin: 0" id="language">';
-            cont += '<option value="1">Русский</option>';
-            cont += '</select>';
+            cont += '<p class="page-text"><input id="date-of-birth" type="date" style="font-family: \'Tahoma\' serif; font-size: 14px; padding: 0" value="'+item[7]+'"></p>';
         cont += '</td>';
     cont += '</tr>';
     cont += '<tr>';
@@ -310,7 +329,7 @@ function contentProfileEdit(language,item) {
             cont += '<p class="page-text"><b>'+chatProfile[language]['gender']+'</b></p>';
         cont += '</td>';
         cont += '<td style="text-align: left; vertical-align: top">';
-            cont += '<select class="search-select" style="width: 100px; margin: 0" id="gender">';
+            cont += '<select class="search-select" style="width: 150px; margin: 0" id="gender">';
             var active = [];
             for(var i=0; i<3; i++) {
                 if(item[6] == i) {
@@ -327,10 +346,36 @@ function contentProfileEdit(language,item) {
     cont += '</tr>';
     cont += '<tr>';
         cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
+            cont += '<p class="page-text"><b>'+chatProfile[language]['language']+'</b></p>';
+        cont += '</td>';
+        cont += '<td style="text-align: left; vertical-align: top">';
+            cont += '<select class="search-select" style="width: 150px; margin: 0" id="language">';
+                cont += '<option value="1">Русский</option>';
+            cont += '</select>';
+        cont += '</td>';
+    cont += '</tr>';
+    cont += '<tr>';
+        cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
+            cont += '<p class="page-text"><b>'+chatProfile[language]['english-level']+'</b></p>';
+        cont += '</td>';
+        cont += '<td style="text-align: left; vertical-align: top">';
+            cont += '<select class="search-select" style="width: 150px; margin: 0" id="english-level">';
+                for(var i=1; i<=6; i++) {
+                    var active = '';
+                    if(item[10] == i) {
+                        active = ' selected ';
+                    }
+                    cont += '<option value="'+i+'"'+active+'>'+chatProfile[language]['english-level-'+i]+'</option>';
+                }
+            cont += '</select>';
+        cont += '</td>';
+    cont += '</tr>';
+    cont += '<tr>';
+        cont += '<td style="text-align: right; width: 150px; vertical-align: top; padding-bottom: 10px">';
             cont += '<p class="page-text"><b>'+chatProfile[language]['about-me']+'</b></p>';
         cont += '</td>';
         cont += '<td style="text-align: left; vertical-align: top">';
-            cont += '<p class="page-text"><textarea id="about-me" class="search-input" style="width: 350px; height: 100px">'+item[8]+'</textarea></p>';
+            cont += '<p class="page-text"><textarea id="about-me" class="search-input" style="width: 350px; height: 150px; resize: none;">'+item[8]+'</textarea></p>';
         cont += '</td>';
     cont += '</tr>';
     cont += '<tr>';
@@ -382,10 +427,30 @@ function getActions(language,isAccepted){
     document.getElementById('actions').innerHTML = act;
 }
 
-function getEditActions(language,item){
+function getEditActions(language,id,actionCase){
     var act = '';
-    act += '<input type="text" class="user-action" onclick="location.hash = \'#profile?my_edit\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));" value="' + chatProfile[language]['button-edit'] + '">';
-    act += '<input type="text" class="user-action" onclick="removeFromFriends(getParam(\'id=\'));" value="' + chatProfile[language]['button-remove'] + '">';
+    switch(actionCase) {
+        case 1:
+            act += '<input type="text" class="user-action" onclick="prepareToEdit(); getEditActions('+language+','+id+',3);" value="' + chatProfile[language]['button-change-photo'] + '">';
+            act += '<input type="text" class="user-action" onclick="getEditActions('+language+','+id+',2);" value="' + chatProfile[language]['button-delete-photo'] + '">';
+            break;
+        case 2:
+            act += '<input type="text" class="user-action" onclick="prepareToEdit(); getEditActions('+language+','+id+',3);" value="' + chatProfile[language]['button-change-photo'] + '">';
+            act += '<input type="text" class="user-action" onclick="deletePhoto(); getEditActions('+language+','+id+',4);" value="' + chatProfile[language]['button-confirm-delete'] + '">';
+            break;
+        case 3:
+            act += '<input type="text" class="user-action" onclick="savePhoto(); getEditActions('+language+','+id+',1);" value="' + chatProfile[language]['button-save'] + '">';
+            act += '<input type="text" class="user-action" onclick="updatePhoto(); getEditActions('+language+','+id+',1);" value="' + chatProfile[language]['button-cancel-save'] + '">';
+            break;
+        case 4:
+            act += '<input type="text" class="user-action" onclick="prepareToEdit(); getEditActions('+language+','+id+',3);" value="' + chatProfile[language]['button-change-photo'] + '">';
+            act += '<input type="text" class="user-action" onclick="editPhoto(); getEditActions('+language+','+id+',1);" value="' + chatProfile[language]['button-cancel-delete'] + '">';
+            break;
+        default:
+            act += '<input type="text" class="user-action" onclick="prepareToEdit(); getEditActions('+language+','+id+',3);" value="' + chatProfile[language]['button-change-photo'] + '">';
+            act += '<input type="text" class="user-action" onclick="getEditActions('+language+','+id+',2);" value="' + chatProfile[language]['button-delete-photo'] + '">';
+            break;
+    }
     document.getElementById('actions').innerHTML = act;
 }
 
@@ -408,7 +473,7 @@ function getFriendActions(language,id,isAccepted){
 
 function formattedDate(date) {
     var d = date.split('-');
-    return [d[1], d[2], d[0]].join('/');
+    return [d[2], d[1], d[0]].join('.');
 }
 
 function savePass(email){
@@ -458,10 +523,162 @@ function saveProfile(){
         data: "id=" + $.cookie('user') + "&firstName=" + document.getElementById("first-name").value + "&lastName=" + document.getElementById("last-name").value
             + "&email=" + document.getElementById("email").value + "&dateOfBirth=" + document.getElementById("date-of-birth").value
             + "&language=" + document.getElementById("language").value + "&gender=" + document.getElementById("gender").value
-            + "&aboutMe=" + document.getElementById("about-me").value,
+            + "&aboutMe=" + document.getElementById("about-me").value + "&englishLevel=" + document.getElementById("english-level").value,
         success: function () {
             location.hash = '#profile?my';
             updateContent($.cookie('language'),document.getElementById('div-content'));
         }
     });
+}
+
+function deletePhoto(){
+    $.ajax({
+        type: "POST",
+        url: "../ajax/chat/profile/deletePhoto.php",
+        data: "id=" + $.cookie('user'),
+        success: function () {
+            updatePhoto();
+        }
+    });
+}
+
+function updatePhoto(){
+    $.ajax({
+        type: "POST",
+        url: "../ajax/chat/profile/getProfile.php",
+        data: "id=" + $.cookie('user'),
+        success: function (data) {
+            var item = JSON.parse(data);
+            if(item[2] == '') {
+                document.getElementById('photo').innerHTML = '<img src="/images/photos/no-photo.png" style="width: 250px; height: 250px; border: 1px solid #0060B0"><br>';
+            } else {
+                document.getElementById('photo').innerHTML = '<img src="/images/photos/'+item[2]+'" style="width: 250px; height: 250px; border: 1px solid #0060B0"><br>';
+            }
+        }
+    });
+}
+
+function editPhoto(){
+    $.ajax({
+        type: "POST",
+        url: "../ajax/chat/profile/editPhoto.php",
+        data: "id=" + $.cookie('user'),
+        success: function () {
+            updatePhoto();
+        }
+    });
+}
+
+function prepareToEdit(){
+    document.getElementById('photo').innerHTML = '<p class="page-text" style="font-size: 14px; font-style: italic">'+chatProfile[$.cookie('language')]['edit-photo-note']+'</p>';
+    document.getElementById('photo').innerHTML += '<canvas id="new-photo" width="250" height="250" class="photo-canvas"></canvas>';
+    document.getElementById('photo').innerHTML += '<input oninput="redrawPhoto()" type="range" id="scale" style="display: none; width: 250px" step="0.1" min="1" max="5" value="1">';
+    var photo = $('#new-photo');
+    photo[0].ondrop = function(e) {
+        event.preventDefault();
+        var file = e.dataTransfer.files[0];
+        var fd = new FormData();
+        fd.append('file', file);
+        var xhr = new XMLHttpRequest();
+        xhr.open('POST', '../ajax/chat/profile/uploadTmpPhoto.php', false);
+        xhr.send(fd);
+
+        photo.removeClass('canvas-drag');
+
+        var canvas = document.getElementById('new-photo');
+        var ctx = canvas.getContext('2d');
+        var image = new Image();
+        image.src = '../images/photos/'+$.cookie('user')+'tmp.png';
+
+        image.src = '../images/photos/'+$.cookie('user')+'tmp.png';
+        params = {x:0, y:0};
+        if(image.width > image.height){
+            params.height = 250;
+            params.width = image.width*params.height/image.height;
+        } else {
+            params.width = 250;
+            params.height = image.height*params.width/image.width;
+        }
+        ctx.drawImage(image, params.x, params.y, params.width*document.getElementById('scale').value, params.height*document.getElementById('scale').value);
+
+        document.getElementById('scale').style.display = 'block';
+
+        params.moved = false;
+        params.x0 = 0;
+        params.y0 = 0;
+        document.getElementById('new-photo').style.cursor = "pointer";
+        document.getElementById('new-photo').onmousedown = function(e) {
+            params.moved = true;
+            var x = e.offsetX==undefined?e.layerX:e.offsetX;
+            var y = e.offsetY==undefined?e.layerY:e.offsetY;
+            params.x0 = x;
+            params.y0 = y;
+        };
+
+        document.getElementById('new-photo').onmouseup = function() {
+            params.moved = false;
+        };
+
+        document.getElementById('new-photo').onmouseleave = function() {
+            params.moved = false;
+        };
+
+        document.getElementById('new-photo').onmousemove = function(e) {
+            if(params.moved) {
+                var x = e.offsetX==undefined?e.layerX:e.offsetX;
+                var y = e.offsetY==undefined?e.layerY:e.offsetY;
+                move(x-params.x0,y-params.y0);
+                params.x0 = x;
+                params.y0 = y;
+            }
+        }
+    };
+    photo[0].ondragover = function() {
+        photo.addClass('canvas-drag');
+        return false;
+    };
+    photo[0].ondragleave = function() {
+        photo.removeClass('canvas-drag');
+        return false;
+    };
+}
+
+function redrawPhoto() {
+    checkBorders();
+    var canvas = document.getElementById('new-photo');
+    var ctx = canvas.getContext('2d');
+    var image = new Image();
+    image.src = '../images/photos/'+$.cookie('user')+'tmp.png';
+    ctx.drawImage(image, params.x, params.y, params.width*document.getElementById('scale').value, params.height*document.getElementById('scale').value);
+}
+
+function checkBorders() {
+    if(params.x>0) {
+        params.x = 0;
+    }
+    if(params.x+params.width*document.getElementById('scale').value < 250) {
+        params.x = 250-params.width*document.getElementById('scale').value;
+    }
+    if(params.y>0) {
+        params.y = 0;
+    }
+    if(params.y+params.height*document.getElementById('scale').value < 250) {
+        params.y = 250-params.height*document.getElementById('scale').value;
+    }
+}
+
+function move(x,y){
+    params.x += x;
+    params.y += y;
+    redrawPhoto();
+}
+
+function savePhoto(){
+    var canvas = document.getElementById('new-photo');
+    var canvasData = canvas.toDataURL("image/png");
+    var xhr = new XMLHttpRequest();
+    xhr.open('POST', '../ajax/chat/profile/uploadPhoto.php', false);
+    xhr.setRequestHeader('Content-Type', 'application/upload');
+    xhr.send("imgData="+canvasData);
+    editPhoto();
 }

@@ -1,14 +1,14 @@
 <?php
 include '../../../config.php';
 $profiles = mysqli_query($db,
-    "SELECT users.Id, Email, Photo, FirstName, LastName, languages.Title AS Language, Gender, DateOfBirth, AboutMe, friends.isAccepted FROM users
+    "SELECT users.Id, Email, Photo, FirstName, LastName, languages.Title AS Language, Gender, DateOfBirth, AboutMe, EnglishLevel, friends.isAccepted FROM users
         INNER JOIN languages ON languages.Id = users.LanguageId
         LEFT OUTER JOIN friends ON friends.User1Id = users.Id AND friends.User2Id = ".$_COOKIE['user']."
         WHERE users.Id = ".$_POST['id'])
 or die(mysql_error());
 $profile = mysqli_fetch_array($profiles);
-$user = array($profile['Id'],$profile['Email'],$profile['Photo'],$profile['FirstName'],$profile['LastName'],
-    $profile['Language'],$profile['Gender'],$profile['DateOfBirth'],$profile['AboutMe'],$profile['isAccepted']);
+$user = array($profile['Id'],$profile['Email'],$profile['Photo'],$profile['FirstName'],$profile['LastName'],$profile['Language'],
+        $profile['Gender'],$profile['DateOfBirth'],$profile['AboutMe'],$profile['isAccepted'],$profile['EnglishLevel']);
 
 $fs = array();
 $friends = mysqli_query($db,
