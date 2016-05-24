@@ -1,11 +1,11 @@
-var grammarRules = [
+var grammarExercises = [
     {
-        'page-header': "Grammar",
-        'not-found': "Grammar rules are not found."
+        'page-header': "Exercises",
+        'not-found': "Grammar exercises are not found."
     },
     {
-        'page-header': "Грамматика",
-        'not-found': "Правила грамматики не найдены."
+        'page-header': "Упражнения",
+        'not-found': "Упражнения по грамматике не найдены."
     }
 ];
 
@@ -92,7 +92,7 @@ function contentId(language,divContent) {
 }
 
 function defaultTab(language,divContent) {
-    document.location.hash = '#grammar?all';
+    document.location.hash = '#exercises?all';
     updateContent(language,divContent);
 }
 

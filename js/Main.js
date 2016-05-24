@@ -1,4 +1,19 @@
 function load() {
+    document.onmouseover = function() {
+        window.innerDocClick = true;
+    };
+    document.onmouseleave = function() {
+        window.innerDocClick = false;
+    };
+    window.onhashchange = function(e) {
+        if (!window.innerDocClick) {
+            if((isLanding(e.oldURL) && !isLanding(e.newURL)) || (!isLanding(e.oldURL) && isLanding(e.newURL))) {
+                load();
+            } else {
+                selectModule();
+            }
+        }
+    };
     $("#landing_js").remove();
     $("#regauth_js").remove();
     $("#landing_css").remove();
@@ -40,6 +55,10 @@ function load() {
         $('head').append('<link rel="stylesheet" type="text/css" href="css/template.css" id="template_css"/>');
         loadPage($.cookie('language'));
     }
+}
+
+function isLanding(url){
+    return url.indexOf('#') == -1 || url.indexOf('#') == url.length-1;
 }
 
 function getTitle(){

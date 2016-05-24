@@ -113,6 +113,7 @@ function selectModule() {
     $("#dictionary_js").remove();
     $("#testing_js").remove();
     $("#advice_js").remove();
+    $("#chat_js").remove();
     $("#profile_js").remove();
     $("#friends_js").remove();
     $("#messages_js").remove();
@@ -143,10 +144,13 @@ function selectModule() {
     } else if(getParam('advice') != -1) {
         $('head').append('<script src="js/Advice.js" type="text/javascript" id="advice_js"></script>');
     } else if(getParam('profile') != -1) {
+        $('head').append('<script src="js/Chat.js" type="text/javascript" id="chat_js"></script>');
         $('head').append('<script src="js/ChatProfile.js" type="text/javascript" id="profile_js"></script>');
     } else if(getParam('friends') != -1) {
+        $('head').append('<script src="js/Chat.js" type="text/javascript" id="chat_js"></script>');
         $('head').append('<script src="js/ChatFriends.js" type="text/javascript" id="friends_js"></script>');
     } else if(getParam('messages') != -1) {
+        $('head').append('<script src="js/Chat.js" type="text/javascript" id="chat_js"></script>');
         $('head').append('<script src="js/ChatMessages.js" type="text/javascript" id="messages_js"></script>');
     } else if(getParam('texts') != -1) {
         $('head').append('<script src="js/LibraryTexts.js" type="text/javascript" id="texts_js"></script>');
@@ -205,7 +209,7 @@ function getHeader(language){
     if(isAuthorized()) {
         header +=           '<li class="item"><a class="menu-text">' + menu[language]['menu-chat'] + '</a>' +
                                 '<ul>' +
-                                    '<li><a onclick="location.hash = \'#profile\'; selectModule()" class="menu-text">' + menu[language]['menu-profile'] + '</a></li>' +
+                                    '<li><a onclick="location.hash = \'#profile?my\'; selectModule()" class="menu-text">' + menu[language]['menu-profile'] + '</a></li>' +
                                     '<li><a onclick="location.hash = \'#friends\'; selectModule()" class="menu-text">' + menu[language]['menu-friends'] + '</a></li>' +
                                     '<li><a onclick="location.hash = \'#messages\'; selectModule()" class="menu-text">' + menu[language]['menu-messages'] + '</a></li>' +
                                 '</ul>' +

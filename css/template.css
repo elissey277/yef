@@ -184,6 +184,10 @@ ul.menu li ul {
     font-family: "Tahoma", serif;
     color: #0060B0;
 }
+.page-title a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 .page-text {
     font-size: 16px;
     font-family: "Tahoma", serif;
@@ -343,4 +347,63 @@ ul.menu li ul {
 .action:hover {
     background: #FDDB50;
     cursor: pointer;
+}
+.user-action {
+    color: #0060B0;
+    background-color: white;
+    border: 1px solid #0060B0;
+    margin-top: 10px;
+    border-radius: 1px;
+    font-size: 18px;
+    padding: 4px 7px;
+    text-align: center;
+    font-family: "Tahoma", serif;
+    width: 252px;
+}
+.user-action:hover {
+    background-color: #EEEEFF;
+    cursor: pointer;
+}
+.user-action-small {
+    color: #0060B0;
+    background-color: white;
+    border: 1px solid #0060B0;
+    margin-top: 10px;
+    border-radius: 1px;
+    font-size: 14px;
+    padding: 2px 4px;
+    text-align: center;
+    font-family: "Tahoma", serif;
+    width: 152px;
+}
+.user-action-small:hover {
+    background-color: #EEEEFF;
+    cursor: pointer;
+}
+.user-friends-div {
+    border: 1px solid #EEEEFF;
+    width: 750px;
+    overflow: hidden;
+    overflow-x: auto;
+    white-space:nowrap;
+}
+.user-friend-div {
+    margin: 5px;
+    text-align: center;
+    vertical-align: top;
+    display: inline-block;
+}
+.friend-text {
+    color: #0060B0;
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+}
+.friend-text:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+.error-text {
+    font-family: "Tahoma", sans-serif;
+    font-size: 14px;
+    color: #FF2F2F;
 }
