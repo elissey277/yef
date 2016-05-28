@@ -120,8 +120,8 @@ function contentMy(language,divContent) {
             var item = JSON.parse(data);
             divContent.innerHTML += contentProfile(language, item);
             getActions(language, item[9]);
-            for(var i=0; i<item[10].length-1; i++) {
-                getFriendActions(language, item[10][i][0], item[10][i][4])
+            for(var i=0; i<item[11].length-1; i++) {
+                getFriendActions(language, item[11][i][0], item[11][i][4]);
             }
         }
     });
@@ -149,8 +149,8 @@ function contentOther(language,divContent) {
             var item = JSON.parse(data);
             divContent.innerHTML += contentProfile(language, item);
             getActions(language, item[9]);
-            for(var i=0; i<item[10].length-1; i++) {
-                getFriendActions(language, item[10][i][0], item[10][i][4])
+            for(var i=0; i<item[11].length-1; i++) {
+                getFriendActions(language, item[11][i][0], item[11][i][4]);
             }
         }
     });
@@ -168,14 +168,17 @@ function contentProfile(language,item) {
     } else {
         cont += '<p class="page-header">'+item[3]+' '+item[4]+'</p>'
     }
+    cont += '<input type="button" onclick="test()" value="Test">';
     cont += '<table>';
     cont += '<tr>';
     cont += '<td style="vertical-align: top">';
+    cont += '<div id="photo">';
     if(item[2] == '') {
         cont += '<img src="/images/photos/no-photo.png" style="width: 250px; height: 250px; border: 1px solid #0060B0"><br>';
     } else {
         cont += '<img src="/images/photos/'+item[2]+'" style="width: 250px; height: 250px; border: 1px solid #0060B0"><br>';
     }
+    cont += '</div>';
     cont += '<div id="actions"></div>';
     cont += '</td>';
     cont += '<td>';
@@ -247,12 +250,12 @@ function contentProfile(language,item) {
     cont += '<tr>';
     cont += '<td style="vertical-align: top" colspan="2">';
     cont += '<p class="page-title">'+chatProfile[language]['friends']+
-    ' <a onclick="location.hash = \'#friends?id='+item[0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">('+chatProfile[language]['view-all']+' '+item[11][item[11].length-1]+')</a>'+'</p>'
+    ' <a onclick="location.hash = \'#friends?search&id='+item[0]+'\'; updateContent($.cookie(\'language\'),document.getElementById(\'div-content\'));">('+chatProfile[language]['view-all']+' '+item[11][item[11].length-1]+')</a>'+'</p>'
     cont += '<div class="user-friends-div">';
     for(var i=0; i<item[11].length-1; i++){
         cont += '<div class="user-friend-div">';
         if(item[11][i][1] == '') {
-            cont += '<img src="/images/photos/no-photo.png" style="width: 150px; height: 150px; border: 1px solid #0060B0"><br>';
+            cont += '<img src="/images/photos/no-photo.png" style="width: 100px; height: 100px; border: 1px solid #0060B0"><br>';
         } else {
             cont += '<img src="/images/photos/'+item[11][i][1]+'" style="width: 100px; height: 100px; border: 1px solid #0060B0"><br>';
         }
@@ -269,6 +272,13 @@ function contentProfile(language,item) {
     cont += '</tr>';
     cont += '</table>';
     return cont;
+}
+
+function test() {
+    document.getElementById('photo').style.height = '0px';
+    $('#photo').animate({
+        height: '250px'
+    });
 }
 
 function contentProfileEdit(language,item) {

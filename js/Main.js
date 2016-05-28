@@ -54,6 +54,7 @@ function load() {
         $('head').append('<script src="js/Page.js" type="text/javascript" id="page_js"></script>');
         $('head').append('<link rel="stylesheet" type="text/css" href="css/template.css" id="template_css"/>');
         loadPage($.cookie('language'));
+        loadPage($.cookie('language'));
     }
 }
 

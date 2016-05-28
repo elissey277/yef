@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - yef@localhost" uuid="2398acfa-02cb-4111-a835-d41019f4c54a">
+    <database-info product="MySQL" version="5.5.25" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.31 ( Revision: alexander.soklakov@oracle.com-20140520065950-groqzzbvxprqdmnz )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <schema name="" catalog="yef"/>
+    <table name="advices" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Text0" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Text1" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="advicesliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="AdviceId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="advicesread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="AdviceId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="advicesrecommended" schema="" catalog="yef" type="TABLE">
+      <column name="Advice1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Advice2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="dictionary" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Word0" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Word1" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Example0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Example1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Audio" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TypeId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="dictionarytypes" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="dictionaryusers" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="WordForeign" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="WordNative" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ExampleForeign" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="ExampleNative" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Audio" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="TypeId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test1Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test2Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test3Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test4Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test5Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test6Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Test7Passed" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="LastTestDate" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="differences" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="differencesliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="DifferencesId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="differencesread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="DifferencesId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="differencesrecommended" schema="" catalog="yef" type="TABLE">
+      <column name="Differences1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Differences2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="differenceswords" schema="" catalog="yef" type="TABLE">
+      <column name="DifferencesId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="WordId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Description" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+    </table>
+    <table name="exercises" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="RuleId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Type" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="Task" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CorrectAnswer" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="IncorrectAnswer1" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="IncorrectAnswer2" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="IncorrectAnswer3" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Reason1" sqlType="VARCHAR" precision="200" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="exercisesusers" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="ExerciseId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="IsPassed" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="DateOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="friends" schema="" catalog="yef" type="TABLE">
+      <column name="User1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="User2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="IsAccepted" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="glossaries" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="glossariesliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="GlossaryId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="glossariesread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="GlossaryId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="glossariesrecommended" schema="" catalog="yef" type="TABLE">
+      <column name="Glossary1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Glossary2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="glossariestags" schema="" catalog="yef" type="TABLE">
+      <column name="GlossaryId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="TagId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="glossarieswords" schema="" catalog="yef" type="TABLE">
+      <column name="GlossaryId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="WordId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="interests" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="languages" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Title" sqlType="VARCHAR" precision="25" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Url" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="IsNative" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+      <column name="IsDefault" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6"/>
+    </table>
+    <table name="messages" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="UserFromId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="UserToId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Text" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="IsRead" sqlType="TINYINT" precision="3" scale="0" nullable="false" jdbcType="-6" def="MA=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="rules" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Text1" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Number" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="rulesliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="RuleId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="rulesread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="RuleId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="synonyms" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="WordId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="synonymsliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="SynonymsId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="synonymsread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="SynonymsId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="synonymsrecommended" schema="" catalog="yef" type="TABLE">
+      <column name="Synonyms1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Synonyms2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="synonymswords" schema="" catalog="yef" type="TABLE">
+      <column name="SynonymsId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="WordId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="tags" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="testings" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Description0" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Description1" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="texts" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT UNSIGNED" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Text0" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Text1" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="CategoryId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Difficulty" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="Mg=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="textscategories" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="textsliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="TextId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="textsread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="TextId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="textsrecommended" schema="" catalog="yef" type="TABLE">
+      <column name="Text1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Text2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="users" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Email" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Password" sqlType="VARCHAR" precision="50" scale="0" nullable="false" jdbcType="12"/>
+      <column name="FirstName" sqlType="VARCHAR" precision="30" scale="0" nullable="false" jdbcType="12"/>
+      <column name="LastName" sqlType="VARCHAR" precision="30" scale="0" nullable="true" jdbcType="12"/>
+      <column name="LanguageId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="Gender" sqlType="TINYINT" precision="3" scale="0" nullable="true" jdbcType="-6"/>
+      <column name="DateOfBirth" sqlType="DATE" precision="10" scale="0" nullable="false" jdbcType="91"/>
+      <column name="AboutMe" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="LastActivityDate" sqlType="DATETIME" precision="19" scale="0" nullable="false" jdbcType="93"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="usersinterests" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="InterestId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+    <table name="videos" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Text0" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Text1" sqlType="TEXT" precision="65535" scale="0" nullable="false" jdbcType="-1"/>
+      <column name="Video" sqlType="VARCHAR" precision="300" scale="0" nullable="false" jdbcType="12"/>
+      <column name="CategoryId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Difficulty" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="Mg=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="videoscategories" schema="" catalog="yef" type="TABLE">
+      <column name="Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" autoIncrement="true"/>
+      <column name="Title0" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Title1" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <column name="Image" sqlType="VARCHAR" precision="100" scale="0" nullable="false" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="Id"/>
+    </table>
+    <table name="videosliked" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="VideoId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="videosread" schema="" catalog="yef" type="TABLE">
+      <column name="UserId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="VideoId" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Count" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4" def="MQ=="/>
+      <column name="CreatedOn" sqlType="TIMESTAMP" precision="19" scale="0" nullable="false" jdbcType="93" def="Q1VSUkVOVF9USU1FU1RBTVA="/>
+    </table>
+    <table name="videosrecommended" schema="" catalog="yef" type="TABLE">
+      <column name="Video1Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+      <column name="Video2Id" sqlType="INT" precision="10" scale="0" nullable="false" jdbcType="4"/>
+    </table>
+  </data-source>
+</component>

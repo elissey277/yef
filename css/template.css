@@ -416,3 +416,16 @@ ul.menu li ul {
 .canvas-drag {
     background: #EEEEFF;
 }
+.message {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #EEEEFF;
+    border: 1px solid #0060B0;
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: "Tahoma", serif;
+    width: 250px;
+    height: auto;
+    padding: 5px;
+}
