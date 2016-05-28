@@ -277,7 +277,7 @@ function contentProfile(language,item) {
 function test() {
     document.getElementById('photo').style.height = '0px';
     $('#photo').animate({
-        height: '250px'
+        height: '350px'
     });
 }
 
